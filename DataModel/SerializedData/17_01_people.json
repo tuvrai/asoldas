@@ -1,0 +1,776 @@
+[
+  {
+    "EntityId": "Q1436",
+    "FullName": "Pertinax",
+    "BirthDate": "0126-07-31",
+    "DeathDate": "0193-03-27"
+  },
+  {
+    "EntityId": "Q1434",
+    "FullName": "Commodus",
+    "BirthDate": "0161-08-30",
+    "DeathDate": "0192-12-30"
+  },
+  {
+    "EntityId": "Q237907",
+    "FullName": "Galla Placidia",
+    "BirthDate": "0386-01-01",
+    "DeathDate": "0450-11-28"
+  },
+  {
+    "EntityId": "Q201905",
+    "FullName": "Constantius III",
+    "BirthDate": "0370-01-01",
+    "DeathDate": "0421-09-03"
+  },
+  {
+    "EntityId": "Q4991",
+    "FullName": "Emperor Taizong of Liao",
+    "BirthDate": "0902-11-25",
+    "DeathDate": "0947-05-15"
+  },
+  {
+    "EntityId": "Q177903",
+    "FullName": "Stephen I of Hungary",
+    "BirthDate": "0975-01-01",
+    "DeathDate": "1038-08-21"
+  },
+  {
+    "EntityId": "Q41834",
+    "FullName": "Romanos IV Diogenes",
+    "BirthDate": "1030-01-01",
+    "DeathDate": "1072-08-10"
+  },
+  {
+    "EntityId": "Q232223",
+    "FullName": "Eudokia Makrembolitissa",
+    "BirthDate": "1021-01-01",
+    "DeathDate": "1096-01-01"
+  },
+  {
+    "EntityId": "Q200033",
+    "FullName": "Michael VIII Palaiologos",
+    "BirthDate": "1224-01-01",
+    "DeathDate": "1282-12-18"
+  },
+  {
+    "EntityId": "Q37088",
+    "FullName": "John IV Laskaris",
+    "BirthDate": "1251-01-01",
+    "DeathDate": "1305-01-01"
+  },
+  {
+    "EntityId": "Q157112",
+    "FullName": "Albert II of Germany",
+    "BirthDate": "1397-08-16",
+    "DeathDate": "1439-11-05"
+  },
+  {
+    "EntityId": "Q129857",
+    "FullName": "Francis I of France",
+    "BirthDate": "1494-09-21",
+    "DeathDate": "1547-04-10"
+  },
+  {
+    "EntityId": "Q79972",
+    "FullName": "James VI and I",
+    "BirthDate": "1566-06-29",
+    "DeathDate": "1625-04-06"
+  },
+  {
+    "EntityId": "Q122553",
+    "FullName": "Charles II of England",
+    "BirthDate": "1630-06-08",
+    "DeathDate": "1685-02-16"
+  },
+  {
+    "EntityId": "Q299650",
+    "FullName": "John V of Portugal",
+    "BirthDate": "1689-10-22",
+    "DeathDate": "1750-07-31"
+  },
+  {
+    "EntityId": "Q1339",
+    "FullName": "Johann Sebastian Bach",
+    "BirthDate": "1685-03-31",
+    "DeathDate": "1750-07-28"
+  },
+  {
+    "EntityId": "Q357301",
+    "FullName": "John Newton",
+    "BirthDate": "1725-08-04",
+    "DeathDate": "1807-12-21"
+  },
+  {
+    "EntityId": "Q574116",
+    "FullName": "Anthony Wayne",
+    "BirthDate": "1745-01-01",
+    "DeathDate": "1796-12-15"
+  },
+  {
+    "EntityId": "Q467694",
+    "FullName": "Lachlan Macquarie",
+    "BirthDate": "1762-01-31",
+    "DeathDate": "1824-07-01"
+  },
+  {
+    "EntityId": "Q47152",
+    "FullName": "Mary Shelley",
+    "BirthDate": "1797-08-30",
+    "DeathDate": "1851-02-01"
+  },
+  {
+    "EntityId": "Q1496",
+    "FullName": "Ferdinand Magellan",
+    "BirthDate": "1480-01-01",
+    "DeathDate": "1521-05-07"
+  },
+  {
+    "EntityId": "Q9439",
+    "FullName": "Queen Victoria",
+    "BirthDate": "1819-05-24",
+    "DeathDate": "1901-01-22"
+  },
+  {
+    "EntityId": "Q41411",
+    "FullName": "Sandford Fleming",
+    "BirthDate": "1827-01-07",
+    "DeathDate": "1915-07-22"
+  },
+  {
+    "EntityId": "Q335013",
+    "FullName": "David Beatty, 1st Earl Beatty",
+    "BirthDate": "1871-01-17",
+    "DeathDate": "1936-03-11"
+  },
+  {
+    "EntityId": "Q83235",
+    "FullName": "Horatio Nelson, 1st Viscount Nelson",
+    "BirthDate": "1758-09-29",
+    "DeathDate": "1805-10-21"
+  },
+  {
+    "EntityId": "Q893660",
+    "FullName": "Boris Bazhanov",
+    "BirthDate": "1900-08-09",
+    "DeathDate": "1982-12-30"
+  },
+  {
+    "EntityId": "Q855",
+    "FullName": "Joseph Stalin",
+    "BirthDate": "1878-12-18",
+    "DeathDate": "1953-03-05"
+  },
+  {
+    "EntityId": "Q9682",
+    "FullName": "Elizabeth II",
+    "BirthDate": "1926-04-21",
+    "DeathDate": "2022-09-08"
+  },
+  {
+    "EntityId": "Q11270",
+    "FullName": "Fulgencio Batista",
+    "BirthDate": "1901-01-16",
+    "DeathDate": "1973-08-06"
+  },
+  {
+    "EntityId": "Q11256",
+    "FullName": "Fidel Castro",
+    "BirthDate": "1926-08-13",
+    "DeathDate": "2016-11-25"
+  },
+  {
+    "EntityId": "Q15967751",
+    "FullName": "Ernest Harrison",
+    "BirthDate": "1926-05-11",
+    "DeathDate": "2009-02-16"
+  },
+  {
+    "EntityId": "Q467133",
+    "FullName": "David Dinkins",
+    "BirthDate": "1927-07-10",
+    "DeathDate": "2020-11-23"
+  },
+  {
+    "EntityId": "Q40495",
+    "FullName": "Pervez Musharraf",
+    "BirthDate": "1943-08-11",
+    "DeathDate": "2023-02-05"
+  },
+  {
+    "EntityId": "Q168736",
+    "FullName": "Pope John II",
+    "BirthDate": "0470-01-01",
+    "DeathDate": "0535-05-10"
+  },
+  {
+    "EntityId": "Q12522411",
+    "FullName": "Trunajaya",
+    "BirthDate": "1649-01-01",
+    "DeathDate": "1680-01-02"
+  },
+  {
+    "EntityId": "Q131706",
+    "FullName": "Maria Theresa",
+    "BirthDate": "1717-05-13",
+    "DeathDate": "1780-11-29"
+  },
+  {
+    "EntityId": "Q23",
+    "FullName": "George Washington",
+    "BirthDate": "1732-02-22",
+    "DeathDate": "1799-12-14"
+  },
+  {
+    "EntityId": "Q164723",
+    "FullName": "Charles Cornwallis, 1st Marquess Cornwallis",
+    "BirthDate": "1738-12-31",
+    "DeathDate": "1805-10-05"
+  },
+  {
+    "EntityId": "Q380875",
+    "FullName": "Thomas Telford",
+    "BirthDate": "1757-08-09",
+    "DeathDate": "1834-09-02"
+  },
+  {
+    "EntityId": "Q380562",
+    "FullName": "Braxton Bragg",
+    "BirthDate": "1817-03-22",
+    "DeathDate": "1876-09-27"
+  },
+  {
+    "EntityId": "Q541708",
+    "FullName": "William Rosecrans",
+    "BirthDate": "1819-09-06",
+    "DeathDate": "1898-03-11"
+  },
+  {
+    "EntityId": "Q117101",
+    "FullName": "John Hay",
+    "BirthDate": "1838-10-08",
+    "DeathDate": "1905-07-01"
+  },
+  {
+    "EntityId": "Q9960",
+    "FullName": "Ronald Reagan",
+    "BirthDate": "1911-02-06",
+    "DeathDate": "2004-06-05"
+  },
+  {
+    "EntityId": "Q9588",
+    "FullName": "Richard Nixon",
+    "BirthDate": "1913-01-09",
+    "DeathDate": "1994-04-22"
+  },
+  {
+    "EntityId": "Q3630093",
+    "FullName": "Lalit Narayan Mishra",
+    "BirthDate": "1923-02-02",
+    "DeathDate": "1975-01-03"
+  },
+  {
+    "EntityId": "Q523020",
+    "FullName": "Peter Sutcliffe",
+    "BirthDate": "1946-06-02",
+    "DeathDate": "2020-11-13"
+  },
+  {
+    "EntityId": "Q2109934",
+    "FullName": "Sharon Pratt",
+    "BirthDate": "1944-01-30",
+    "DeathDate": null
+  },
+  {
+    "EntityId": "Q1830",
+    "FullName": "Decius",
+    "BirthDate": "0201-01-01",
+    "DeathDate": "0251-07-01"
+  },
+  {
+    "EntityId": "Q49237",
+    "FullName": "Pope Leo X",
+    "BirthDate": "1475-12-20",
+    "DeathDate": "1521-12-11"
+  },
+  {
+    "EntityId": "Q9554",
+    "FullName": "Martin Luther",
+    "BirthDate": "1483-11-19",
+    "DeathDate": "1546-02-28"
+  },
+  {
+    "EntityId": "Q4889852",
+    "FullName": "Benning Wentworth",
+    "BirthDate": "1696-08-03",
+    "DeathDate": "1770-10-14"
+  },
+  {
+    "EntityId": "Q360164",
+    "FullName": "Joseph Jenkins Roberts",
+    "BirthDate": "1809-03-15",
+    "DeathDate": "1876-02-24"
+  },
+  {
+    "EntityId": "Q545751",
+    "FullName": "Louis Faidherbe",
+    "BirthDate": "1818-06-03",
+    "DeathDate": "1889-09-28"
+  },
+  {
+    "EntityId": "Q6868793",
+    "FullName": "Minnie D. Craig",
+    "BirthDate": "1883-11-04",
+    "DeathDate": "1966-07-01"
+  },
+  {
+    "EntityId": "Q684140",
+    "FullName": "Pappy Boyington",
+    "BirthDate": "1912-12-04",
+    "DeathDate": "1988-01-11"
+  },
+  {
+    "EntityId": "Q533397",
+    "FullName": "George Woolf",
+    "BirthDate": "1910-05-31",
+    "DeathDate": "1946-01-03"
+  },
+  {
+    "EntityId": "Q599174",
+    "FullName": "Frances P. Bolton",
+    "BirthDate": "1885-03-29",
+    "DeathDate": "1977-03-09"
+  },
+  {
+    "EntityId": "Q7087731",
+    "FullName": "Oliver P. Bolton",
+    "BirthDate": "1917-02-22",
+    "DeathDate": "1972-12-13"
+  },
+  {
+    "EntityId": "Q23873",
+    "FullName": "Pope John XXIII",
+    "BirthDate": "1881-11-25",
+    "DeathDate": "1963-06-03"
+  },
+  {
+    "EntityId": "Q192667",
+    "FullName": "Manuel Noriega",
+    "BirthDate": "1934-02-11",
+    "DeathDate": "2017-05-29"
+  },
+  {
+    "EntityId": "Q23505",
+    "FullName": "George H. W. Bush",
+    "BirthDate": "1924-06-12",
+    "DeathDate": "2018-11-30"
+  },
+  {
+    "EntityId": "Q34453",
+    "FullName": "Boris Yeltsin",
+    "BirthDate": "1931-02-01",
+    "DeathDate": "2007-04-23"
+  },
+  {
+    "EntityId": "Q1992645",
+    "FullName": "Nimr al-Nimr",
+    "BirthDate": "1959-06-21",
+    "DeathDate": "2016-01-02"
+  },
+  {
+    "EntityId": "Q892014",
+    "FullName": "Qasem Soleimani",
+    "BirthDate": "1957-03-11",
+    "DeathDate": "2020-01-03"
+  },
+  {
+    "EntityId": "Q83476",
+    "FullName": "Alfred the Great",
+    "BirthDate": "0849-01-01",
+    "DeathDate": "0899-10-30"
+  },
+  {
+    "EntityId": "Q81506",
+    "FullName": "Charles I of England",
+    "BirthDate": "1600-11-29",
+    "DeathDate": "1649-02-09"
+  },
+  {
+    "EntityId": "Q2994983",
+    "FullName": "Constantine Hangerli",
+    "BirthDate": "1760-01-01",
+    "DeathDate": "1799-02-18"
+  },
+  {
+    "EntityId": "Q127688",
+    "FullName": "Johan Vilhelm Snellman",
+    "BirthDate": "1806-05-12",
+    "DeathDate": "1881-07-04"
+  },
+  {
+    "EntityId": "Q3489578",
+    "FullName": "Solomon Northup",
+    "BirthDate": "1808-07-10",
+    "DeathDate": "1864-01-01"
+  },
+  {
+    "EntityId": "Q380910",
+    "FullName": "Aeneas Mackintosh",
+    "BirthDate": "1879-07-01",
+    "DeathDate": "1916-05-08"
+  },
+  {
+    "EntityId": "Q156806",
+    "FullName": "Konstantinos Karamanlis",
+    "BirthDate": "1907-03-21",
+    "DeathDate": "1998-04-23"
+  },
+  {
+    "EntityId": "Q2166737",
+    "FullName": "Rose Heilbron",
+    "BirthDate": "1914-08-19",
+    "DeathDate": "2005-12-08"
+  },
+  {
+    "EntityId": "Q311161",
+    "FullName": "Jesse Ventura",
+    "BirthDate": "1951-07-15",
+    "DeathDate": null
+  },
+  {
+    "EntityId": "Q93181",
+    "FullName": "Ehud Olmert",
+    "BirthDate": "1945-09-30",
+    "DeathDate": null
+  },
+  {
+    "EntityId": "Q60206",
+    "FullName": "Ariel Sharon",
+    "BirthDate": "1928-02-26",
+    "DeathDate": "2014-01-11"
+  },
+  {
+    "EntityId": "Q170581",
+    "FullName": "Nancy Pelosi",
+    "BirthDate": "1940-03-26",
+    "DeathDate": null
+  },
+  {
+    "EntityId": "Q151120",
+    "FullName": "Charles the Bold",
+    "BirthDate": "1433-11-19",
+    "DeathDate": "1477-01-14"
+  },
+  {
+    "EntityId": "Q7738",
+    "FullName": "Louis XV",
+    "BirthDate": "1710-02-15",
+    "DeathDate": "1774-05-10"
+  },
+  {
+    "EntityId": "Q298237",
+    "FullName": "Benedict Arnold",
+    "BirthDate": "1741-01-14",
+    "DeathDate": "1801-06-14"
+  },
+  {
+    "EntityId": "Q171826",
+    "FullName": "Alfred Dreyfus",
+    "BirthDate": "1859-10-09",
+    "DeathDate": "1935-07-12"
+  },
+  {
+    "EntityId": "Q1394",
+    "FullName": "Vladimir Lenin",
+    "BirthDate": "1870-04-22",
+    "DeathDate": "1924-01-21"
+  },
+  {
+    "EntityId": "Q374655",
+    "FullName": "Pavlos Kountouriotis",
+    "BirthDate": "1855-04-21",
+    "DeathDate": "1935-08-22"
+  },
+  {
+    "EntityId": "Q242714",
+    "FullName": "Nellie Tayloe Ross",
+    "BirthDate": "1876-11-29",
+    "DeathDate": "1977-12-19"
+  },
+  {
+    "EntityId": "Q2998",
+    "FullName": "Amy Johnson",
+    "BirthDate": "1903-07-01",
+    "DeathDate": "1941-01-05"
+  },
+  {
+    "EntityId": "Q11613",
+    "FullName": "Harry S. Truman",
+    "BirthDate": "1884-05-08",
+    "DeathDate": "1972-12-26"
+  },
+  {
+    "EntityId": "Q37327",
+    "FullName": "Samuel Beckett",
+    "BirthDate": "1906-04-13",
+    "DeathDate": "1989-12-22"
+  },
+  {
+    "EntityId": "Q9916",
+    "FullName": "Dwight D. Eisenhower",
+    "BirthDate": "1890-10-14",
+    "DeathDate": "1969-03-28"
+  },
+  {
+    "EntityId": "Q200881",
+    "FullName": "Kassym-Jomart Tokayev",
+    "BirthDate": "1953-05-17",
+    "DeathDate": null
+  },
+  {
+    "EntityId": "Q527063",
+    "FullName": "Asqar Mamin",
+    "BirthDate": "1965-10-23",
+    "DeathDate": null
+  },
+  {
+    "EntityId": "Q159597",
+    "FullName": "Harold Godwinson",
+    "BirthDate": "1022-01-01",
+    "DeathDate": "1066-10-20"
+  },
+  {
+    "EntityId": "Q121130",
+    "FullName": "Philip of Swabia",
+    "BirthDate": "1177-08-01",
+    "DeathDate": "1208-06-28"
+  },
+  {
+    "EntityId": "Q1281457",
+    "FullName": "Stefan Konstantin",
+    "BirthDate": "1282-01-01",
+    "DeathDate": "1322-01-01"
+  },
+  {
+    "EntityId": "Q155669",
+    "FullName": "Charles IV, Holy Roman Emperor",
+    "BirthDate": "1316-05-14",
+    "DeathDate": "1378-11-29"
+  },
+  {
+    "EntityId": "Q37142",
+    "FullName": "Constantine XI Palaiologos",
+    "BirthDate": "1404-02-18",
+    "DeathDate": "1453-05-29"
+  },
+  {
+    "EntityId": "Q441300",
+    "FullName": "Antonio de Mendoza",
+    "BirthDate": "1490-01-01",
+    "DeathDate": "1552-07-31"
+  },
+  {
+    "EntityId": "Q57126",
+    "FullName": "Anne of Cleves",
+    "BirthDate": "1515-07-08",
+    "DeathDate": "1557-07-17"
+  },
+  {
+    "EntityId": "Q442497",
+    "FullName": "Ottavio Farnese, Duke of Parma",
+    "BirthDate": "1524-10-19",
+    "DeathDate": "1586-09-18"
+  },
+  {
+    "EntityId": "Q34417",
+    "FullName": "Philip II of Spain",
+    "BirthDate": "1527-05-31",
+    "DeathDate": "1598-09-13"
+  },
+  {
+    "EntityId": "Q454292",
+    "FullName": "Alfred Vail",
+    "BirthDate": "1809-09-25",
+    "DeathDate": "1859-01-18"
+  },
+  {
+    "EntityId": "Q183246",
+    "FullName": "Samuel Colt",
+    "BirthDate": "1814-07-22",
+    "DeathDate": "1862-01-10"
+  },
+  {
+    "EntityId": "Q131117",
+    "FullName": "Maria Montessori",
+    "BirthDate": "1870-08-31",
+    "DeathDate": "1952-05-06"
+  },
+  {
+    "EntityId": "Q207384",
+    "FullName": "Alexander I of Yugoslavia",
+    "BirthDate": "1888-12-16",
+    "DeathDate": "1934-10-09"
+  },
+  {
+    "EntityId": "Q5131954",
+    "FullName": "Clessie Cummins",
+    "BirthDate": "1888-12-27",
+    "DeathDate": "1968-08-17"
+  },
+  {
+    "EntityId": "Q8007",
+    "FullName": "Franklin D. Roosevelt",
+    "BirthDate": "1882-01-30",
+    "DeathDate": "1945-04-12"
+  },
+  {
+    "EntityId": "Q2546004",
+    "FullName": "Satwant Singh",
+    "BirthDate": "1962-01-01",
+    "DeathDate": "1989-01-06"
+  },
+  {
+    "EntityId": "Q6383467",
+    "FullName": "Kehar Singh",
+    "BirthDate": "1935-01-01",
+    "DeathDate": "1989-01-01"
+  },
+  {
+    "EntityId": "Q1149",
+    "FullName": "Indira Gandhi",
+    "BirthDate": "1917-11-19",
+    "DeathDate": "1984-10-31"
+  },
+  {
+    "EntityId": "Q218435",
+    "FullName": "Zviad Gamsakhurdia",
+    "BirthDate": "1939-03-31",
+    "DeathDate": "1993-12-31"
+  },
+  {
+    "EntityId": "Q239988",
+    "FullName": "Nancy Kerrigan",
+    "BirthDate": "1969-10-13",
+    "DeathDate": null
+  },
+  {
+    "EntityId": "Q236278",
+    "FullName": "Tonya Harding",
+    "BirthDate": "1970-11-12",
+    "DeathDate": null
+  },
+  {
+    "EntityId": "Q1284122",
+    "FullName": "Edgar Ray Killen",
+    "BirthDate": "1925-01-17",
+    "DeathDate": "2018-01-11"
+  },
+  {
+    "EntityId": "Q272903",
+    "FullName": "Afonso IV of Portugal",
+    "BirthDate": "1291-02-08",
+    "DeathDate": "1357-05-28"
+  },
+  {
+    "EntityId": "Q307",
+    "FullName": "Galileo Galilei",
+    "BirthDate": "1564-02-25",
+    "DeathDate": "1642-01-08"
+  },
+  {
+    "EntityId": "Q366649",
+    "FullName": "Jean-Pierre Blanchard",
+    "BirthDate": "1753-07-04",
+    "DeathDate": "1809-03-07"
+  },
+  {
+    "EntityId": "Q1387374",
+    "FullName": "John Jeffries",
+    "BirthDate": "1744-02-05",
+    "DeathDate": "1819-09-16"
+  },
+  {
+    "EntityId": "Q1035",
+    "FullName": "Charles Darwin",
+    "BirthDate": "1809-02-12",
+    "DeathDate": "1882-04-19"
+  },
+  {
+    "EntityId": "Q8743",
+    "FullName": "Thomas Edison",
+    "BirthDate": "1847-02-11",
+    "DeathDate": "1931-10-18"
+  },
+  {
+    "EntityId": "Q5622461",
+    "FullName": "Guy Menzies",
+    "BirthDate": "1909-08-20",
+    "DeathDate": "1940-11-01"
+  },
+  {
+    "EntityId": "Q23559",
+    "FullName": "Benito Mussolini",
+    "BirthDate": "1883-07-29",
+    "DeathDate": "1945-04-28"
+  },
+  {
+    "EntityId": "Q151983",
+    "FullName": "Pierre Laval",
+    "BirthDate": "1883-06-28",
+    "DeathDate": "1945-10-15"
+  },
+  {
+    "EntityId": "Q231923",
+    "FullName": "Marian Anderson",
+    "BirthDate": "1897-02-21",
+    "DeathDate": "1993-04-08"
+  },
+  {
+    "EntityId": "Q7317",
+    "FullName": "Giuseppe Verdi",
+    "BirthDate": "1813-10-10",
+    "DeathDate": "1901-01-27"
+  },
+  {
+    "EntityId": "Q6767537",
+    "FullName": "Mark Essex",
+    "BirthDate": "1949-08-12",
+    "DeathDate": "1973-01-07"
+  },
+  {
+    "EntityId": "Q39464",
+    "FullName": "Pol Pot",
+    "BirthDate": "1925-05-19",
+    "DeathDate": "1998-04-15"
+  },
+  {
+    "EntityId": "Q23685",
+    "FullName": "Jimmy Carter",
+    "BirthDate": "1924-10-01",
+    "DeathDate": "2024-12-29"
+  },
+  {
+    "EntityId": "Q3439151",
+    "FullName": "Roger Lafontant",
+    "BirthDate": "1931-01-01",
+    "DeathDate": "1991-09-29"
+  },
+  {
+    "EntityId": "Q51002",
+    "FullName": "Jerry Rawlings",
+    "BirthDate": "1947-06-22",
+    "DeathDate": "2020-11-12"
+  },
+  {
+    "EntityId": "Q1124",
+    "FullName": "Bill Clinton",
+    "BirthDate": "1946-08-19",
+    "DeathDate": null
+  },
+  {
+    "EntityId": "Q766866",
+    "FullName": "Kevin McCarthy",
+    "BirthDate": "1965-01-26",
+    "DeathDate": null
+  }
+]

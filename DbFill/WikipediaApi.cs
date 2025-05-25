@@ -15,6 +15,8 @@ using System.Data;
 using System.Net.Http.Headers;
 using System.Diagnostics;
 using System.Net;
+using static System.Net.Mime.MediaTypeNames;
+using static System.Formats.Asn1.AsnWriter;
 
 namespace DbFill
 {
@@ -38,13 +40,55 @@ namespace DbFill
         {
             if (_httpClient == null)
             {
-                HttpClientHandler handler = new HttpClientHandler
+                PrepareHttpClient();
+            }
+            WikiDataset wikiDataset = new();
+            if (month < 1 || _dayMax[month] < day)
+            {
+                return wikiDataset;
+            }
+
+            List<RawEvent> preprocessedEvents = await PreprocessEvents(month, day);
+            List<string> allLinked = preprocessedEvents.SelectMany(x => x.LinkedArticleTitles).ToList();
+
+            Dictionary<string, Person> persons = [];
+            if (allLinked.Count > 0)
+            {
+                int batchSize = 50;
+                int maxBatchId = (allLinked.Count - 1) / batchSize;
+                for (int batchId = 0; batchId < maxBatchId; batchId++)
                 {
-                    AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate
-                };
-                _httpClient = new HttpClient(handler);
-                _httpClient.DefaultRequestHeaders.UserAgent.ParseAdd("MyBot/1.0 (https://example.com)");
-                _httpClient.DefaultRequestHeaders.AcceptEncoding.ParseAdd("gzip, deflate");
+                    int startId = batchId * batchSize;
+                    
+                    foreach (KeyValuePair<string, Person> pair in await GetPersonDict(await GetPersonToEntityDict(allLinked.Slice(startId, batchSize))))
+                    {
+                        persons.Add(pair.Key, pair.Value);
+                    }
+                }
+
+                foreach (WikiEvent wevent in preprocessedEvents.Select(x => x.GetWikiEvent(persons)))
+                {
+                    wikiDataset.AddEvent(wevent);
+                }
+
+                foreach (Person person in persons.Values)
+                {
+                    wikiDataset.AddPerson(person);
+                }
+            }
+            else
+            {
+                Console.WriteLine("Error - not a single link.");
+            }
+            return wikiDataset;
+
+        }
+
+        public async static Task<WikiDataset> GetEventsFromDayOld(int month, int day)
+        {
+            if (_httpClient == null)
+            {
+                PrepareHttpClient();
             }
             WikiDataset wikiDataset = new();
             if (month < 1 || _dayMax[month] < day)
@@ -91,33 +135,97 @@ namespace DbFill
                             Stop(watch, ref lastStopElapsed, "a. cleaneventdescr");
                             newEvent.Description = cleanEventDescr;
 
-                            foreach (string name in linked)
-                            {
-                                if (await GetWikiItemId(name) is string entity)
-                                {
-                                    Stop(watch, ref lastStopElapsed, "a. GetWikiItemId (OK)");
-                                    if (await SparqlQueries.GetPersonUsingEntityId(entity) is Person person)
-                                    {
-                                        Stop(watch, ref lastStopElapsed, "a. GetPersonUsingEntityId (OK)");
-                                        person.FullName = name;
-                                        if (newEvent.AddPerson(person))
-                                        {
-                                            person.Events.Add(newEvent);
-                                            wikiDataset.AddPerson(person);
-                                        }
-                                    }
-                                    else
-                                    {
-                                        Stop(watch, ref lastStopElapsed, "a. GetPersonUsingEntityId (NOK)");
-                                    }
-                                }
-                                else
-                                {
-                                    Stop(watch, ref lastStopElapsed, "a. getwikiitemid (NOK)");
-                                }
-                            }
+                            //foreach (string name in linked)
+                            //{
+                            //    if (await GetWikiItemId(name) is string entity)
+                            //    {
+                            //        Stop(watch, ref lastStopElapsed, "a. GetWikiItemId (OK)");
+                            //        if (await SparqlQueries.GetPersonUsingEntityId(entity) is Person person)
+                            //        {
+                            //            Stop(watch, ref lastStopElapsed, "a. GetPersonUsingEntityId (OK)");
+                            //            person.FullName = name;
+                            //            if (newEvent.AddPerson(person))
+                            //            {
+                            //                person.Events.Add(newEvent);
+                            //                wikiDataset.AddPerson(person);
+                            //            }
+                            //        }
+                            //        else
+                            //        {
+                            //            Stop(watch, ref lastStopElapsed, "a. GetPersonUsingEntityId (NOK)");
+                            //        }
+                            //    }
+                            //    else
+                            //    {
+                            //        Stop(watch, ref lastStopElapsed, "a. getwikiitemid (NOK)");
+                            //    }
+                            //}
 
-                            wikiDataset.AddEvent(newEvent);
+                            //wikiDataset.AddEvent(newEvent);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.StackTrace);
+                    }
+
+                    currentLine++;
+                    //Thread.Sleep(ForcedBreakTimeMs);
+                }
+            }
+            return wikiDataset;
+        }
+
+        private static async Task<List<RawEvent>> PreprocessEvents(int month, int day)
+        {
+            string urlFormat = @"https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&rvprop=content&titles={0}%20{1}&origin=*";
+            string actualUrl = string.Format(urlFormat, _monthFull[month], day);
+            string data = await GetHttpContent(actualUrl);
+
+            int eventsStartId = data.IndexOf(events);
+            int birthsStartId = data.IndexOf(births);
+
+            Stopwatch watch = Stopwatch.StartNew();
+            long lastStopElapsed = watch.ElapsedMilliseconds;
+
+            List<RawEvent> rawEvents = [];
+
+            if (eventsStartId >= 0 && birthsStartId >= 0)
+            {
+                string[] lines = data.Substring(eventsStartId, birthsStartId - eventsStartId).Split("\\n*").Where(x => x.Trim().StartsWith("[[")).ToArray();
+                int lineCount = lines.Length;
+                int currentLine = 1;
+                foreach (string line in lines)
+                {
+                    WikiEvent newEvent = new();
+                    Console.Clear();
+                    Console.WriteLine($"{day}/{_monthFull[month]}, {currentLine}/{lineCount} - {line[..40]}");
+                    try
+                    {
+
+                        string datePart = line.Contains("&ndash;") ? line.Split("&ndash;", 2)[0] : line.Replace("\\u2013", "&ndash;").Split("&ndash;", 2)[0];
+                        string eventPart = line.Contains("&ndash;") ? line.Split("&ndash;", 2)[1] : line.Replace("\\u2013", "&ndash;").Split("&ndash;", 2)[1];
+
+                        Stop(watch, ref lastStopElapsed, "a. split");
+                        if (ParseAcYear(WikiMarkupParsers.ReadWikipediaLinkArticleName(datePart)) is int year)
+                        {
+                            Stop(watch, ref lastStopElapsed, "a. parseacyear");
+                            newEvent.Day = new DateOnly(year, month, day);
+                            string cleanEventDescr = eventPart
+                                .RemoveRefs()
+                                .RemoveExcessNewLines()
+                                .FlattenLinks(out List<string> linked)
+                                .ConvertUtfCharacters()
+                                .Trim();
+                            Stop(watch, ref lastStopElapsed, "a. cleaneventdescr");
+                            newEvent.Description = cleanEventDescr;
+
+                            rawEvents.Add(new RawEvent
+                            {
+                                Day = newEvent.Day,
+                                Description = cleanEventDescr,
+                                LinkedArticleTitles = linked
+                            });
                         }
                     }
                     catch (Exception ex)
@@ -129,7 +237,19 @@ namespace DbFill
                     Thread.Sleep(ForcedBreakTimeMs);
                 }
             }
-            return wikiDataset;
+
+            return rawEvents;
+        }
+
+        private static void PrepareHttpClient()
+        {
+            HttpClientHandler handler = new HttpClientHandler
+            {
+                AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate
+            };
+            _httpClient = new HttpClient(handler);
+            _httpClient.DefaultRequestHeaders.UserAgent.ParseAdd("MyBot/1.0 (https://example.com)");
+            _httpClient.DefaultRequestHeaders.AcceptEncoding.ParseAdd("gzip, deflate");
         }
 
         private static void Stop(this Stopwatch stopwatch, ref long lastMs, string comment)
@@ -186,6 +306,83 @@ namespace DbFill
             }
             Stop(stopw, ref curr, $"\t{articleName} - a. desc");
             return null;
+        }
+
+        public async static Task<Dictionary<string, string>> GetPersonToEntityDict(List<string> articleNames)
+        {
+            var stopw = Stopwatch.StartNew();
+            long curr = stopw.ElapsedMilliseconds;
+            string urlFormat = @"https://en.wikipedia.org/w/api.php?action=query&titles={0}&prop=pageprops&format=xml";
+            string articleUrl = string.Format(urlFormat, Uri.EscapeDataString(GetUrlTitleArg(articleNames)));
+
+
+            string xmlContent = await GetHttpContent(articleUrl);
+
+            Stop(stopw, ref curr, $"\tarticle batch - a. http");
+
+            XDocument doc = XDocument.Parse(xmlContent);
+
+            Stop(stopw, ref curr, $"\ttarticle batch - a. parse");
+            Dictionary<string, string> dict = [];
+            foreach (XElement pageEl in doc.Descendants().Where(e => e.Name.LocalName == "page"))
+            {
+                if (pageEl.Attribute("title") is XAttribute titleAttr && !string.IsNullOrEmpty(titleAttr.Value) && !dict.ContainsKey(titleAttr.Value))
+                {
+                    if (pageEl.Descendants().FirstOrDefault(e => e.Name.LocalName == "pageprops") is XElement pageprops)
+                    {
+                        if (pageprops.Attribute("wikibase_item") is XAttribute entityAttr)
+                        {
+                            dict.Add(titleAttr.Value, entityAttr.Value);
+                        }
+                    }
+                }
+            }
+            Stop(stopw, ref curr, $"\ttarticle batch - a. desc");
+            return dict;
+        }
+
+        private async static Task<Dictionary<string, Person>> GetPersonDict(Dictionary<string, string> personToEntity)
+        {
+            string start = "https://query.wikidata.org/sparql?query=";
+            string sparqla = "SELECT ?person ?name ?isHuman ?birthDate ?deathDate WHERE {VALUES ?person { REPLACABLE } OPTIONAL { ?person wdt:P31 wd:Q5. BIND(true AS ?isHuman) } OPTIONAL { ?person wdt:P569 ?birthDate. } OPTIONAL { ?person wdt:P570 ?deathDate. } OPTIONAL { ?person rdfs:label ?name. FILTER (lang(?name) = \"en\") }}";
+            string query = sparqla.Replace("REPLACABLE", string.Join(' ', personToEntity.Values.Select(x => $"wd:{x}")));
+
+            string queryUrl = start + Uri.EscapeDataString(query);
+
+            string xmlContent = await GetHttpContent(queryUrl);
+
+            XDocument doc = XDocument.Parse(xmlContent);
+
+            Dictionary<string, Person> dict = [];
+            foreach (XElement result in doc.Descendants().Where(e => e.Name.LocalName == "result"))
+            {
+                if (SparqlQueries.GetEntity(result) is string entity && personToEntity.ContainsValue(entity))
+                {
+                    string key = personToEntity.FirstOrDefault(pair => pair.Value == entity).Key;
+                    if (!dict.ContainsKey(key) && SparqlQueries.IsHuman(result))
+                    {
+                        if (SparqlQueries.GetDate(result, "birthDate") is DateOnly birthDate)
+                        {
+                            Person person = new Person()
+                            {
+                                EntityId = entity,
+                                FullName = key,
+                                BirthDate = birthDate,
+                                DeathDate = SparqlQueries.GetDate(result, "deathDate")
+                            };
+                            dict.Add(key, person);
+                        }
+                    }
+                }
+
+            }
+
+            return dict;
+        }
+
+        private static string GetUrlTitleArg(List<string> titles)
+        {
+            return string.Join('|', titles);
         }
 
         private static async Task<string> GetHttpContent(string url)

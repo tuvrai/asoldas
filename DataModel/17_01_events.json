@@ -1,0 +1,2909 @@
+[
+  {
+    "Id": "5927FB731D556BF985A143796360E8C6DF10DCAF430E5D2A2A61938705A00354",
+    "Day": "0193-01-01",
+    "Description": "The Senate chooses Pertinax against his will to succeed Commodus as Roman emperor.",
+    "People": [
+      {
+        "EntityId": "Q1434",
+        "FullName": "Commodus",
+        "BirthDate": "0161-08-30",
+        "DeathDate": "0192-12-30"
+      },
+      {
+        "EntityId": "Q1436",
+        "FullName": "Pertinax",
+        "BirthDate": "0126-07-31",
+        "DeathDate": "0193-03-27"
+      }
+    ]
+  },
+  {
+    "Id": "0632D1A1BC731B89AEF0EC333BBE50990CFAFEC5F2A06F6FBAD5F8750D0F1953",
+    "Day": "0404-01-01",
+    "Description": "Saint Telemachus tries to stop a gladiatorial fight in a Roman amphitheatre, and is stoned to death by the crowd. This act impresses the Christian Emperor Honorius, who issues a historic ban on gladiatorial fights.",
+    "People": [
+      {
+        "EntityId": "Q1115667",
+        "FullName": "Saint Telemachus",
+        "BirthDate": "0301-01-01",
+        "DeathDate": "0404-01-01"
+      }
+    ]
+  },
+  {
+    "Id": "251E4F4C88E20162860D8E25E21E4F759DF99CD99D3799706C5A32076E003BAC",
+    "Day": "0417-01-01",
+    "Description": "Emperor Honorius forces Galla Placidia into marriage to Constantius, his famous general (''magister militum'') (probable).",
+    "People": [
+      {
+        "EntityId": "Q237907",
+        "FullName": "Galla Placidia",
+        "BirthDate": "0386-01-01",
+        "DeathDate": "0450-11-28"
+      },
+      {
+        "EntityId": "Q201905",
+        "FullName": "Constantius III",
+        "BirthDate": "0370-01-01",
+        "DeathDate": "0421-09-03"
+      }
+    ]
+  },
+  {
+    "Id": "4953B152455E1D3BFCF98DC9E221F7676E5760D60E9F145FEF4CE444094612F5",
+    "Day": "0947-01-01",
+    "Description": "Emperor Taizong of the Khitan-led Liao dynasty captures Daliang, ending the dynasty and empire of the Later Jin.",
+    "People": [
+      {
+        "EntityId": "Q4991",
+        "FullName": "Emperor Taizong of Liao",
+        "BirthDate": "0902-11-25",
+        "DeathDate": "0947-05-15"
+      }
+    ]
+  },
+  {
+    "Id": "06498B1FAC1D4FB1494F3F4969FBB8007F14B4C3A6DBE9A7B086EB4E394C1486",
+    "Day": "1001-01-01",
+    "Description": "Grand Prince Stephen I of Hungary is named the first King of Hungary by Pope Sylvester II (probable).",
+    "People": [
+      {
+        "EntityId": "Q177903",
+        "FullName": "Stephen I of Hungary",
+        "BirthDate": "0975-01-01",
+        "DeathDate": "1038-08-21"
+      }
+    ]
+  },
+  {
+    "Id": "517E94C2FD8C01C59B425922C100EF3195E72B3E7A33B2E8CACE9F9C9DC2EDE2",
+    "Day": "1068-01-01",
+    "Description": "Romanos IV Diogenes marries Eudokia Makrembolitissa and is crowned Byzantine Emperor.",
+    "People": [
+      {
+        "EntityId": "Q232223",
+        "FullName": "Eudokia Makrembolitissa",
+        "BirthDate": "1021-01-01",
+        "DeathDate": "1096-01-01"
+      },
+      {
+        "EntityId": "Q41834",
+        "FullName": "Romanos IV Diogenes",
+        "BirthDate": "1030-01-01",
+        "DeathDate": "1072-08-10"
+      }
+    ]
+  },
+  {
+    "Id": "F7A2CC07B7F490B610C72B8F4ED825E94D1A79DE81AB041C0C7C273EA0D7C804",
+    "Day": "1259-01-01",
+    "Description": "Michael VIII Palaiologos is proclaimed co-emperor of the Empire of Nicaea with his ward John IV Laskaris.",
+    "People": [
+      {
+        "EntityId": "Q200033",
+        "FullName": "Michael VIII Palaiologos",
+        "BirthDate": "1224-01-01",
+        "DeathDate": "1282-12-18"
+      },
+      {
+        "EntityId": "Q37088",
+        "FullName": "John IV Laskaris",
+        "BirthDate": "1251-01-01",
+        "DeathDate": "1305-01-01"
+      }
+    ]
+  },
+  {
+    "Id": "3BDEF299DF7023C90AB38B84FCCE7B3DB68AAC8EF8AF2D058293413ED04FD2A4",
+    "Day": "1438-01-01",
+    "Description": "Albert II of Habsburg is crowned King of Hungary.",
+    "People": [
+      {
+        "EntityId": "Q157112",
+        "FullName": "Albert II of Germany",
+        "BirthDate": "1397-08-16",
+        "DeathDate": "1439-11-05"
+      }
+    ]
+  },
+  {
+    "Id": "E22DF0445DF9684C1DAB4DD0CF329A298453964959AD8CF50556B464762DAA52",
+    "Day": "1502-01-01",
+    "Description": "The present-day location of Rio de Janeiro, Brazil, is first explored by the Portuguese.",
+    "People": []
+  },
+  {
+    "Id": "73CC21A3EB522677E563C6840AF04CD3C551354BE1686A9B8320410109142A97",
+    "Day": "1515-01-01",
+    "Description": "Twenty-year-old Francis, Duke of Brittany, succeeds to the French throne following the death of his father-in-law, Louis XII.",
+    "People": [
+      {
+        "EntityId": "Q129857",
+        "FullName": "Francis I of France",
+        "BirthDate": "1494-09-21",
+        "DeathDate": "1547-04-10"
+      }
+    ]
+  },
+  {
+    "Id": "59006885A464D7EF8263ED3C28CD21050D04047ADE71D4B1CC714546361AC12B",
+    "Day": "1527-01-01",
+    "Description": "Croatian nobles elect Ferdinand I, Archduke of Austria as King of Croatia in the 1527 election in Cetin.",
+    "People": []
+  },
+  {
+    "Id": "FC93C401FE821884CFE91A1906181CC1891DF982129C5261066F3ED28B8722EB",
+    "Day": "1600-01-01",
+    "Description": "Scotland recognises January 1 as the start of the year, instead of March 25.",
+    "People": []
+  },
+  {
+    "Id": "F4B94DBDBB99D5E36E469D2CCAB6B808BA48378E96CC6A2BC5B428F4E3E5F955",
+    "Day": "1604-01-01",
+    "Description": "''The Masque of Indian and China Knights'' is performed by courtiers of James VI and I at Hampton Court.",
+    "People": [
+      {
+        "EntityId": "Q79972",
+        "FullName": "James VI and I",
+        "BirthDate": "1566-06-29",
+        "DeathDate": "1625-04-06"
+      }
+    ]
+  },
+  {
+    "Id": "7E4B1BE6867447B1D0D698FEF6CB86C3C0998FE7F829DA63041548460D897600",
+    "Day": "1651-01-01",
+    "Description": "Charles II is crowned King of Scotland at Scone Palace.",
+    "People": [
+      {
+        "EntityId": "Q122553",
+        "FullName": "Charles II of England",
+        "BirthDate": "1630-06-08",
+        "DeathDate": "1685-02-16"
+      }
+    ]
+  },
+  {
+    "Id": "530DB20705265F3B6DE0FDF254029DEB721C12DF322715D35458B7C8C3E5CFBB",
+    "Day": "1700-01-01",
+    "Description": "Russia begins using the Anno Domini era instead of the Anno Mundi era of the Byzantine Empire.",
+    "People": []
+  },
+  {
+    "Id": "5A737D141BAE35F02F1AE60890E18D1FB0055FFAED8929C05FA7214FF5D31106",
+    "Day": "1707-01-01",
+    "Description": "John V is proclaimed King of Portugal and the Algarves in Lisbon.",
+    "People": [
+      {
+        "EntityId": "Q299650",
+        "FullName": "John V of Portugal",
+        "BirthDate": "1689-10-22",
+        "DeathDate": "1750-07-31"
+      }
+    ]
+  },
+  {
+    "Id": "BE212288A15670271B08CABC4A836267E17D047A8B0DAAF731DDA8FC56B456DD",
+    "Day": "1725-01-01",
+    "Description": "J. S. Bach leads the first performance of his chorale cantata ''Jesu, nun sei gepreiset'', BWV 41, which features the trumpet fanfares from the beginning also in the end.",
+    "People": [
+      {
+        "EntityId": "Q1339",
+        "FullName": "Johann Sebastian Bach",
+        "BirthDate": "1685-03-31",
+        "DeathDate": "1750-07-28"
+      }
+    ]
+  },
+  {
+    "Id": "35E8B765019DEEF2A95139994986048F6C0738494BDFE09D05CB54B5678E9027",
+    "Day": "1739-01-01",
+    "Description": "Bouvet Island, the world's remotest island,",
+    "People": []
+  },
+  {
+    "Id": "3319EBC6688745F39F282C4EEA7B36400B8DDDC8DBB8CD0BA8D3FB17FC019F87",
+    "Day": "1772-01-01",
+    "Description": "The first traveler's cheques, which could be used in 90 European cities, are issued by the London Credit Exchange Company.",
+    "People": []
+  },
+  {
+    "Id": "BBEC14CA510249A7573DEE33062E67939C17D6AA52EFD6A5CB73CCDB7D3A4B4B",
+    "Day": "1773-01-01",
+    "Description": "The hymn that becomes known as \\\"Amazing Grace\\\", previously titled \\\"1 Chronicles 17:16–17, Faith's Review and Expectation\\\", is first used to accompany a sermon led by John Newton in the town of Olney, Buckinghamshire, England.",
+    "People": [
+      {
+        "EntityId": "Q357301",
+        "FullName": "John Newton",
+        "BirthDate": "1725-08-04",
+        "DeathDate": "1807-12-21"
+      }
+    ]
+  },
+  {
+    "Id": "F5687DF90F40BF877839C50636615873E4B882D58D856D65C3C93140B7F46ECF",
+    "Day": "1776-01-01",
+    "Description": "American Revolutionary War: Burning of Norfolk &ndash; Norfolk, Virginia, is burned to the ground by combined Royal Navy and Continental Army action.",
+    "People": []
+  },
+  {
+    "Id": "F96F1D546D6D2118472696C4BC3570A3C3B981565417F62DC60407762D6999FD",
+    "Day": "1781-01-01",
+    "Description": "American Revolutionary War: One thousand five hundred soldiers of the 6th Pennsylvania Regiment under General Anthony Wayne's command rebel against the Continental Army's winter camp in Morristown, New Jersey in the Pennsylvania Line Mutiny of 1781.",
+    "People": [
+      {
+        "EntityId": "Q574116",
+        "FullName": "Anthony Wayne",
+        "BirthDate": "1745-01-01",
+        "DeathDate": "1796-12-15"
+      }
+    ]
+  },
+  {
+    "Id": "D180D2624B97241383451C0332D906AF3211180FF02FE9AE50E892055E7F1CAC",
+    "Day": "1788-01-01",
+    "Description": "The first edition of ''The Times'' of London, previously ''The Daily Universal Register'', is published.",
+    "People": []
+  },
+  {
+    "Id": "CC4753730E56702969CBF2F8E6002B37A87046BFD032B822830441105C95E1F2",
+    "Day": "1801-01-01",
+    "Description": "The legislative union of Kingdom of Great Britain and Kingdom of Ireland is completed, and the United Kingdom of Great Britain and Ireland is proclaimed.",
+    "People": []
+  },
+  {
+    "Id": "76F8790ED5CBD55A2640FD1F25BCD5A6B59C9774970728DA1FCC38508AB85A61",
+    "Day": "1804-01-01",
+    "Description": "French rule ends in Haiti. Haiti becomes the first black-majority republic and second independent country in North America after the United States.",
+    "People": []
+  },
+  {
+    "Id": "EEB8B83B18A2468C18C9133DE54F827D8926B9EBD0D356F1EBBE5A719DA17522",
+    "Day": "1806-01-01",
+    "Description": "The French Republican Calendar is abolished.",
+    "People": []
+  },
+  {
+    "Id": "162D8042E91A43576B0F100C928DBBE065C3B9176BD487DECFB93E4D965C1850",
+    "Day": "1808-01-01",
+    "Description": "The United States bans the importation of slaves.",
+    "People": []
+  },
+  {
+    "Id": "438662C27291976688A8D12808FBE33006B09B976094BBD09B022068B7412DD0",
+    "Day": "1810-01-01",
+    "Description": "Major-General Lachlan Macquarie officially becomes Governor of New South Wales.",
+    "People": [
+      {
+        "EntityId": "Q467694",
+        "FullName": "Lachlan Macquarie",
+        "BirthDate": "1762-01-31",
+        "DeathDate": "1824-07-01"
+      }
+    ]
+  },
+  {
+    "Id": "F0BA06FB7E96B09CB9F2350923D7E3F24B52DF058342A1DA0DDBC3B43ECC131E",
+    "Day": "1818-01-01",
+    "Description": "Mary Wollstonecraft Shelley (anonymously) publishes the pioneering work of science fiction, ''Frankenstein; or, The Modern Prometheus'', in London.",
+    "People": [
+      {
+        "EntityId": "Q47152",
+        "FullName": "Mary Shelley",
+        "BirthDate": "1797-08-30",
+        "DeathDate": "1851-02-01"
+      }
+    ]
+  },
+  {
+    "Id": "365110F9156F811C0310E937B9066C63401E921986D931623C730D43F9F38B3A",
+    "Day": "1822-01-01",
+    "Description": "The Greek Constitution of 1822 is adopted by the First National Assembly at Epidaurus.",
+    "People": []
+  },
+  {
+    "Id": "398D5BAAEF715778D461CD85F1AB3A876D31F34714A6F6C06788537AE68F51E5",
+    "Day": "1834-01-01",
+    "Description": "Most of Germany forms the ''Zollverein'' customs union, the first such union between sovereign states.",
+    "People": []
+  },
+  {
+    "Id": "5F8C0E2E2CB0AFF469496EE6E9090CDC5E1798B367BC4D3C1A3C7AAD90CCE1F1",
+    "Day": "1845-01-01",
+    "Description": "The Philippines moves its national calendar to align with other Asian countries' calendars by skipping Tuesday, December 31, 1844. The change has been ordered by Governor–General Narciso Claveria to reform the country's calendar so that it aligns with the rest of Asia. Its territory has been one day behind the rest of Asia for 323 years since the arrival of Ferdinand Magellan in the Philippines on March 16, 1521.",
+    "People": [
+      {
+        "EntityId": "Q1496",
+        "FullName": "Ferdinand Magellan",
+        "BirthDate": "1480-01-01",
+        "DeathDate": "1521-05-07"
+      }
+    ]
+  },
+  {
+    "Id": "8C00028BCBD6E898DE1DE5254B6248CFA501F580AA6854765A0B6D6A2B5A5E07",
+    "Day": "1847-01-01",
+    "Description": "The world's first \\\"Mercy\\\" Hospital is founded in Pittsburgh, United States, by a group of Sisters of Mercy from Ireland; the name will go on to grace over 30 major hospitals throughout the world.",
+    "People": []
+  },
+  {
+    "Id": "D883D7259AE0D4C99967ABAB71E76E6FEB4ED8D19B690EAC4E6F10AD70B44C20",
+    "Day": "1860-01-01",
+    "Description": "The first Polish postage stamp is issued, replacing the Russian stamps previously in use.",
+    "People": []
+  },
+  {
+    "Id": "C5733F8A726FEFDAC011176B6570EA59A6953F2D8111799B8749A774FB8B8CF2",
+    "Day": "1861-01-01",
+    "Description": "Liberal forces supporting Benito Juárez enter Mexico City.",
+    "People": []
+  },
+  {
+    "Id": "6FD82721C7D75AC4D78E1E52FC05D00F96BBD09618B4FC1A867FAE5DB7D6D68E",
+    "Day": "1863-01-01",
+    "Description": "American Civil War: The Emancipation Proclamation takes effect in Confederate territory.",
+    "People": []
+  },
+  {
+    "Id": "B20A7959028A7DD65D521C888FFF925DE66B6E48027AC08D457A881F195FB493",
+    "Day": "1877-01-01",
+    "Description": "Queen Victoria of the United Kingdom is proclaimed Empress of India.",
+    "People": [
+      {
+        "EntityId": "Q9439",
+        "FullName": "Queen Victoria",
+        "BirthDate": "1819-05-24",
+        "DeathDate": "1901-01-22"
+      }
+    ]
+  },
+  {
+    "Id": "51116B23708A19894D8372D551104D50A57692EDD8DF2997BD99284DC7ED11BD",
+    "Day": "1885-01-01",
+    "Description": "Twenty-five nations adopt Sandford Fleming's proposal for standard time (and also, time zones).",
+    "People": [
+      {
+        "EntityId": "Q41411",
+        "FullName": "Sandford Fleming",
+        "BirthDate": "1827-01-07",
+        "DeathDate": "1915-07-22"
+      }
+    ]
+  },
+  {
+    "Id": "071C9D48D5F6DE37DBD875360741BC651C5F156945203B7F1FC08B780B74D041",
+    "Day": "1890-01-01",
+    "Description": "Eritrea is consolidated into a colony by the Italian government.",
+    "People": []
+  },
+  {
+    "Id": "706BB5BD5D593C42AC10C1999F67F8B80C925A798D08356612EEAC4DFA3850D2",
+    "Day": "1892-01-01",
+    "Description": "Ellis Island begins processing immigrants into the United States.",
+    "People": []
+  },
+  {
+    "Id": "BF7E8045321D6D4F309576C4667BEB4FB9B8CF3A59ED0525E70D8B7C50293084",
+    "Day": "1898-01-01",
+    "Description": "New York, New York annexes land from surrounding counties, creating the City of Greater New York. The four initial boroughs, Manhattan, Brooklyn, Queens, and The Bronx, are joined on January 25 by Staten Island to create the modern city of five boroughs.",
+    "People": []
+  },
+  {
+    "Id": "0AD77F39EE966A04E6146512C30314C7C061D4490D61ED723BEBE08EAEB3B5F4",
+    "Day": "1899-01-01",
+    "Description": "Spanish rule ends in Cuba.",
+    "People": []
+  },
+  {
+    "Id": "A571C28B1D32BC19B0DFE2952D60768A1E4390EE2C2B840BF960F88AA72739D1",
+    "Day": "1900-01-01",
+    "Description": "Nigeria becomes a British protectorate with Frederick Lugard as high commissioner.",
+    "People": []
+  },
+  {
+    "Id": "4F0A724581D9DEF14B9F3BD1D77C6160248B54837BE4ABE8C845729A13EF072B",
+    "Day": "1901-01-01",
+    "Description": "The Southern Nigeria Protectorate is established within the British Empire.",
+    "People": []
+  },
+  {
+    "Id": "4B2D38C978F461EF0091FA90537C1B9CDA46A353FAB350EC519CD6E3D68291D1",
+    "Day": "1902-01-01",
+    "Description": "The first American college football bowl game, the Rose Bowl between Michigan and Stanford, is held in Pasadena, California.",
+    "People": []
+  },
+  {
+    "Id": "FED75D8F58200D5A6B4EF29267256AAB4B8C8EF15E31F1707B04BB8C7DEE1698",
+    "Day": "1910-01-01",
+    "Description": "Captain David Beatty is promoted to rear admiral, and becomes the youngest admiral in the Royal Navy (except for royal family members) since Horatio Nelson.",
+    "People": [
+      {
+        "EntityId": "Q83235",
+        "FullName": "Horatio Nelson, 1st Viscount Nelson",
+        "BirthDate": "1758-09-29",
+        "DeathDate": "1805-10-21"
+      },
+      {
+        "EntityId": "Q335013",
+        "FullName": "David Beatty, 1st Earl Beatty",
+        "BirthDate": "1871-01-17",
+        "DeathDate": "1936-03-11"
+      }
+    ]
+  },
+  {
+    "Id": "3C2FBB39289F5D0FDB5D1904856652EB9D48210E7C10559BD5B48D1D2D7EFC62",
+    "Day": "1912-01-01",
+    "Description": "The Republic of China is established.",
+    "People": []
+  },
+  {
+    "Id": "1A1B9D141A2CFEA37BF51ECE7A946778704FC5D6EEE81100BB234B9FFD398670",
+    "Day": "1914-01-01",
+    "Description": "The SPT Airboat Line becomes the world's first scheduled airline to use a winged aircraft.",
+    "People": []
+  },
+  {
+    "Id": "39BC2C04B66FA42BDDF2E5818F064268558AE6C72ACB093322099BFBC0BB2ACF",
+    "Day": "1923-01-01",
+    "Description": "Britain's Railways are grouped into the Big Four: LNER, GWR, SR, and LMS.",
+    "People": []
+  },
+  {
+    "Id": "BA46A16B5405ABFC151F8926CE6E93C2A082425A02AEA9C023D46492FCBF2EE2",
+    "Day": "1927-01-01",
+    "Description": "New Mexican oil legislation goes into effect, leading to the formal outbreak of the Cristero War.",
+    "People": []
+  },
+  {
+    "Id": "9EA7848448DF722DBD5B375166C60A5345BADF826498FB37EE75E271D7778DA4",
+    "Day": "1928-01-01",
+    "Description": "Boris Bazhanov defects through Iran to seek asylum in France. He is the only member of Joseph Stalin's secretariat to have defected from the Soviet Union.",
+    "People": [
+      {
+        "EntityId": "Q855",
+        "FullName": "Joseph Stalin",
+        "BirthDate": "1878-12-18",
+        "DeathDate": "1953-03-05"
+      },
+      {
+        "EntityId": "Q893660",
+        "FullName": "Boris Bazhanov",
+        "BirthDate": "1900-08-09",
+        "DeathDate": "1982-12-30"
+      }
+    ]
+  },
+  {
+    "Id": "6E18D8F5EE2303C3F6433E2E4A721DCF31B83478195F2BBA8887980497619107",
+    "Day": "1929-01-01",
+    "Description": "The former municipalities of Point Grey, British Columbia and South Vancouver, British Columbia are amalgamated into Vancouver.",
+    "People": []
+  },
+  {
+    "Id": "D5149F38443B92B4EA94678EC23245DA5A68B2D87C33939F77392399F1A018BD",
+    "Day": "1932-01-01",
+    "Description": "The United States Post Office Department issues a set of 12 stamps commemorating the 200th anniversary of George Washington's birth.",
+    "People": []
+  },
+  {
+    "Id": "7DF20051EBE0910C635859EFACF3DA47B729C943678454CD9F599C97DA2536A9",
+    "Day": "1934-01-01",
+    "Description": "Alcatraz Island in San Francisco Bay becomes a United States federal prison.",
+    "People": []
+  },
+  {
+    "Id": "F339B2BA1094E81B9E9BB6AE5BB8D6C76DE134D1D5BB02C77748060E50E6320B",
+    "Day": "1942-01-01",
+    "Description": "The Declaration by United Nations is signed by twenty-six nations.",
+    "People": []
+  },
+  {
+    "Id": "8EAB602A2CFD0A962D869E6E45AB005F3EA966AAB97EA7F013F6A04F30E64612",
+    "Day": "1945-01-01",
+    "Description": "World War II: The German ''Luftwaffe'' launches ''Operation Bodenplatte'', a massive, but failed, attempt to knock out Allied air power in northern Europe in a single blow.",
+    "People": []
+  },
+  {
+    "Id": "B5987B53ED197D4D63AC8449B56B5BEE0F5ACC24390DEE8CAA3F20E932E0736C",
+    "Day": "1947-01-01",
+    "Description": "Cold War: The American and British occupation zones in Allied-occupied Germany, after World War II, merge to form the Bizone, which later (with the French zone) became part of West Germany.",
+    "People": []
+  },
+  {
+    "Id": "8B81A4409233FCEE4BCB6C3DD49DFC4F0D5B7D550746778A427E7ACDA3B9E746",
+    "Day": "1948-01-01",
+    "Description": "The British railway network is nationalized to form British Railways.",
+    "People": []
+  },
+  {
+    "Id": "39B51FFB58EC7411AF8BC4CE60FE1FD63CE09B0E1729D357920BED8F41CE1B94",
+    "Day": "1949-01-01",
+    "Description": "United Nations cease-fire takes effect in Kashmir from one minute before midnight. War between India and Pakistan stops accordingly.",
+    "People": []
+  },
+  {
+    "Id": "F88E713B567F390A31268ED9C0996FD19B8D19049E5997277302B91DE66F50E4",
+    "Day": "1956-01-01",
+    "Description": "Sudan achieves independence from Egypt and the United Kingdom.",
+    "People": []
+  },
+  {
+    "Id": "40404D286837090D4AD5D5EAF66A035CD5507C7A3C7FE9368D7BAB4856898CB3",
+    "Day": "1957-01-01",
+    "Description": "George Town, Penang, is made a city by a royal charter of Queen Elizabeth II of the United Kingdom.",
+    "People": [
+      {
+        "EntityId": "Q9682",
+        "FullName": "Elizabeth II",
+        "BirthDate": "1926-04-21",
+        "DeathDate": "2022-09-08"
+      }
+    ]
+  },
+  {
+    "Id": "BB338C8CF585C087FE9352322ECB7C1CAF60886E1053A33CE4EF25EA025133CE",
+    "Day": "1958-01-01",
+    "Description": "The European Economic Community is established.",
+    "People": []
+  },
+  {
+    "Id": "BC65E556F4D6CD8192646A2F54403D8CC58F426DF7028D88405800C9A063162B",
+    "Day": "1959-01-01",
+    "Description": "Cuban Revolution: Fulgencio Batista, dictator of Cuba, is overthrown by Fidel Castro's forces.",
+    "People": [
+      {
+        "EntityId": "Q11256",
+        "FullName": "Fidel Castro",
+        "BirthDate": "1926-08-13",
+        "DeathDate": "2016-11-25"
+      },
+      {
+        "EntityId": "Q11270",
+        "FullName": "Fulgencio Batista",
+        "BirthDate": "1901-01-16",
+        "DeathDate": "1973-08-06"
+      }
+    ]
+  },
+  {
+    "Id": "978CD43ED8A369E46A84ED1ABEBDF8B5E2FA15A0E81FBF6E943221646F27DAB0",
+    "Day": "1960-01-01",
+    "Description": "Cameroon achieves independence from France and the United Kingdom.",
+    "People": []
+  },
+  {
+    "Id": "77662EDA5DA60605026178190256A5B05B6D159AC67F5ECFF0B28195B5274798",
+    "Day": "1962-01-01",
+    "Description": "Western Samoa achieves independence from New Zealand; its name is changed to the Independent State of Western Samoa.",
+    "People": []
+  },
+  {
+    "Id": "884CBB76D0FD0B8A6E15D99E63C70F2FCD7E182C019E1B82DD4084CDA99AF22E",
+    "Day": "1964-01-01",
+    "Description": "The Federation of Rhodesia and Nyasaland is divided into the independent republics of Zambia and Malawi, and the British-controlled Rhodesia.",
+    "People": []
+  },
+  {
+    "Id": "6E659DC133CE21D3F3108A6A0620EEC3AA931480BD2D31BA4CC8C11D0CBEB376",
+    "Day": "1965-01-01",
+    "Description": "The People's Democratic Party of Afghanistan is founded in Kabul, Afghanistan.",
+    "People": []
+  },
+  {
+    "Id": "EB990D2D210F9D39B8FF442A7A5F02F69EF71C3C44E941D6F731CF8E93A4798C",
+    "Day": "1970-01-01",
+    "Description": "The defined beginning of Unix time, at 00:00:00.",
+    "People": []
+  },
+  {
+    "Id": "6201CCDEC72354242C2FA3BFAA42CF4314880FA0CDE6A9B435B92B9E1C98F7BE",
+    "Day": "1971-01-01",
+    "Description": "Cigarette advertisements are banned on American television.",
+    "People": []
+  },
+  {
+    "Id": "87C11BF54E7EAB64D4B4BAE00A1CDE3E5074D85129455E490814D6DD1F4A26A3",
+    "Day": "1973-01-01",
+    "Description": "Denmark, Ireland and the United Kingdom are admitted into the European Economic Community.",
+    "People": []
+  },
+  {
+    "Id": "D4E6B027B1B2D7FCB755561B9D8929EB3535146751849D72921BDF5CF79A81E9",
+    "Day": "1976-01-01",
+    "Description": "A bomb explodes on board Middle East Airlines Flight 438 over Qaisumah, Saudi Arabia, killing all 81 people on board.",
+    "People": []
+  },
+  {
+    "Id": "23748DC3C4AA3FD783561F07F9BE18244E675786BD785F4C1DB1AA0A33C86CBC",
+    "Day": "1978-01-01",
+    "Description": "Air India Flight 855, a Boeing 747, crashes into the Arabian Sea off the coast of Bombay, India, due to instrument failure, spatial disorientation, and pilot error, killing all 213 people on board.",
+    "People": []
+  },
+  {
+    "Id": "3FD20727FFF56B31347D879741CF2BE94856E39FA973A10E77E7B7F7A5529814",
+    "Day": "1979-01-01",
+    "Description": "the Joint Communiqué on the Establishment of Diplomatic Relations and Taiwan Relations Act enter into force. Through the Communiqué, the United States establishes normal diplomatic relations with China.",
+    "People": []
+  },
+  {
+    "Id": "6F715AD296C94F2599718B132640527156B1DD4DE9C1A0D2B44E336ED3C335F9",
+    "Day": "1981-01-01",
+    "Description": "Greece is admitted into the European Community.",
+    "People": []
+  },
+  {
+    "Id": "6B5A87A614CB9DC578D4E4D524099C529D94912F7E68D5FC7A08EF605A27ACD1",
+    "Day": "1982-01-01",
+    "Description": "Peruvian Javier Pérez de Cuéllar becomes the first Latin American to hold the title of Secretary-General of the United Nations.",
+    "People": []
+  },
+  {
+    "Id": "20DE3F829D7F8E7EB4B23BA6C6453886A3820A87C9B271BAB2902491B7048504",
+    "Day": "1983-01-01",
+    "Description": "The ARPANET officially changes to using TCP/IP, the Internet Protocol, effectively creating the Internet.",
+    "People": []
+  },
+  {
+    "Id": "A42838D01B59795076A3BC0992E4F8B260071EC2AC87798A521C75E7D7091F48",
+    "Day": "1984-01-01",
+    "Description": "The original American Telephone & Telegraph Company is divested of its 22 Bell System companies as a result of the settlement of the 1974 United States Department of Justice antitrust suit against AT&T.",
+    "People": []
+  },
+  {
+    "Id": "F8BFC25AC89BB5F32CC7CC43095E2E2039ECB52AD558990C4A6639DFDF884143",
+    "Day": "1985-01-01",
+    "Description": "The first British mobile phone call is made by Michael Harrison to his father Sir Ernest Harrison, chairman of Vodafone.",
+    "People": [
+      {
+        "EntityId": "Q15967751",
+        "FullName": "Ernest Harrison",
+        "BirthDate": "1926-05-11",
+        "DeathDate": "2009-02-16"
+      }
+    ]
+  },
+  {
+    "Id": "B565038BB33D9D59F14C8AF659C3FC673005D5289B23FC7BC964689D219CAE4A",
+    "Day": "1987-01-01",
+    "Description": "The Isleta Pueblo tribe elect Verna Williamson to be their first female governor.",
+    "People": []
+  },
+  {
+    "Id": "8482EDB3A980CBD1590650E93A96171EC97874478BDF1A49E66B2927A0C4A1B9",
+    "Day": "1988-01-01",
+    "Description": "The Evangelical Lutheran Church in America comes into existence, creating the largest Lutheran denomination in the United States.",
+    "People": []
+  },
+  {
+    "Id": "8C3B6F15F7DFD960368D3D939A996A83F1EDBC626E7B72DC524A580C561ECDEA",
+    "Day": "1989-01-01",
+    "Description": "The Montreal Protocol comes into force, stopping the use of chemicals contributing to ozone depletion.",
+    "People": []
+  },
+  {
+    "Id": "71E4C8D9056843F08439C2C1B0354FB1393172019E695749E07C43016A35D1E7",
+    "Day": "1990-01-01",
+    "Description": "David Dinkins is sworn in as New York City's first black mayor.",
+    "People": [
+      {
+        "EntityId": "Q467133",
+        "FullName": "David Dinkins",
+        "BirthDate": "1927-07-10",
+        "DeathDate": "2020-11-23"
+      }
+    ]
+  },
+  {
+    "Id": "A5BA5F6F557402CEC6A44A6CF1AC3C2834892C65F7F3958DE2B254017522E6E5",
+    "Day": "1993-01-01",
+    "Description": "Dissolution of Czechoslovakia: Czechoslovakia is divided into the Czech Republic and Slovak Republic.",
+    "People": []
+  },
+  {
+    "Id": "F3570A489B70A0403A87AEA64DDBF97936B4EA51F4568DD9D45E18FB2F105B90",
+    "Day": "1994-01-01",
+    "Description": "The Zapatista Army of National Liberation initiates twelve days of armed conflict in the Mexican state of Chiapas.",
+    "People": []
+  },
+  {
+    "Id": "6A638142060C0FF375335153EBC409A0E34C7F024D8966489AD49E7D5BA71242",
+    "Day": "1995-01-01",
+    "Description": "The World Trade Organization comes into being.",
+    "People": []
+  },
+  {
+    "Id": "2CD6727922E79441BBD94A6E088E8E9B5E2F4CB5EFA49290D17C8F2742A73121",
+    "Day": "1998-01-01",
+    "Description": "Following a currency reform, Russia begins to circulate new rubles to stem inflation and promote confidence.",
+    "People": []
+  },
+  {
+    "Id": "A765B1A360AF35224FF2A788266FC2650699BDB9C32E99FB6EA9A3DF564112D8",
+    "Day": "1999-01-01",
+    "Description": "The Euro currency is introduced in 11 member nations of the European Union (with the exception of the United Kingdom, Denmark, Greece and Sweden).",
+    "People": []
+  },
+  {
+    "Id": "0B9E40E316C044D18F13B7CF88DC2898CDBB0482AB88E8338B00D796F953BBFD",
+    "Day": "2001-01-01",
+    "Description": "Greece adopts the Euro, becoming the 12th Eurozone country.<ref name=\\\":0\\\" />",
+    "People": []
+  },
+  {
+    "Id": "B61C1BE116B936CA600B357B56278C94DFC53796BDFE986345BCA7EAE2E57889",
+    "Day": "2004-01-01",
+    "Description": "In a vote of confidence, General Pervez Musharraf wins 658 out of 1,170 votes in the Electoral College of Pakistan, and according to Article 41(8) of the Constitution of Pakistan, is \\\"deemed to be elected\\\" to the office of President until October 2007.",
+    "People": []
+  },
+  {
+    "Id": "2C4ECE2B5A8F8D6694C20C20C8F1004AC0283E360EDF40C85C3F488D82AADA25",
+    "Day": "2007-01-01",
+    "Description": "Bulgaria and Romania join the EU.",
+    "People": []
+  },
+  {
+    "Id": "868BF61FED82527028A664941FD8B3AAA28341626045E219733B60F4193CEB2F",
+    "Day": "2009-01-01",
+    "Description": "Sixty-six people die in a nightclub fire in Bangkok, Thailand.",
+    "People": []
+  },
+  {
+    "Id": "F69F00C3C39AF070910D1E4CFEA25BC85A7E074095B849B301704696469DEB9C",
+    "Day": "2010-01-01",
+    "Description": "A suicide car bomber detonates at a volleyball tournament in Lakki Marwat, Pakistan, killing 105 and injuring 100 more.",
+    "People": []
+  },
+  {
+    "Id": "82FD060985FDED15E1611675B00B9F32BE38527F35126F9A9EA9C70E0C8F61A7",
+    "Day": "2011-01-01",
+    "Description": "A bomb explodes as Coptic Christians in Alexandria, Egypt, leave a new year service, killing 23 people.",
+    "People": []
+  },
+  {
+    "Id": "01406785EB6B5DF432BF33FCE0EE616DBFC5051ABF11640A9FA0D25EFB1025F6",
+    "Day": "2013-01-01",
+    "Description": "At least 60 people are killed and 200 injured in a stampede after celebrations at Félix Houphouët-Boigny Stadium in Abidjan, Ivory Coast.",
+    "People": []
+  },
+  {
+    "Id": "7AA5FDDD41828A3872FFE81A7346BFB3B001B45013A5A5C6618F1E7DD4761195",
+    "Day": "2015-01-01",
+    "Description": "The Eurasian Economic Union comes into effect, creating a political and economic union between Russia, Belarus, Armenia, Kazakhstan and Kyrgyzstan.",
+    "People": []
+  },
+  {
+    "Id": "DE84C2A82BB9E39D04AF1F01B1DA5BC5566483931FA9BB21B689B512A7F8F300",
+    "Day": "2017-01-01",
+    "Description": "An attack on a nightclub in Istanbul, Turkey, during New Year's celebrations, kills 39 people and injures 79 others.",
+    "People": []
+  },
+  {
+    "Id": "DDFDF790F18B59BB2D633D1F0CC4F83AA58F526BCE7B0FEE57DE32CC8E6ADB8A",
+    "Day": "2023-01-01",
+    "Description": "Croatia officially adopts the Euro, becoming the 20th Eurozone country, and becomes the 27th member of the Schengen Area.",
+    "People": []
+  },
+  {
+    "Id": "C19DB1AFEB88E027042D5205B857A291C9A65E0B2ABFE598371B297F6B7ABB7E",
+    "Day": "2024-01-01",
+    "Description": "A 7.5 {{M|ww}} earthquake strikes the western coast of Japan, killing more than 500 people and injuring over 1,000 others.",
+    "People": []
+  },
+  {
+    "Id": "5C13E2CFD6A4EBBBC6DE239CC8BDA511F5B8AAE89546C8F50C7FACFA91569483",
+    "Day": "2025-01-01",
+    "Description": "14 people are killed and 35 others injured during a vehicle-ramming and shooting attack in New Orleans, Louisiana.",
+    "People": []
+  },
+  {
+    "Id": "CFB9AD569DC10B62237F63D76945B76C34A2E61D079182805DA41F33F4AD7CD3",
+    "Day": "0069-01-02",
+    "Description": "The Roman legions in Germania Superior refuse to swear loyalty to Galba. They rebel and proclaim Vitellius as emperor.",
+    "People": [
+      {
+        "EntityId": "Q1417",
+        "FullName": "Vitellius",
+        "BirthDate": "0015-09-22",
+        "DeathDate": "0069-12-20"
+      }
+    ]
+  },
+  {
+    "Id": "D5A9E46F09C85F3FD62D9C68123FBBFA2BCCE27503327D2F314348655C066370",
+    "Day": "0366-01-02",
+    "Description": "The Alemanni cross the frozen Rhine in large numbers, invading the Roman Empire.",
+    "People": []
+  },
+  {
+    "Id": "21288EFBE3FA1E6CB1C1FD5B17AE9A49E0E3170B7632337A1E2C318115AD0A9F",
+    "Day": "0533-01-02",
+    "Description": "Mercurius becomes Pope John II, the first pope to adopt a new name upon elevation to the papacy.",
+    "People": [
+      {
+        "EntityId": "Q168736",
+        "FullName": "Pope John II",
+        "BirthDate": "0470-01-01",
+        "DeathDate": "0535-05-10"
+      }
+    ]
+  },
+  {
+    "Id": "725DDE6760A83C806D568AFF78302B852C487390A2A7D73F5482992FDE44193E",
+    "Day": "1492-01-02",
+    "Description": "Reconquista: The Emirate of Granada, the last Moorish stronghold in Spain, surrenders.",
+    "People": []
+  },
+  {
+    "Id": "B3613F44DAB0B296992991D69243FF607006991D4BB72A02051B88D0E42B0AB6",
+    "Day": "1680-01-02",
+    "Description": "Trunajaya rebellion: Amangkurat II of Mataram and his bodyguards execute the rebel leader Trunajaya.",
+    "People": [
+      {
+        "EntityId": "Q12522411",
+        "FullName": "Trunajaya",
+        "BirthDate": "1649-01-01",
+        "DeathDate": "1680-01-02"
+      }
+    ]
+  },
+  {
+    "Id": "A5578B0F2D340C4311B960E33C13AF62B9A2E2DBC1C5B0263493A6F8516E7437",
+    "Day": "1776-01-02",
+    "Description": "Empress Maria Theresa of Austria amends the Constitutio Criminalis Theresiana to include the abolition of torture throughout the Habsburg-ruled countries of Austria and Bohemia.",
+    "People": [
+      {
+        "EntityId": "Q131706",
+        "FullName": "Maria Theresa",
+        "BirthDate": "1717-05-13",
+        "DeathDate": "1780-11-29"
+      }
+    ]
+  },
+  {
+    "Id": "B3D9328DC24BEE94BAF287721ED64CA91C3D0861BC79D6EA125219770AFE99FE",
+    "Day": "1777-01-02",
+    "Description": "American Revolutionary War: American forces under the command of General George Washington repulse a British attack led by General Charles Cornwallis at the Battle of the Assunpink Creek near Trenton, New Jersey.",
+    "People": [
+      {
+        "EntityId": "Q23",
+        "FullName": "George Washington",
+        "BirthDate": "1732-02-22",
+        "DeathDate": "1799-12-14"
+      },
+      {
+        "EntityId": "Q164723",
+        "FullName": "Charles Cornwallis, 1st Marquess Cornwallis",
+        "BirthDate": "1738-12-31",
+        "DeathDate": "1805-10-05"
+      }
+    ]
+  },
+  {
+    "Id": "6F844574C736964880498BE3218AA56BB2D54EB84B25F86890254EA279E3C1D5",
+    "Day": "1788-01-02",
+    "Description": "Georgia becomes the fourth state to ratify the United States Constitution.",
+    "People": []
+  },
+  {
+    "Id": "06A07D3FDF86C0CC4E1FE8E55653683BD366758A52110B21D93E3F010B1EE79B",
+    "Day": "1791-01-02",
+    "Description": "Northwest Indian War: The Big Bottom massacre is committed by Lenape and Wyandot warriors in the Ohio Country, North America.",
+    "People": []
+  },
+  {
+    "Id": "47D0F56B45C2973A7981A8D74FAB1C7FBFA576F929E03A948E26B9F0072FB36B",
+    "Day": "1818-01-02",
+    "Description": "The British Institution of Civil Engineers is founded by a group of six engineers; Thomas Telford would later become its first president.",
+    "People": [
+      {
+        "EntityId": "Q380875",
+        "FullName": "Thomas Telford",
+        "BirthDate": "1757-08-09",
+        "DeathDate": "1834-09-02"
+      }
+    ]
+  },
+  {
+    "Id": "EFEE709A009B9569AFCC49B5DE4EE34B40C355F5DFE821274401A7489544F1DE",
+    "Day": "1863-01-02",
+    "Description": "American Civil War: The three-day Battle of Stones River ends in a Union victory when the Confederate Army of Tennessee under General Braxton Bragg are repulsed for the final time by the Army of the Cumberland under General William S. Rosecrans.",
+    "People": [
+      {
+        "EntityId": "Q380562",
+        "FullName": "Braxton Bragg",
+        "BirthDate": "1817-03-22",
+        "DeathDate": "1876-09-27"
+      },
+      {
+        "EntityId": "Q541708",
+        "FullName": "William Rosecrans",
+        "BirthDate": "1819-09-06",
+        "DeathDate": "1898-03-11"
+      }
+    ]
+  },
+  {
+    "Id": "BE447041C71E9FBF842FA86251EFEAB2DA03E7F95123DE9F12F860376A32B59D",
+    "Day": "1865-01-02",
+    "Description": "Uruguayan War: The Siege of Paysandú ends as the Brazilians and Coloradans capture Paysandú, Uruguay.",
+    "People": []
+  },
+  {
+    "Id": "4CB4988FFFCD99C0DFB69D91B715A31D5020B2CDC316D419A19FCB4B1361D612",
+    "Day": "1900-01-02",
+    "Description": "American statesman and diplomat John Hay announces the Open Door Policy to promote trade with China.",
+    "People": [
+      {
+        "EntityId": "Q117101",
+        "FullName": "John Hay",
+        "BirthDate": "1838-10-08",
+        "DeathDate": "1905-07-01"
+      }
+    ]
+  },
+  {
+    "Id": "934F64D036A09FD00BC5E4B72AB5EDCE507B493B45875E0533FE3C8D90009118",
+    "Day": "1900-01-02",
+    "Description": "Chicago Canal opens.",
+    "People": []
+  },
+  {
+    "Id": "1E49D647ED87FCDA4ADF53C82482736F287B6DCD2BE749AE37CEC7E4D77A7C1C",
+    "Day": "1920-01-02",
+    "Description": "The second Palmer Raid, ordered by the US Department of Justice, results in 6,000 suspected communists and anarchists being arrested and held without trial.",
+    "People": []
+  },
+  {
+    "Id": "3B9D6ABB9FD50A0195E4EAE02CA119228A18BBA2259CFAD3DE7A1D16751460C3",
+    "Day": "1921-01-02",
+    "Description": "World premiere of the science fiction play ''R.U.R.'' by the Czech writer Karel Čapek in a theater in Hradec Králové.",
+    "People": []
+  },
+  {
+    "Id": "D9A3D55C3D54CA91708FC2164F5CAC97B5F9D7B3EBF1AE16AB0B77C6849AFA06",
+    "Day": "1941-01-02",
+    "Description": "World War II: The Cardiff Blitz severely damages the cathedral in Cardiff, Wales.",
+    "People": []
+  },
+  {
+    "Id": "7A393FB844E68C5900690D710EADAF0DCF9A7A9356C76CD4FF96898D625844FB",
+    "Day": "1942-01-02",
+    "Description": "The Federal Bureau of Investigation (FBI) obtains the conviction of 33 members of a German spy ring headed by Fritz Joubert Duquesne in the largest espionage case in United States history; Also known as the Duquesne Spy Ring.",
+    "People": []
+  },
+  {
+    "Id": "3D7A99242CFF08EE2898792055CAE7BDE55835DF0237C9CAE197A128D706369C",
+    "Day": "1949-01-02",
+    "Description": "Luis Muñoz Marín is inaugurated as the first democratically elected Governor of Puerto Rico.",
+    "People": []
+  },
+  {
+    "Id": "509197E4173E2A5A2633F0CB6102FEDA531A9973A09071173F74C72FC12576A8",
+    "Day": "1954-01-02",
+    "Description": "India establishes its highest civilian awards, the Bharat Ratna and the Padma Vibhushan.",
+    "People": []
+  },
+  {
+    "Id": "1407E318311047F205E63113CA5A4FC26A56587E56C096DE4320A08FF4FD596E",
+    "Day": "1955-01-02",
+    "Description": "Following the assassination of the Panamanian president José Antonio Remón Cantera, his deputy, José Ramón Guizado, takes power, but is quickly deposed after his involvement in Cantera's death is discovered.",
+    "People": []
+  },
+  {
+    "Id": "C60293DC207282F2531179399D3307FCEC7544DE32DE7AD1FE26B3D9697C798A",
+    "Day": "1959-01-02",
+    "Description": "''Luna 1'', the first spacecraft to reach the vicinity of the Moon and to orbit the Sun, is launched by the Soviet Union.",
+    "People": []
+  },
+  {
+    "Id": "63252EBFC072E331728B8546AFFB0AFB147F5C45E28A892270519A6AC2BD2DA3",
+    "Day": "1963-01-02",
+    "Description": "Vietnam War: The Viet Cong wins its first major victory, at the Battle of Ap Bac.",
+    "People": []
+  },
+  {
+    "Id": "CAC4912C6B47AE657693FD82A100EFA8573F2F5617996324DF05FD48CCCB758D",
+    "Day": "1967-01-02",
+    "Description": "Ronald Reagan, past movie actor and future President of the United States, is sworn in as Governor of California.",
+    "People": [
+      {
+        "EntityId": "Q9960",
+        "FullName": "Ronald Reagan",
+        "BirthDate": "1911-02-06",
+        "DeathDate": "2004-06-05"
+      }
+    ]
+  },
+  {
+    "Id": "03D84E4383A2DF14A2063AA47625A6120AFA1DE136FC98AB4A6D371C227B8340",
+    "Day": "1971-01-02",
+    "Description": "The second Ibrox disaster kills 66 fans at a Rangers-Celtic association football match.",
+    "People": []
+  },
+  {
+    "Id": "518352A1A0AC1382FD8175826D3108BA868898211CD691A77932698A5BE3A57A",
+    "Day": "1974-01-02",
+    "Description": "United States President Richard Nixon signs a bill lowering the maximum U.S. speed limit to 55&nbsp;mph in order to conserve gasoline during an OPEC embargo.",
+    "People": [
+      {
+        "EntityId": "Q9588",
+        "FullName": "Richard Nixon",
+        "BirthDate": "1913-01-09",
+        "DeathDate": "1994-04-22"
+      }
+    ]
+  },
+  {
+    "Id": "F00B144433DB2AB68B30209E06F628A842DB350DFD896DEB4EA174D2ED6137A9",
+    "Day": "1975-01-02",
+    "Description": "At the opening of a new railway line, a bomb blast at Samastipur, Bihar, India, fatally wounds Lalit Narayan Mishra, Minister of Railways.",
+    "People": [
+      {
+        "EntityId": "Q3630093",
+        "FullName": "Lalit Narayan Mishra",
+        "BirthDate": "1923-02-02",
+        "DeathDate": "1975-01-03"
+      }
+    ]
+  },
+  {
+    "Id": "8104AC48E8965FBDD988397207B366B851C2C21511A176F09EC008BA1E78562A",
+    "Day": "1976-01-02",
+    "Description": "The Gale of January 1976 begins, resulting in coastal flooding around the southern North Sea coasts, affecting countries from Ireland to Yugoslavia and causing at least 82 deaths and US$1.3 billion in damage.",
+    "People": []
+  },
+  {
+    "Id": "F794A493DE85BF5437513DE8F411828F89F7094664EE036F68C5DFCE4E490FAC",
+    "Day": "1978-01-02",
+    "Description": "On the orders of the President of Pakistan, Muhammad Zia-ul-Haq, paramilitary forces opened fire on peaceful protesting workers in Multan, Pakistan; it is known as 1978 massacre at Multan Colony Textile Mills.",
+    "People": []
+  },
+  {
+    "Id": "E3A6EBFF3D59EAAC284049DE2F2136B321A299551B064030AB1D489FB9717F9D",
+    "Day": "1981-01-02",
+    "Description": "One of the largest investigations by a British police force ends when serial killer Peter Sutcliffe, the \\\"Yorkshire Ripper\\\", is arrested in Sheffield, South Yorkshire.",
+    "People": []
+  },
+  {
+    "Id": "08BCA00F96CEED4C699EF98564A976A7202D20A46CAEA27DBD5DB26D39DBCC00",
+    "Day": "1988-01-02",
+    "Description": "Condor Flugdienst Flight 3782 crashes near Seferihisar, Turkey, killing 16 people.",
+    "People": []
+  },
+  {
+    "Id": "2444B4B0A3468DE7BA30E178B47732BD10859C083337C7207D3CC7AA5F293E75",
+    "Day": "1991-01-02",
+    "Description": "Sharon Pratt Dixon becomes the first African American woman mayor of a major city and first woman Mayor of the District of Columbia.",
+    "People": []
+  },
+  {
+    "Id": "7162E24250528D4DD31A87C696664EDAF1EC01968A004185F1EABF4ECFAA1674",
+    "Day": "1993-01-02",
+    "Description": "Sri Lankan Civil War: The Sri Lanka Navy kill 35–100 civilians on the Jaffna Lagoon.",
+    "People": []
+  },
+  {
+    "Id": "655B5C4AE4DD0523E2204CC1CFFCC79A87B73351EC7079397D7BF4683F5FD428",
+    "Day": "2004-01-02",
+    "Description": "''Stardust'' successfully flies past Comet Wild 2, collecting samples that are returned to Earth.",
+    "People": []
+  },
+  {
+    "Id": "6290F978092FC9F428A6B0113283785F504C1813E721D518092E4EB7FBF7E81C",
+    "Day": "2022-01-02",
+    "Description": "Massive nationwide protests and unrest break out in Kazakhstan over the sudden increase of liquefied petroleum gas prices, leading to 238 people dead and thousands injured by January 11.",
+    "People": []
+  },
+  {
+    "Id": "56071B4D7538403BFBA16FD5B505DF7803A40FA93C28D2DC7C46F71329F1DCB1",
+    "Day": "2024-01-02",
+    "Description": "Two aircraft collide on a runway at Haneda Airport in Tokyo, killing 5 and injuring 18.",
+    "People": []
+  },
+  {
+    "Id": "7DADED941057187CE48341836060164F657BF84C765141E06CA06AFA51BBF57A",
+    "Day": "0069-01-03",
+    "Description": "The Roman legions on the Rhine refuse to declare their allegiance to Galba, instead proclaiming their legate, Aulus Vitellius, as emperor.",
+    "People": []
+  },
+  {
+    "Id": "6B740F625E16D8149A1A1C6C4DC484D11E639DAC2CD0A244321C21D17F820268",
+    "Day": "0250-01-03",
+    "Description": "Emperor Decius orders everyone in the Roman Empire (except Jews) to make sacrifices to the Roman gods.",
+    "People": [
+      {
+        "EntityId": "Q1830",
+        "FullName": "Decius",
+        "BirthDate": "0201-01-01",
+        "DeathDate": "0251-07-01"
+      }
+    ]
+  },
+  {
+    "Id": "F25B8D82ED731123DC520F3E4FA25451D425E38DEC921EEDDD8B101F51D260D1",
+    "Day": "1521-01-03",
+    "Description": "Pope Leo X excommunicates Martin Luther in the papal bull ''Decet Romanum Pontificem''.",
+    "People": [
+      {
+        "EntityId": "Q9554",
+        "FullName": "Martin Luther",
+        "BirthDate": "1483-11-19",
+        "DeathDate": "1546-02-28"
+      },
+      {
+        "EntityId": "Q49237",
+        "FullName": "Pope Leo X",
+        "BirthDate": "1475-12-20",
+        "DeathDate": "1521-12-11"
+      }
+    ]
+  },
+  {
+    "Id": "08146EB82E73F0C7AD69DD444E0A1EAC6F1F12E2A420F232B6C71A02F60478A6",
+    "Day": "1653-01-03",
+    "Description": "By the Coonan Cross Oath, the Eastern Church in India cuts itself off from colonial Portuguese tutelage.",
+    "People": []
+  },
+  {
+    "Id": "2BDC4BB171F8680FFB4CA0365D29C927FBA047CCAE972E63F78AB378ABD8A6B0",
+    "Day": "1749-01-03",
+    "Description": "Benning Wentworth issues the first of the New Hampshire Grants, leading to the establishment of Vermont.",
+    "People": [
+      {
+        "EntityId": "Q4889852",
+        "FullName": "Benning Wentworth",
+        "BirthDate": "1696-08-03",
+        "DeathDate": "1770-10-14"
+      }
+    ]
+  },
+  {
+    "Id": "9CED5465AC24FF2D485F29CB4E5C0CB94813B49EE25DD4915E81F5709913C83B",
+    "Day": "1777-01-03",
+    "Description": "American Revolutionary War: American forces under General George Washington defeat British forces at the Battle of Princeton, helping boost patriot morale.",
+    "People": [
+      {
+        "EntityId": "Q23",
+        "FullName": "George Washington",
+        "BirthDate": "1732-02-22",
+        "DeathDate": "1799-12-14"
+      }
+    ]
+  },
+  {
+    "Id": "374BC635491A3AFFF45C9FC75D2F90362D108A544414E8C8D6434A4E9CB9FAFD",
+    "Day": "1815-01-03",
+    "Description": "Austria, the United Kingdom, and France form a secret defensive alliance against Prussia and Russia.",
+    "People": []
+  },
+  {
+    "Id": "F99CF111CB8A69C8BC96289963EADA16A33C052C0CA63D4B42B67466223F140A",
+    "Day": "1833-01-03",
+    "Description": "Captain James Onslow, in the ''Clio'', reasserts British sovereignty over the Falkland Islands.",
+    "People": []
+  },
+  {
+    "Id": "11ECAE693F6F1987678B84CB3EA2052AF3AD8DA771345872F2CD2D93FB15DB46",
+    "Day": "1848-01-03",
+    "Description": "Joseph Jenkins Roberts is sworn in as the first president of Liberia.",
+    "People": [
+      {
+        "EntityId": "Q360164",
+        "FullName": "Joseph Jenkins Roberts",
+        "BirthDate": "1809-03-15",
+        "DeathDate": "1876-02-24"
+      }
+    ]
+  },
+  {
+    "Id": "479C45D4C3C6217946D0D6F2446A85C91CB66B883AABB531017DE74BE8CA4490",
+    "Day": "1861-01-03",
+    "Description": "American Civil War: Delaware votes not to secede from the United States.",
+    "People": []
+  },
+  {
+    "Id": "92B2569F2D039D4CC5B39AEFBFC8F0C7926FD366E55AB16A9437EB1CA5B74722",
+    "Day": "1868-01-03",
+    "Description": "Meiji Restoration in Japan: The Tokugawa shogunate is abolished; agents of Satsuma and Chōshū seize power.",
+    "People": []
+  },
+  {
+    "Id": "519E012D6779E50666099517EADED95C589D450CDDC355BA164FD6497709C779",
+    "Day": "1870-01-03",
+    "Description": "Construction work begins on the Brooklyn Bridge in New York, United States.",
+    "People": []
+  },
+  {
+    "Id": "CE877F5E27681F867274580ED30584FE5AA29C356DAA7761DE272BCB60A42C9C",
+    "Day": "1871-01-03",
+    "Description": "In the Battle of Bapaume, an engagement in the Franco-Prussian War, General Louis Faidherbe's forces bring about a Prussian retreat.",
+    "People": [
+      {
+        "EntityId": "Q545751",
+        "FullName": "Louis Faidherbe",
+        "BirthDate": "1818-06-03",
+        "DeathDate": "1889-09-28"
+      }
+    ]
+  },
+  {
+    "Id": "9E3749BFE24CA859BF82A7B8193F06EC7631DBDDEF40A4B5AD130BE3D8FDAF64",
+    "Day": "1885-01-03",
+    "Description": "Sino-French War: Beginning of the Battle of Núi Bop.",
+    "People": []
+  },
+  {
+    "Id": "DA429DA7873AADC8788094BAF34B40BD62379BA3F15204430983A4326B19A249",
+    "Day": "1911-01-03",
+    "Description": "A magnitude 7.7 earthquake destroys the city of Almaty in Russian Turkestan.",
+    "People": []
+  },
+  {
+    "Id": "90E4731A778F62DB0920FE94142FA19962918EF2B976C1B0E16B95D38E3B0484",
+    "Day": "1913-01-03",
+    "Description": "An Atlantic coast storm sets the lowest confirmed barometric pressure reading (955.0 mb (28.20 inHg)) for a non-tropical system in the continental United States.",
+    "People": []
+  },
+  {
+    "Id": "2DC368D598422999E011E7CFD6E43258E20A7B8F876A8C3C4666FDD4A8735FFE",
+    "Day": "1920-01-03",
+    "Description": "Over 640 are killed after a magnitude 6.4 earthquake strikes the Mexican states Puebla and Veracruz.",
+    "People": []
+  },
+  {
+    "Id": "B12A168DF1E4702BB0018DFD49F33D24FC294BC410A49E3522E0DEFE3B07E481",
+    "Day": "1933-01-03",
+    "Description": "Minnie D. Craig becomes the first woman elected as Speaker of the North Dakota House of Representatives, the first woman to hold a Speaker position anywhere in the United States.",
+    "People": [
+      {
+        "EntityId": "Q6868793",
+        "FullName": "Minnie D. Craig",
+        "BirthDate": "1883-11-04",
+        "DeathDate": "1966-07-02"
+      }
+    ]
+  },
+  {
+    "Id": "7D8F6B6FAA7B5539A2E93EF92886A3D23CBFD284BCE4AFC79DFCF69A4B6A4BF6",
+    "Day": "1944-01-03",
+    "Description": "World War II: US flying ace Major Greg \\\"Pappy\\\" Boyington is shot down in his Vought F4U Corsair by Captain Masajiro Kawato flying a Mitsubishi A6M Zero.",
+    "People": [
+      {
+        "EntityId": "Q684140",
+        "FullName": "Pappy Boyington",
+        "BirthDate": "1912-12-04",
+        "DeathDate": "1988-01-11"
+      }
+    ]
+  },
+  {
+    "Id": "3EB43227A569AF9021A031CCD1F6C120B88CAAC7E41ACFC8ED80B9447206F53B",
+    "Day": "1946-01-03",
+    "Description": "Popular Canadian American jockey George Woolf suffers a concussion during a freak racing accident; he dies from the injury the following day. The annual George Woolf Memorial Jockey Award is created to honor him.",
+    "People": [
+      {
+        "EntityId": "Q533397",
+        "FullName": "George Woolf",
+        "BirthDate": "1910-05-31",
+        "DeathDate": "1946-01-04"
+      }
+    ]
+  },
+  {
+    "Id": "F9BF2A5824EA97BE23BD1E73E169128D196F87ECCB50F3ED4F0523084A8C12B0",
+    "Day": "1947-01-03",
+    "Description": "Proceedings of the U.S. Congress are televised for the first time.",
+    "People": []
+  },
+  {
+    "Id": "3B3379AC2857470B264C2302603A1883C8EC3207BFDDD244BC9C860BE0A308E5",
+    "Day": "1949-01-03",
+    "Description": "The Bangko Sentral ng Pilipinas, the central bank of the Philippines, is established.",
+    "People": []
+  },
+  {
+    "Id": "7B8A23DBF824F086A14877BF392D11E36D14BC757B6E0116E7AEFFC6436F90C3",
+    "Day": "1953-01-03",
+    "Description": "Frances P. Bolton and her son, Oliver from Ohio, become the first mother and son to serve simultaneously in the U.S. Congress.",
+    "People": [
+      {
+        "EntityId": "Q7087731",
+        "FullName": "Oliver P. Bolton",
+        "BirthDate": "1917-02-22",
+        "DeathDate": "1972-12-13"
+      },
+      {
+        "EntityId": "Q599174",
+        "FullName": "Frances P. Bolton",
+        "BirthDate": "1885-03-29",
+        "DeathDate": "1977-03-09"
+      }
+    ]
+  },
+  {
+    "Id": "8EC1B7DCDD7D7F7814BB30FBE7C31AFD4E603D9364BC808FF9803F017EC20C4B",
+    "Day": "1956-01-03",
+    "Description": "A fire damages the top part of the Eiffel Tower.",
+    "People": []
+  },
+  {
+    "Id": "049F2B2B39D4CB05A3A71F2F2D48CEBD77A312828001262F1625BA7C01548454",
+    "Day": "1957-01-03",
+    "Description": "The Hamilton Watch Company introduces the first electric watch.",
+    "People": []
+  },
+  {
+    "Id": "692C0D7E43144650EDE712565475134A84AD258AD98DFF8FD8C076EAB1D9E8B0",
+    "Day": "1958-01-03",
+    "Description": "The West Indies Federation is formed.",
+    "People": []
+  },
+  {
+    "Id": "AF357E5BFFFFB4F8773DE1868C2E2A5095971573D03A70B85E01AACE16B10329",
+    "Day": "1959-01-03",
+    "Description": "Alaska is admitted as the 49th U.S. state.",
+    "People": []
+  },
+  {
+    "Id": "D78792D7113EB88D6470378C32A2EDAA34863459B18B9FBC8D968B142926A836",
+    "Day": "1961-01-03",
+    "Description": "Cold War: After a series of economic retaliations against one another, the United States severs diplomatic relations with Cuba.",
+    "People": []
+  },
+  {
+    "Id": "7E221F9CFB790777C86E66C8D9BC6F883F90E555C8B907AFB1C5EDE2C9F10721",
+    "Day": "1962-01-03",
+    "Description": "Pope John XXIII excommunicates Fidel Castro.",
+    "People": [
+      {
+        "EntityId": "Q23873",
+        "FullName": "Pope John XXIII",
+        "BirthDate": "1881-11-25",
+        "DeathDate": "1963-06-03"
+      },
+      {
+        "EntityId": "Q11256",
+        "FullName": "Fidel Castro",
+        "BirthDate": "1926-08-13",
+        "DeathDate": "2016-11-25"
+      }
+    ]
+  },
+  {
+    "Id": "3C616CE843C13EEBCF30BE20BAF842B1EAE8F3BC07C60D67513FA4C54125F9A8",
+    "Day": "1976-01-03",
+    "Description": "The International Covenant on Economic, Social and Cultural Rights, adopted by the United Nations General Assembly, comes into force.",
+    "People": []
+  },
+  {
+    "Id": "544CC27F2F3C96D03BE7A95BE4BA09615867B8CF0D73BF63EA500EDBCE237567",
+    "Day": "1977-01-03",
+    "Description": "Apple Computer is incorporated.",
+    "People": []
+  },
+  {
+    "Id": "C5D0464A740C2B247B57249C8E9327D570C278B338DAAE6219235D7CB94D45ED",
+    "Day": "1987-01-03",
+    "Description": "Varig Flight 797 crashes near Akouré in the Ivory Coast, resulting in 50 deaths.",
+    "People": []
+  },
+  {
+    "Id": "D1265810FDB754A331CDA98F6503B740908389FF89D1D204BF4766514293D2E7",
+    "Day": "1990-01-03",
+    "Description": "United States invasion of Panama: Manuel Noriega, former leader of Panama, surrenders to American forces.",
+    "People": [
+      {
+        "EntityId": "Q192667",
+        "FullName": "Manuel Noriega",
+        "BirthDate": "1934-02-11",
+        "DeathDate": "2017-05-29"
+      }
+    ]
+  },
+  {
+    "Id": "5D7C91F43FA1AC29B46AEE3643C0583E81218B0C44AD9414B33BBD3575A2B1CF",
+    "Day": "1992-01-03",
+    "Description": "CommutAir Flight 4821 crashes on approach to Adirondack Regional Airport, in Saranac Lake, New York, killing two people.",
+    "People": []
+  },
+  {
+    "Id": "19C3A01B09FC22EFE7F8FE7980414330D33E26E6225646339B1186B096CB8784",
+    "Day": "1993-01-03",
+    "Description": "In Moscow, Russia, George H. W. Bush and Boris Yeltsin sign the second Strategic Arms Reduction Treaty (START).",
+    "People": [
+      {
+        "EntityId": "Q23505",
+        "FullName": "George H. W. Bush",
+        "BirthDate": "1924-06-12",
+        "DeathDate": "2018-11-30"
+      },
+      {
+        "EntityId": "Q34453",
+        "FullName": "Boris Yeltsin",
+        "BirthDate": "1931-02-01",
+        "DeathDate": "2007-04-23"
+      }
+    ]
+  },
+  {
+    "Id": "BCEABCAF0400B27AF5307BAE0927ABA8B2690A5ABA82D8C0CD4BCB0C75A46B81",
+    "Day": "1994-01-03",
+    "Description": "Baikal Airlines Flight 130 crashes near Mamoney, Irkutsk, Russia, resulting in 125 deaths.",
+    "People": []
+  },
+  {
+    "Id": "304A8CE4CC2AFADF54239423E616D94C4939225B869B6F1EBA7E6FC9F1CA6BA7",
+    "Day": "1999-01-03",
+    "Description": "The ''Mars Polar Lander'' is launched by NASA.",
+    "People": []
+  },
+  {
+    "Id": "ED6D0B79773EF9C5CBE48C7CDC7B213E2C4C1C7F1D2E9A70047AC04C2FC911E8",
+    "Day": "2002-01-03",
+    "Description": "Israeli–Palestinian conflict: Israeli forces seize the Palestinian freighter ''Karine A'' in the Red Sea, finding 50 tons of weapons.",
+    "People": []
+  },
+  {
+    "Id": "A898484134676A56C16EF3CAFC6E9B012BC6E5FBDB1807516E606B6281E03E65",
+    "Day": "2004-01-03",
+    "Description": "Flash Airlines Flight 604 crashes into the Red Sea, resulting in 148 deaths, making it one of the deadliest aviation accidents in Egyptian history.",
+    "People": []
+  },
+  {
+    "Id": "BA67C0FB07938CB823EECDF130B7DD0884C2AFE5B76A9F78A5107911D221267A",
+    "Day": "2009-01-03",
+    "Description": "The first block of the blockchain of the decentralized payment system Bitcoin, called the ''Genesis block'', is established by the creator of the system, Satoshi Nakamoto.",
+    "People": []
+  },
+  {
+    "Id": "48300F0AFF87D90DD755879406DE3915FFA8FD50694040431C305C01FDAE5E54",
+    "Day": "2015-01-03",
+    "Description": "Boko Haram militants destroy the entire town of Baga in north-east Nigeria, starting the Baga massacre and killing as many as 2,000 people.",
+    "People": []
+  },
+  {
+    "Id": "A8C128671CE0AF676D34BC59B92ED34A7D6D42AF44F813B26D82685D92FDF5B7",
+    "Day": "2016-01-03",
+    "Description": "In response to the execution of Nimr al-Nimr, Iran ends its diplomatic relations with Saudi Arabia.",
+    "People": []
+  },
+  {
+    "Id": "C4136A48EF81FFDC633A83AF7E9046186FA971FE6522C644C2473AD11C183693",
+    "Day": "2018-01-03",
+    "Description": "For the first time in history, all five major storm surge gates in the Netherlands are closed simultaneously in the wake of a storm.",
+    "People": []
+  },
+  {
+    "Id": "67B2783B8BB6356010F012CF1386D64860D9566EF6F91B8F2684D5382729ECBD",
+    "Day": "2019-01-03",
+    "Description": "Chang'e 4 makes the first soft landing on the far side of the Moon, deploying the Yutu-2 lunar rover.",
+    "People": []
+  },
+  {
+    "Id": "20DD6F3B67A31570FA8DF0967CA7BEA2949F7B4890E4724F45C4C939C4D38FED",
+    "Day": "2020-01-03",
+    "Description": "Iranian General Qasem Soleimani is killed by an American airstrike near Baghdad International Airport, igniting global concerns of a potential armed conflict.",
+    "People": []
+  },
+  {
+    "Id": "A27DCAE82FB79AC621D67BA1492F96753B34B28C893396AED72522941D5849AD",
+    "Day": "2023-01-03",
+    "Description": "Singapore's Jurong Bird Park permanently closes.",
+    "People": []
+  },
+  {
+    "Id": "A6D2C8EADFBDA2832AA15026956B5665577465CE72A84C157D30E2D2B9472C5E",
+    "Day": "2024-01-03",
+    "Description": "At least 91 people are killed in bombings in Kerman, Iran, during a ceremony commemorating the assassination of Iranian General Qasem Soleimani four years earlier.",
+    "People": []
+  },
+  {
+    "Id": "76E65C048F1C6BCE41D03830289D29153DA2A78A5FA6C2456FF3C8525097B5A0",
+    "Day": "0871-01-04",
+    "Description": "Battle of Reading: Æthelred of Wessex and his brother Alfred are defeated by a Danish invasion army.",
+    "People": [
+      {
+        "EntityId": "Q83476",
+        "FullName": "Alfred the Great",
+        "BirthDate": "0849-01-01",
+        "DeathDate": "0899-10-30"
+      }
+    ]
+  },
+  {
+    "Id": "8F5EA5AACAEDA1C0DD09BE6507DCE286D224CF871BD8B3ADC361E42EAE8946CA",
+    "Day": "1642-01-04",
+    "Description": "English Civil War: King Charles I, accompanied by 400 soldiers, attempts to arrest five members of Parliament for treason, only to discover the men had been tipped off and fled.",
+    "People": [
+      {
+        "EntityId": "Q81506",
+        "FullName": "Charles I of England",
+        "BirthDate": "1600-11-29",
+        "DeathDate": "1649-02-09"
+      }
+    ]
+  },
+  {
+    "Id": "53B50BF9F770BFE603C3A63EFA0BCCAB649238730F6DBA29309E9DDE3B3F10A8",
+    "Day": "1649-01-04",
+    "Description": "English Civil War: The Rump Parliament votes to put Charles I on trial.",
+    "People": []
+  },
+  {
+    "Id": "A5DD707A5CDCD812E6C4FF334847035E9559C84780E546987800B0D0E87254D4",
+    "Day": "1717-01-04",
+    "Description": "The Netherlands, Great Britain, and France sign the Triple Alliance.",
+    "People": []
+  },
+  {
+    "Id": "47FBABAF32C24257174A70BDD46D1457E4328E6699B551D5F3EB7C7409F8479F",
+    "Day": "1762-01-04",
+    "Description": "Great Britain declares war on Spain, which meant the entry of Spain into the Seven Years' War.",
+    "People": []
+  },
+  {
+    "Id": "59F773CE3AF5896F730ECC593D066D6CEE0A3AF9CDC1C735DB246763AC562E42",
+    "Day": "1798-01-04",
+    "Description": "Constantine Hangerli arrives in Bucharest, Wallachia, as its new Prince, invested by the Ottoman Empire.",
+    "People": [
+      {
+        "EntityId": "Q2994983",
+        "FullName": "Constantine Hangerli",
+        "BirthDate": "1760-01-01",
+        "DeathDate": "1799-02-18"
+      }
+    ]
+  },
+  {
+    "Id": "A529779DDA44B16033D3D4C121D7B44C91F48D599C23311B65133DCDE25945E7",
+    "Day": "1844-01-04",
+    "Description": "The first issue of the Swedish-languaged ''Saima'' newspaper founded by J. V. Snellman is published in Kuopio, Finland.",
+    "People": [
+      {
+        "EntityId": "Q127688",
+        "FullName": "Johan Vilhelm Snellman",
+        "BirthDate": "1806-05-12",
+        "DeathDate": "1881-07-04"
+      }
+    ]
+  },
+  {
+    "Id": "876126DFE74869A374C49404C2BEDE449491EBED5B866D6888EA87CB4EDB27AB",
+    "Day": "1853-01-04",
+    "Description": "After having been kidnapped and sold into slavery in the American South, Solomon Northup regains his freedom; his memoir ''Twelve Years a Slave'' later becomes a national bestseller.",
+    "People": [
+      {
+        "EntityId": "Q3489578",
+        "FullName": "Solomon Northup",
+        "BirthDate": "1808-07-10",
+        "DeathDate": "1864-01-01"
+      }
+    ]
+  },
+  {
+    "Id": "569A811909CC4D628F973A7A65493AD196CE1FF38DAADD7455CA2E87028C76CC",
+    "Day": "1854-01-04",
+    "Description": "The McDonald Islands are discovered by Captain William McDonald aboard the ''Samarang''.",
+    "People": []
+  },
+  {
+    "Id": "09AF29BAF72309C136DED0DBC0F2D5866FEBF205982569D222B09958D10B9BC9",
+    "Day": "1863-01-04",
+    "Description": "The New Apostolic Church, a Christian and chiliastic church, is established in Hamburg, Germany.",
+    "People": []
+  },
+  {
+    "Id": "F798ADFB4325FD9E7973E507DA1980A520083252B56EF3210DF7CCEE2E8DE311",
+    "Day": "1878-01-04",
+    "Description": "Russo-Turkish War (1877–78): Sofia is liberated from Ottoman rule.",
+    "People": []
+  },
+  {
+    "Id": "196F7B05575E66F92258F80290905F4BED6A02D0650941DED1D982D0A251E335",
+    "Day": "1884-01-04",
+    "Description": "The Fabian Society is founded in London, United Kingdom.",
+    "People": []
+  },
+  {
+    "Id": "2A43CC08756A1730C7E060D4F32CDF9A67E555933EFB355E81BA37E239F084DB",
+    "Day": "1885-01-04",
+    "Description": "Sino-French War: French troops under General Oscar de Négrier defeat a numerically superior Qing force at Núi Bop in northern Vietnam.",
+    "People": []
+  },
+  {
+    "Id": "7D701EAFA9F19D29D9DBEC954825F703C92EBB646BC84CA4777E5D9D0FC908C5",
+    "Day": "1896-01-04",
+    "Description": "Utah is admitted as the 45th U.S. state.",
+    "People": []
+  },
+  {
+    "Id": "35E9612ABD76ECEFC0ECCAC6C85824A9511D6DD3CD7BCE62C5F4A0F1B72D3A47",
+    "Day": "1903-01-04",
+    "Description": "Topsy, an elephant, is electrocuted by the owners of Luna Park, Coney Island. The Edison film company records the film ''Electrocuting an Elephant'' of Topsy's death.",
+    "People": []
+  },
+  {
+    "Id": "C8D7E20C70904BEF178A4761C741CF4BE2EB072D4BEF734C9DA48A1589007F0D",
+    "Day": "1909-01-04",
+    "Description": "Explorer Aeneas Mackintosh of the Imperial Trans-Antarctic Expedition escaped death by fleeing across ice floes.",
+    "People": [
+      {
+        "EntityId": "Q380910",
+        "FullName": "Aeneas Mackintosh",
+        "BirthDate": "1879-07-01",
+        "DeathDate": "1916-05-08"
+      }
+    ]
+  },
+  {
+    "Id": "9E76943AEB4BF428F07D919A23DC4F61C75696D0F14F4191A092AC0D481BAAF1",
+    "Day": "1912-01-04",
+    "Description": "The Scout Association is incorporated throughout the British Empire by royal charter.",
+    "People": []
+  },
+  {
+    "Id": "4CC2E63152CF2622CECEBAFFA436E5EF534E364ABAAA83337B335FEF7939EB99",
+    "Day": "1918-01-04",
+    "Description": "The Finnish Declaration of Independence is recognized by Russia, Sweden, Germany and France.",
+    "People": []
+  },
+  {
+    "Id": "FEB789E71034639CEFE04BBD81EE9D2B9DB8E36C58D016FD5FC8C919704A3928",
+    "Day": "1944-01-04",
+    "Description": "World War II: Operation Carpetbagger, involving the dropping of arms and supplies to resistance fighters in Europe, begins.",
+    "People": []
+  },
+  {
+    "Id": "2C51A9C2FE2513451F8184E1751B4F2CCF511C4433FAD8802FB2E834201BC62F",
+    "Day": "1946-01-04",
+    "Description": "The first day of a three-day \\\"disastrous\\\" tornado outbreak across the south-central United States leaves 41 people dead and at least 412 others injured.",
+    "People": []
+  },
+  {
+    "Id": "1EC1251726E961AD8A90599A559350F20CA11D158A7BD3BB963B9D95EB46E932",
+    "Day": "1948-01-04",
+    "Description": "Burma gains its independence from the United Kingdom, becoming an independent republic.",
+    "People": []
+  },
+  {
+    "Id": "EF2F32A97AC03FC53C9087FACA56446638228A9EAFEF8FD98EC2928F2347A57F",
+    "Day": "1951-01-04",
+    "Description": "Korean War: Chinese and North Korean forces capture Seoul for the second time.",
+    "People": []
+  },
+  {
+    "Id": "BFC37EEC325EDC8F8BFAD135EA6D2BD3101124468C83C1BF945094262B89D028",
+    "Day": "1956-01-04",
+    "Description": "The Greek National Radical Union is formed by Konstantinos Karamanlis.",
+    "People": [
+      {
+        "EntityId": "Q156806",
+        "FullName": "Konstantinos Karamanlis",
+        "BirthDate": "1907-03-21",
+        "DeathDate": "1998-04-23"
+      }
+    ]
+  },
+  {
+    "Id": "5B20F132A1325D85ABE4BDFAF554639A4056B92FD0CC5FA7F0AB8D0B96BD9191",
+    "Day": "1958-01-04",
+    "Description": "Sputnik 1, the first artificial Earth satellite, launched by the Soviet Union in 1957, falls to Earth from orbit.",
+    "People": []
+  },
+  {
+    "Id": "F8F3C48C5623EDD948F660486124F47917C08BBD64D4729DC3716FA6270A7604",
+    "Day": "1959-01-04",
+    "Description": "''Luna 1'' becomes the first spacecraft to reach the vicinity of the Moon.",
+    "People": []
+  },
+  {
+    "Id": "57D0346DCE31494DAB4D88969EBF002F7C3EE1E0A84DD9430E2A71B4A6BB66A3",
+    "Day": "1965-01-04",
+    "Description": "Aeroflot Flight 101/X-20 crashes on approach to Alma-Ata Airport, killing 64 people.",
+    "People": []
+  },
+  {
+    "Id": "159EEB59BFAB0BCE86265B005CF40112888BB7BA48B3489480E51CEBD3974F9F",
+    "Day": "1972-01-04",
+    "Description": "Rose Heilbron becomes the first female judge to sit at the Old Bailey in London, UK.",
+    "People": [
+      {
+        "EntityId": "Q2166737",
+        "FullName": "Rose Heilbron",
+        "BirthDate": "1914-08-19",
+        "DeathDate": "2005-12-08"
+      }
+    ]
+  },
+  {
+    "Id": "FFD76BE4C5D99AA0F2D9047A38FB92F664BFA8D9E0BD04E6E258E0F656071B50",
+    "Day": "1975-01-04",
+    "Description": "This date overflowed the 12-bit field that had been used in TOPS-10. There were numerous problems and crashes related to this bug while an alternative format was developed.",
+    "People": []
+  },
+  {
+    "Id": "E58C0756D7CE3EC16BD08AA66F89E3665DA3F8DBB9ABC5B46288E3F757B64495",
+    "Day": "1976-01-04",
+    "Description": "The Troubles: The Ulster Volunteer Force shoots dead six Irish Catholic civilians in County Armagh, Northern Ireland. The next day, gunmen would shoot dead ten Protestant civilians nearby in retaliation.",
+    "People": []
+  },
+  {
+    "Id": "E62AA97354FD6289BAB0E5601AF564C4F285CDE774E216A5F9A7FBCE9159DF2E",
+    "Day": "1987-01-04",
+    "Description": "The Maryland train collision: An Amtrak train ''en route'' to Boston from Washington, D.C., collides with Conrail engines in Chase, Maryland, United States, killing 16 people.",
+    "People": []
+  },
+  {
+    "Id": "C28051132A669011D1A251D71C1BC1D982227F0A4A0592D91BAA28568FEAEC06",
+    "Day": "1989-01-04",
+    "Description": "Second Gulf of Sidra incident: A pair of Libyan MiG-23 \\\"Floggers\\\" are shot down by a pair of US Navy F-14 Tomcats during an air-to-air confrontation.",
+    "People": []
+  },
+  {
+    "Id": "BDB26ED7C9D0441C4AECC1EAF00CC4370A1B291B6DE4C850C1021D1E94D2281B",
+    "Day": "1990-01-04",
+    "Description": "In Pakistan's deadliest train accident an overloaded passenger train collides with an empty freight train, resulting in 307 deaths and 700 injuries.",
+    "People": []
+  },
+  {
+    "Id": "8EF26F8F92B46EC61FF1A328908B2BFB0402D6B1DCA4D4EE3664D1F63B430177",
+    "Day": "1998-01-04",
+    "Description": "A massive ice storm hits eastern Canada and the northeastern United States, continuing through January 10 and causing widespread destruction.",
+    "People": []
+  },
+  {
+    "Id": "D161E8CE88D999BBE4BB1CF8856E24B1C390C79CC766DFDD342F3D891133F149",
+    "Day": "1999-01-04",
+    "Description": "Former professional wrestler Jesse Ventura is sworn in as governor of Minnesota, United States.",
+    "People": [
+      {
+        "EntityId": "Q311161",
+        "FullName": "Jesse Ventura",
+        "BirthDate": "1951-07-15",
+        "DeathDate": null
+      }
+    ]
+  },
+  {
+    "Id": "30487348B4F8FDD11FEC44DDD00D34C1FE98E88C61F8A1574A04BCB1052B7A12",
+    "Day": "2000-01-04",
+    "Description": "A Norwegian passenger train departing from Trondheim, collides with a local train coming from Hamar in Åsta, Åmot; 19 people are killed and 68 injured in the accident.",
+    "People": []
+  },
+  {
+    "Id": "AE1B5E45D1F956E4BE7A2B17CDC142831EDCB6791C655BAAA967C9B4B36DDFFD",
+    "Day": "2004-01-04",
+    "Description": "''Spirit'', a NASA Mars rover, lands successfully on Mars at 04:35 UTC.",
+    "People": []
+  },
+  {
+    "Id": "BE9BF54BB9592A0FB408249D56117395866A10FF43B8985787F36236766A33C7",
+    "Day": "2006-01-04",
+    "Description": "Ehud Olmert becomes acting Prime Minister of Israel after the incumbent, Ariel Sharon, suffers a second, apparently more serious stroke.",
+    "People": [
+      {
+        "EntityId": "Q60206",
+        "FullName": "Ariel Sharon",
+        "BirthDate": "1928-02-27",
+        "DeathDate": "2014-01-11"
+      },
+      {
+        "EntityId": "Q93181",
+        "FullName": "Ehud Olmert",
+        "BirthDate": "1945-09-30",
+        "DeathDate": null
+      }
+    ]
+  },
+  {
+    "Id": "A085D8ECA89BD18E6FFA2170809AB650420CE422FB7E4C787CFBF837DCD2B905",
+    "Day": "2007-01-04",
+    "Description": "The 110th United States Congress convenes, electing Nancy Pelosi as the first female Speaker of the House in U.S. history.",
+    "People": [
+      {
+        "EntityId": "Q170581",
+        "FullName": "Nancy Pelosi",
+        "BirthDate": "1940-03-26",
+        "DeathDate": null
+      }
+    ]
+  },
+  {
+    "Id": "55299377F7FF741322D6B6CBC0D703776A928D910BD5974CD5A0EB5BDB1CCD5B",
+    "Day": "2008-01-04",
+    "Description": "A Let L-410 Turbolet crashes in the Los Roques Archipelago in Venezuela, killing 14 people.",
+    "People": []
+  },
+  {
+    "Id": "A97999DEAA39B3E11374D1AAC63B8D0712D137FB6CA13F7FF48280D36FAEF1CE",
+    "Day": "2010-01-04",
+    "Description": "The Burj Khalifa, the current tallest building in the world, officially opens in Dubai.",
+    "People": []
+  },
+  {
+    "Id": "4B4CB4D3FCDCA7B2E7EBCE5ADEB6D7689990D066B1100E84DB318EF57CDA9263",
+    "Day": "2013-01-04",
+    "Description": "A gunman kills eight people in a house-to-house rampage in Kawit, Cavite, Philippines.",
+    "People": []
+  },
+  {
+    "Id": "F7186F1E61730E4C38F97866B04B9EABF0F58E97FDB6C7F053BB8820E12B49BA",
+    "Day": "2018-01-04",
+    "Description": "Hennenman–Kroonstad train crash: A passenger train operated by Shosholoza Meyl collides with a truck on a level crossing at Geneva Station between Hennenman and Kroonstad, Free State, South Africa. Twenty people are killed and 260 injured.",
+    "People": []
+  },
+  {
+    "Id": "EB583114047C1D8870DC58C1639B7F15710CF09EEB31B7C4D4D2E9F26E580167",
+    "Day": "2019-01-04",
+    "Description": "A fire in an escape room in Koszalin, Poland, kills five teenagers through carbon monoxide poisoning.",
+    "People": []
+  },
+  {
+    "Id": "D05DA7A26C581804195984B267B2D5D9EE37BE6485CE918C9A88C41DCB5D4777",
+    "Day": "1477-01-05",
+    "Description": "Battle of Nancy: Charles the Bold is defeated and killed in a conflict with René II, Duke of Lorraine; Burgundy subsequently becomes part of France.",
+    "People": [
+      {
+        "EntityId": "Q151120",
+        "FullName": "Charles the Bold",
+        "BirthDate": "1433-11-19",
+        "DeathDate": "1477-01-14"
+      }
+    ]
+  },
+  {
+    "Id": "A74DA3402E492C5F163642B6D3DC426A8B295151AE6784A974CB9B89549C4186",
+    "Day": "1675-01-05",
+    "Description": "Battle of Colmar: The French army defeats forces from Austria and Brandenburg.",
+    "People": []
+  },
+  {
+    "Id": "20676409B05AF5751BCB4372BEED746F78EDC3CF98350494081966FA67A287BB",
+    "Day": "1757-01-05",
+    "Description": "Louis XV of France survives an assassination attempt by Robert-François Damiens, who becomes the last person to be executed in France by drawing and quartering (the traditional form of capital punishment used for regicides).",
+    "People": [
+      {
+        "EntityId": "Q7738",
+        "FullName": "Louis XV",
+        "BirthDate": "1710-02-15",
+        "DeathDate": "1774-05-10"
+      }
+    ]
+  },
+  {
+    "Id": "D4A43B36B882CFFA6B115384F28200CF787EE7E0369B122A37E2FE5820BE3309",
+    "Day": "1781-01-05",
+    "Description": "American Revolutionary War: Richmond, Virginia, is burned by British naval forces led by former American general Benedict Arnold.",
+    "People": [
+      {
+        "EntityId": "Q298237",
+        "FullName": "Benedict Arnold",
+        "BirthDate": "1741-01-14",
+        "DeathDate": "1801-06-14"
+      }
+    ]
+  },
+  {
+    "Id": "F5E32FC43C01855D9FB718A1E551EB6C9DB4AFB59E6EBB02000D022B4414C659",
+    "Day": "1822-01-05",
+    "Description": "The government of Central America votes for total annexation to the First Mexican Empire.",
+    "People": []
+  },
+  {
+    "Id": "6614499F880F2D58003A28BACC8550F2489B587E7D62CCA1BD30ACD8A4397DAA",
+    "Day": "1875-01-05",
+    "Description": "The Palais Garnier, one of the most famous opera houses in the world, is inaugurated in Paris.",
+    "People": []
+  },
+  {
+    "Id": "4B9F577D2FBFE34A0BFAD4E43D8F4110EB8AFA0B941B649CD8F9D5DEF4EBEEA0",
+    "Day": "1895-01-05",
+    "Description": "Dreyfus affair: French army officer Alfred Dreyfus is stripped of his rank and sentenced to life imprisonment on Devil's Island.",
+    "People": [
+      {
+        "EntityId": "Q171826",
+        "FullName": "Alfred Dreyfus",
+        "BirthDate": "1859-10-09",
+        "DeathDate": "1935-07-12"
+      }
+    ]
+  },
+  {
+    "Id": "822499707192541E526893F357769F149016A9660F88D4B84E15A794B4816715",
+    "Day": "1900-01-05",
+    "Description": "Irish nationalist leader John Edward Redmond calls for revolt against British rule.",
+    "People": []
+  },
+  {
+    "Id": "054D9AF6F813698D8171CD7C40CF44DC50C1BE056A5B1AD16161A2A1891EB9CC",
+    "Day": "1911-01-05",
+    "Description": "Kappa Alpha Psi, the world's third-oldest and largest black fraternity, is founded at Indiana University.",
+    "People": []
+  },
+  {
+    "Id": "682CEC8FDF4FA31BDFD63A94BCF1A7EAB7D8351DB348745DF91FD202D996F255",
+    "Day": "1912-01-05",
+    "Description": "The sixth All-Russian Conference of the Russian Social Democratic Labour Party (Prague Party Conference) opens. In the course of the conference, Vladimir Lenin and his supporters break from the rest of the party to form the Bolshevik movement.",
+    "People": [
+      {
+        "EntityId": "Q1394",
+        "FullName": "Vladimir Lenin",
+        "BirthDate": "1870-04-22",
+        "DeathDate": "1924-01-21"
+      }
+    ]
+  },
+  {
+    "Id": "081DF7A394ACB2D23CE197676352FD346BF130C678D8F8D4D2A9EC3B01D146D9",
+    "Day": "1913-01-05",
+    "Description": "First Balkan War: The Battle of Lemnos begins; Greek admiral Pavlos Kountouriotis forces the Turkish fleet to retreat to its base within the Dardanelles, from which it did not venture for the rest of the war.",
+    "People": [
+      {
+        "EntityId": "Q374655",
+        "FullName": "Pavlos Kountouriotis",
+        "BirthDate": "1855-04-21",
+        "DeathDate": "1935-08-22"
+      }
+    ]
+  },
+  {
+    "Id": "F64D90A66434F005914076ECD2A8FC8E58AC20A660A832C614D356C855812D89",
+    "Day": "1914-01-05",
+    "Description": "The Ford Motor Company announces an eight-hour workday and minimum daily wage of $5 in salary plus bonuses.",
+    "People": []
+  },
+  {
+    "Id": "CF30B0DFE218AB6D0005CEA6AC7A00244B0AE5E6227E59A772011D59A73BCF4B",
+    "Day": "1919-01-05",
+    "Description": "The German Workers' Party, which would become the Nazi Party, is founded in Munich.",
+    "People": []
+  },
+  {
+    "Id": "9A9DCE5E84A6C3985DC2999F203627D18C8679357B99407D52200E3264A9F690",
+    "Day": "1925-01-05",
+    "Description": "Nellie Tayloe Ross of Wyoming becomes the first female governor in the United States.",
+    "People": [
+      {
+        "EntityId": "Q242714",
+        "FullName": "Nellie Tayloe Ross",
+        "BirthDate": "1876-11-29",
+        "DeathDate": "1977-12-19"
+      }
+    ]
+  },
+  {
+    "Id": "4E3AA284737C236C649136F530244F7CE5836D5A2F873ABFAB51D120D432826E",
+    "Day": "1933-01-05",
+    "Description": "Construction of the Golden Gate Bridge begins in San Francisco Bay.",
+    "People": []
+  },
+  {
+    "Id": "36DCE5F957555ACB4CF96085A20F07DEB681A6F3CA998DA7367BC4A872190F5F",
+    "Day": "1941-01-05",
+    "Description": "Amy Johnson, a 37-year-old pilot and the first woman to fly solo from London to Australia, disappears after bailing out of her plane over the River Thames, and is presumed dead.",
+    "People": [
+      {
+        "EntityId": "Q2998",
+        "FullName": "Amy Johnson",
+        "BirthDate": "1903-07-01",
+        "DeathDate": "1941-01-05"
+      }
+    ]
+  },
+  {
+    "Id": "813D4D0AB150E6C1DE56E74571092F345B1ACFF4DA91417187F64EEC11DFEA4A",
+    "Day": "1944-01-05",
+    "Description": "The ''Daily Mail'' becomes the first major London newspaper to be published on both sides of the Atlantic Ocean.",
+    "People": []
+  },
+  {
+    "Id": "327E6B48D18A68C1C14720E6B35E28FB146FBCC8BDC07CC901CEB5595F4368CE",
+    "Day": "1945-01-05",
+    "Description": "The Soviet Union recognizes the new pro-Soviet Provisional Government of the Republic of Poland.",
+    "People": []
+  },
+  {
+    "Id": "A4ABE8B7D12224F848CDC82A468A473321F62E031A031A24083D3B89248CE60A",
+    "Day": "1949-01-05",
+    "Description": "In his State of the Union address, United States President Harry S. Truman unveils his Fair Deal program.",
+    "People": []
+  },
+  {
+    "Id": "8E6B75FC1091FFF5F9CDAE57640BBA85AEF9C74B10FB2E543FB1007CB789BDFD",
+    "Day": "1953-01-05",
+    "Description": "The play ''Waiting for Godot'' by Samuel Beckett receives its première in Paris.",
+    "People": []
+  },
+  {
+    "Id": "35B0C2FBC3133D4C3F0A95B53B41C418BD6C1462FF7409D3A4361261679EB831",
+    "Day": "1957-01-05",
+    "Description": "In a speech given to the United States Congress, United States President Dwight D. Eisenhower announces the establishment of what will later be called the Eisenhower Doctrine.",
+    "People": []
+  },
+  {
+    "Id": "8CD58B27BFC21D9BF8DC9BCEDE443E8FD4EE1F9168171110167FB70E8BDB1856",
+    "Day": "1967-01-05",
+    "Description": "Cultural Revolution: The Shanghai People's Commune is established following the seizure of power from local city officials by revolutionaries.",
+    "People": []
+  },
+  {
+    "Id": "B34610CBE3F1DBB0DBD73C143A105E95277103861519257B9CE28E1138E31518",
+    "Day": "1968-01-05",
+    "Description": "Alexander Dubček comes to power in Czechoslovakia, effectively beginning the \\\"Prague Spring\\\".",
+    "People": []
+  },
+  {
+    "Id": "51E8633C87FCFC960ACC4FDAA0FB7405A022897435AB7631C3DB4E74BBB1B533",
+    "Day": "1969-01-05",
+    "Description": "The Venera 5 space probe is launched at 06:28:08 UTC",
+    "People": []
+  },
+  {
+    "Id": "B5B2BE06803ACFE158C56A728139EE502D2170255D1ECAEB8B2B0624418C431F",
+    "Day": "1970-01-05",
+    "Description": "The 7.1 {{M|w}} Tonghai earthquake shakes Tonghai County, Yunnan province, China, with a maximum Mercalli intensity of X (''Extreme''). Between 10,000 and 15,000 people are known to have been killed and about another 26,000 are injured.",
+    "People": []
+  },
+  {
+    "Id": "987C7F668DE20794F9BD51A55E39A1201637032819F7FF0B841932EE893C729C",
+    "Day": "1972-01-05",
+    "Description": "US President Richard Nixon announces the Space Shuttle program.",
+    "People": []
+  },
+  {
+    "Id": "0C5EFF5A64EBBA4AB8AECE8C7EA95CEC781DD534C5A4EE3EB6DCBA6BE01638E5",
+    "Day": "1975-01-05",
+    "Description": "The Tasman Bridge in Tasmania, Australia, is struck by the bulk ore carrier ''Lake Illawarra'', killing twelve people.",
+    "People": []
+  },
+  {
+    "Id": "77BB543D3E1D8B40F48611A1F445FBA4D3380EC04B0103B323F127478E878A72",
+    "Day": "1976-01-05",
+    "Description": "The Khmer Rouge announce that the new Constitution of Democratic Kampuchea is ratified.",
+    "People": []
+  },
+  {
+    "Id": "7FBE05C6CDDA560605865CEFCFD283D05E3792E92EC0C978D3F143D6E9569032",
+    "Day": "1991-01-05",
+    "Description": "Georgian forces enter Tskhinvali, the capital of South Ossetia, Georgia, opening the 1991–92 South Ossetia War.",
+    "People": []
+  },
+  {
+    "Id": "E37FCE545130C32E0F6CE7F19DEA0EF2DDE4B843677C10169B4DA88BE55BE171",
+    "Day": "1993-01-05",
+    "Description": "The oil tanker MV ''Braer'' runs aground on the coast of the Shetland Islands, spilling 84,700 tons of crude oil.",
+    "People": []
+  },
+  {
+    "Id": "CC134B8DC421A3BFBBD047666A57639DD36EEA39242D837DF2A455D5D74B2EE8",
+    "Day": "2005-01-05",
+    "Description": "The dwarf planet Eris is discovered by Palomar Observatory-based astronomers, later motivating the International Astronomical Union (IAU) to define the term ''planet'' for the first time.",
+    "People": []
+  },
+  {
+    "Id": "442D8D90F2C6A448FC2B6C3FCC8370C1AA24B1AB7C43ED259DF006D6E2526949",
+    "Day": "2014-01-05",
+    "Description": "A launch of the communication satellite GSAT-14 aboard the GSLV MK.II D5 marks the first successful flight of an Indian cryogenic engine.",
+    "People": []
+  },
+  {
+    "Id": "557BD5064696AB7CAE209377C718248E82CA053AA7AA1B0542D4150585AFAC09",
+    "Day": "2022-01-05",
+    "Description": "Kazakh President Kassym-Jomart Tokayev dismisses Prime Minister Asqar Mamin and declares state of emergency over the 2022 Kazakh unrest.",
+    "People": []
+  },
+  {
+    "Id": "809E7CDA8170DB589D698C3F159CCCA1095760ACB2C6EE1BBF8478A51953A6F4",
+    "Day": "2024-01-05",
+    "Description": "Alaska Airlines Flight 1282 makes an emergency landing at Portland International Airport after a door plug blows off the Boeing 737 MAX 9 operating the flight. There are no fatalities, but the accident prompts the 737 MAX to be grounded and renews scrutiny on Boeing's manufacturing and design issues.",
+    "People": []
+  },
+  {
+    "Id": "87033B1083A7C6575E345D96947BDD1193734FC8BCACF4B4F67F7DF8AFBD6640",
+    "Day": "1066-01-06",
+    "Description": "Following the death of Edward the Confessor on the previous day, the Witan meets to confirm Harold Godwinson as the new King of England; Harold is crowned the same day, sparking a succession crisis that will eventually lead to the Norman conquest of England.",
+    "People": [
+      {
+        "EntityId": "Q159597",
+        "FullName": "Harold Godwinson",
+        "BirthDate": "1022-01-01",
+        "DeathDate": "1066-10-20"
+      }
+    ]
+  },
+  {
+    "Id": "3E7DB02584331639C05FF5B3DD421123077D4F2C711C4BCC91B628EDD03918ED",
+    "Day": "1205-01-06",
+    "Description": "Philip of Swabia undergoes a second coronation as King of the Romans.",
+    "People": [
+      {
+        "EntityId": "Q121130",
+        "FullName": "Philip of Swabia",
+        "BirthDate": "1177-08-01",
+        "DeathDate": "1208-06-28"
+      }
+    ]
+  },
+  {
+    "Id": "53344A9BEF5CFA75236E6B2AB868AC86143FEF6F7FA292F2D6182F7E0CEC6883",
+    "Day": "1322-01-06",
+    "Description": "Stephen Uroš III is crowned King of Serbia, having defeated his half-brother Stefan Konstantin in battle. His son is crowned \\\"young king\\\" in the same ceremony.",
+    "People": [
+      {
+        "EntityId": "Q1281457",
+        "FullName": "Stefan Konstantin",
+        "BirthDate": "1282-01-01",
+        "DeathDate": "1322-01-01"
+      }
+    ]
+  },
+  {
+    "Id": "BED580E5C94BCFE760E9A622C746CB466EAB1E724563F6E197C95B2E5B045484",
+    "Day": "1355-01-06",
+    "Description": "Charles IV of Bohemia is crowned with the Iron Crown of Lombardy as King of Italy in Milan.",
+    "People": [
+      {
+        "EntityId": "Q155669",
+        "FullName": "Charles IV, Holy Roman Emperor",
+        "BirthDate": "1316-05-14",
+        "DeathDate": "1378-11-29"
+      }
+    ]
+  },
+  {
+    "Id": "4BF45814B1F95775FB50C90106853AC97D84B707C7FC1F4B909937FBB24D9F7E",
+    "Day": "1449-01-06",
+    "Description": "Constantine XI is crowned Byzantine Emperor at Mystras.",
+    "People": [
+      {
+        "EntityId": "Q37142",
+        "FullName": "Constantine XI Palaiologos",
+        "BirthDate": "1405-02-08",
+        "DeathDate": "1453-05-29"
+      }
+    ]
+  },
+  {
+    "Id": "1CABD51196A97C7A6510AE1124A67B8DF8F00FBCDC36A4D148E77237C790A2BE",
+    "Day": "1492-01-06",
+    "Description": "The Catholic Monarchs Ferdinand and Isabella enter Granada at the conclusion of the Granada War.",
+    "People": []
+  },
+  {
+    "Id": "6ED75DFDC598A237162DFDE2F7DE3A0EFA8B518F682252713C865242D4CF4A95",
+    "Day": "1536-01-06",
+    "Description": "The first European school of higher learning in the Americas, Colegio de Santa Cruz de Tlatelolco, is founded by Viceroy Antonio de Mendoza and Bishop Juan de Zumárraga in Mexico City.",
+    "People": [
+      {
+        "EntityId": "Q441300",
+        "FullName": "Antonio de Mendoza",
+        "BirthDate": "1490-01-01",
+        "DeathDate": "1552-07-31"
+      }
+    ]
+  },
+  {
+    "Id": "ED8F4ECC2ED78A436CD0EA68F9727FAD5A14910CF811487EC0F60A75F8AA37A7",
+    "Day": "1540-01-06",
+    "Description": "King Henry VIII of England marries Anne of Cleves.",
+    "People": [
+      {
+        "EntityId": "Q57126",
+        "FullName": "Anne of Cleves",
+        "BirthDate": "1515-10-02",
+        "DeathDate": "1557-07-26"
+      }
+    ]
+  },
+  {
+    "Id": "EA37F718C1DDF4FB19A9C2D36C1861AEC5EA18AEDA922E398BBC4C4D9C8147F0",
+    "Day": "1579-01-06",
+    "Description": "The Union of Arras unites the southern Netherlands under the Duke of Parma (Ottavio Farnese), governor in the name of King Philip II of Spain.",
+    "People": [
+      {
+        "EntityId": "Q34417",
+        "FullName": "Philip II of Spain",
+        "BirthDate": "1527-05-31",
+        "DeathDate": "1598-09-13"
+      },
+      {
+        "EntityId": "Q442497",
+        "FullName": "Ottavio Farnese, Duke of Parma",
+        "BirthDate": "1524-10-19",
+        "DeathDate": "1586-09-18"
+      }
+    ]
+  },
+  {
+    "Id": "EEF833F4C785E15FD59FA7E3553ED8B0F0205EAEC08BCB3FDAC14C9ED6866577",
+    "Day": "1641-01-06",
+    "Description": "Arauco War: The first Parliament of Quillín is celebrated, putting a temporary hold on hostilities between Mapuches and Spanish in Chile.",
+    "People": []
+  },
+  {
+    "Id": "D94355C48E01FBE7613AD2380E69C1DFD794096B20F3551386E2F55BF8BD3E3C",
+    "Day": "1661-01-06",
+    "Description": "English Restoration: The Fifth Monarchists unsuccessfully attempt to seize control of London, England. The revolt is suppressed after a few days.",
+    "People": []
+  },
+  {
+    "Id": "FE349330B2F8823C2AA9EAA88964A8ED27249975E1C894D633D76E2FFE3BDFBD",
+    "Day": "1721-01-06",
+    "Description": "The Committee of Inquiry on the South Sea Bubble publishes its findings, revealing details of fraud among company directors and corrupt politicians.",
+    "People": []
+  },
+  {
+    "Id": "68682E850C3BD6DCB8A7FF8B01FE15AD3698AB282CBB4B409801C92CD3EEBE6B",
+    "Day": "1724-01-06",
+    "Description": "''Sie werden aus Saba alle kommen'', BWV 65, a Bach cantata, for Epiphany, is performed the first time.<!-- 300 years in 2024 -->",
+    "People": []
+  },
+  {
+    "Id": "C07E812118C243630D2811D76DD5C8AA73E1D82289D5C6B85CF72EBE12BC24D0",
+    "Day": "1725-01-06",
+    "Description": "J. S. Bach leads the first performance of ''Liebster Immanuel, Herzog der Frommen'', BWV 123, a chorale cantata for Epiphany.",
+    "People": [
+      {
+        "EntityId": "Q1339",
+        "FullName": "Johann Sebastian Bach",
+        "BirthDate": "1685-03-31",
+        "DeathDate": "1750-07-28"
+      }
+    ]
+  },
+  {
+    "Id": "91C46D42AC78DD956A9A181204C32E02E49B7F861BE71B87EB234F930AB15809",
+    "Day": "1781-01-06",
+    "Description": "In the Battle of Jersey, the British defeat the last attempt by France to invade Jersey in the Channel Islands.",
+    "People": []
+  },
+  {
+    "Id": "DC77C3D8A066426BEE38BA01594FA31DA5E8C8A38F32B73BABF39A1CDA094049",
+    "Day": "1809-01-06",
+    "Description": "Combined British, Portuguese and colonial Brazilian forces begin the Invasion of Cayenne during the Napoleonic Wars.",
+    "People": []
+  },
+  {
+    "Id": "7C29ACCBBFA0184A8A98407AEED5B6DADF2346082180CAEB5756BC9A8AC8C3CF",
+    "Day": "1838-01-06",
+    "Description": "Alfred Vail and colleagues demonstrate a telegraph system using dots and dashes (this is the forerunner of Morse code).",
+    "People": [
+      {
+        "EntityId": "Q454292",
+        "FullName": "Alfred Vail",
+        "BirthDate": "1809-09-25",
+        "DeathDate": "1859-01-18"
+      }
+    ]
+  },
+  {
+    "Id": "639054BCD5BE835B341A67C03979AFBF6F7306B1D295BC53FE6AE05CEF40CC8C",
+    "Day": "1839-01-06",
+    "Description": "The Night of the Big Wind, the most damaging storm in 300 years, sweeps across Ireland, damaging or destroying more than 20% of the houses in Dublin.",
+    "People": []
+  },
+  {
+    "Id": "E47FCBFC5A6364851FA0487E050FC788C5951335BCDB876119EB5056D22BA545",
+    "Day": "1847-01-06",
+    "Description": "Samuel Colt obtains his first contract for the sale of revolver pistols to the United States government.",
+    "People": [
+      {
+        "EntityId": "Q183246",
+        "FullName": "Samuel Colt",
+        "BirthDate": "1814-07-22",
+        "DeathDate": "1862-01-10"
+      }
+    ]
+  },
+  {
+    "Id": "EB17CD26FFE527B58AEE5A9C4D1F66353E74C6227250936792A9CDA0D1DC06B6",
+    "Day": "1870-01-06",
+    "Description": "The inauguration of the Musikverein in Vienna, Austria.",
+    "People": []
+  },
+  {
+    "Id": "31814791A0F4FF22E7F710A3BE99C34D2B1B0619B22E77B303FF5A3D967BAF90",
+    "Day": "1900-01-06",
+    "Description": "Second Boer War: Having already besieged the fortress at Ladysmith, Boer forces attack it, but are driven back by British defenders.",
+    "People": []
+  },
+  {
+    "Id": "CC42243B40F52E1BF5CB341C85D08D9627C21D877E5C7E56F6D175DA48BDC95C",
+    "Day": "1907-01-06",
+    "Description": "Maria Montessori opens her first school and daycare center for working class children in Rome, Italy.",
+    "People": [
+      {
+        "EntityId": "Q131117",
+        "FullName": "Maria Montessori",
+        "BirthDate": "1870-08-31",
+        "DeathDate": "1952-05-06"
+      }
+    ]
+  },
+  {
+    "Id": "56C452C2E1BA4C3A85085B4F1E9CD3DCB06B98894D283511F2F511F78380F6CC",
+    "Day": "1912-01-06",
+    "Description": "New Mexico is admitted to the Union as the 47th U.S. state.",
+    "People": []
+  },
+  {
+    "Id": "119F79F80A4B5186FB99E3664604C1FAA43F606281F0CA1A405BFD85A9DBBD9D",
+    "Day": "1929-01-06",
+    "Description": "King Alexander of the Serbs, Croats and Slovenes suspends his country's constitution, starting the January 6th Dictatorship.",
+    "People": [
+      {
+        "EntityId": "Q207384",
+        "FullName": "Alexander I of Yugoslavia",
+        "BirthDate": "1888-12-16",
+        "DeathDate": "1934-10-09"
+      }
+    ]
+  },
+  {
+    "Id": "7726B4827C0458C27917FC923278C3D26A8E1D0F6EADFF80E57B8BD8CC63EEBF",
+    "Day": "1930-01-06",
+    "Description": "Clessie Cummins arrives at the National Automobile Show in New York City, having driven a car powered by one of his diesel engines from Indianapolis.",
+    "People": [
+      {
+        "EntityId": "Q5131954",
+        "FullName": "Clessie Cummins",
+        "BirthDate": "1888-12-27",
+        "DeathDate": "1968-08-17"
+      }
+    ]
+  },
+  {
+    "Id": "33C80E04B631A145C84904CE0995C86E784E64BDA80E2B894D642EE5DCA24A63",
+    "Day": "1941-01-06",
+    "Description": "United States President Franklin D. Roosevelt delivers his Four Freedoms speech in the State of the Union address.",
+    "People": [
+      {
+        "EntityId": "Q8007",
+        "FullName": "Franklin D. Roosevelt",
+        "BirthDate": "1882-01-30",
+        "DeathDate": "1945-04-12"
+      }
+    ]
+  },
+  {
+    "Id": "3F009CA1D7B0B100A4EEE06ABC67FBF197110FDCCCB58ECD5E27B27EFECBF907",
+    "Day": "1946-01-06",
+    "Description": "The first general election ever in Vietnam is held.",
+    "People": []
+  },
+  {
+    "Id": "3300F508230EF62F9CFEB2BD9DDFE4EB8C17EE015763187BEC9ED9C77B4F6B4F",
+    "Day": "1947-01-06",
+    "Description": "Pan American Airlines becomes the first commercial airline to offer a round-the-world ticket.",
+    "People": []
+  },
+  {
+    "Id": "565852A9FE7BF88F068997B6B689DBAFA32AD8E880FB8CBAE75A7267B0F9897E",
+    "Day": "1950-01-06",
+    "Description": "The United Kingdom recognizes the People's Republic of China. The Republic of China severs diplomatic relations with the UK in response.",
+    "People": []
+  },
+  {
+    "Id": "8F8C3403D37425ECDA3C707AD9428A5311CCE1A46E5FC0FEB48ABC5AC92EA9FA",
+    "Day": "1951-01-06",
+    "Description": "Korean War: Beginning of the Ganghwa massacre, in the course of which an estimated 200–1,300 South Korean communist sympathizers are slaughtered.",
+    "People": []
+  },
+  {
+    "Id": "47EF416A321C784A6725C5507907B0732259724E0F73851CFF351957CCF3C87B",
+    "Day": "1960-01-06",
+    "Description": "National Airlines Flight 2511 is destroyed in mid-air by a bomb, while en route from New York City to Miami.",
+    "People": []
+  },
+  {
+    "Id": "213C7030FBD09D03403A0D983E187CF01F543F59C815553E2E5D6472D9374601",
+    "Day": "1967-01-06",
+    "Description": "Vietnam War: United States Marine Corps and ARVN troops launch \\\"Operation Deckhouse Five\\\" in the Mekong River delta.",
+    "People": []
+  },
+  {
+    "Id": "D85A41EF99C59906596CC9C2582782AE32539B2DC12D706A276EA61114FF3E73",
+    "Day": "1968-01-06",
+    "Description": "Aeroflot Flight 1668 crashes near Olyokminsk, killing 45.",
+    "People": []
+  },
+  {
+    "Id": "FF126A81C026512CCC8C4FFA5A371ED731073A70DCC4B898F36A94B6967A3968",
+    "Day": "1969-01-06",
+    "Description": "Allegheny Airlines Flight 737 crashes in Lafayette Township, McKean County, Pennsylvania, United States, killing 11.",
+    "People": []
+  },
+  {
+    "Id": "627081C19E704DCC4CEFF57D4300FA46A886A50117FA956A23A89D78E01C8483",
+    "Day": "1974-01-06",
+    "Description": "In response to the 1973 oil crisis, daylight saving time commences nearly four months early in the United States.",
+    "People": []
+  },
+  {
+    "Id": "D2F098A8E3C8910A0961A3A13762046A9450F3FA79FC5FEFEFC43A8E089088B6",
+    "Day": "1989-01-06",
+    "Description": "Satwant Singh and Kehar Singh are sentenced to death for conspiracy in the assassination of Prime Minister Indira Gandhi; the two men are executed the same day.",
+    "People": [
+      {
+        "EntityId": "Q1149",
+        "FullName": "Indira Gandhi",
+        "BirthDate": "1917-11-19",
+        "DeathDate": "1984-10-31"
+      },
+      {
+        "EntityId": "Q6383467",
+        "FullName": "Kehar Singh",
+        "BirthDate": "1935-01-01",
+        "DeathDate": "1989-01-01"
+      },
+      {
+        "EntityId": "Q2546004",
+        "FullName": "Satwant Singh",
+        "BirthDate": "1962-01-01",
+        "DeathDate": "1989-01-06"
+      }
+    ]
+  },
+  {
+    "Id": "790A4FBD0E683BAAD6C416214CDD96F6739B7021701744E3578505920DF09152",
+    "Day": "1992-01-06",
+    "Description": "President of Georgia Zviad Gamsakhurdia flees the country as a result of the military coup.",
+    "People": [
+      {
+        "EntityId": "Q218435",
+        "FullName": "Zviad Gamsakhurdia",
+        "BirthDate": "1939-03-31",
+        "DeathDate": "1993-12-31"
+      }
+    ]
+  },
+  {
+    "Id": "7205ED767716DEA3F89199DF4BF7174977D2480FC2CA8C33BF67A38F544B9FC6",
+    "Day": "1993-01-06",
+    "Description": "Indian Border Security Force units kill 55 Kashmiri civilians in Sopore, Jammu and Kashmir, in revenge after militants ambushed a BSF patrol.",
+    "People": []
+  },
+  {
+    "Id": "CC2BBFA5F4880D7FCA8AEE8CD4B84499A2ADBC3360860D46B1B1CEB2E4191055",
+    "Day": "1994-01-06",
+    "Description": "U.S. figure skater Nancy Kerrigan is attacked and injured by an assailant hired by her rival Tonya Harding's ex-husband during the U.S. Figure Skating Championships.",
+    "People": []
+  },
+  {
+    "Id": "94DF2669004A4D0567ADE39DFBDED814DA303491AA415AB9ECCFF8AC1EFA72E4",
+    "Day": "1995-01-06",
+    "Description": "A chemical fire in an apartment complex in Manila, Philippines, leads to the discovery of plans for Project Bojinka, a mass-terrorist attack.",
+    "People": []
+  },
+  {
+    "Id": "B5D75E927ABECE7792C19545AC9DC294B9BF0D752616B0DF4371B9C972C7401D",
+    "Day": "2000-01-06",
+    "Description": "The last natural Pyrenean ibex, Celia, is killed by a falling tree, thus making the species extinct.",
+    "People": []
+  },
+  {
+    "Id": "2019EAC11E44DCF18EBE50C2A537AAF3F0A3E39DF20B1010AA27822DDB63DB47",
+    "Day": "2005-01-06",
+    "Description": "Edgar Ray Killen is indicted for the 1964 murders of Chaney, Goodman, and Schwerner during the American Civil Rights Movement.",
+    "People": []
+  },
+  {
+    "Id": "089E1B7E7F2114A50FB9E28D89E121E457BD9E5ACB0FD961B1E0C84BE9E6A850",
+    "Day": "2012-01-06",
+    "Description": "Twenty-six people are killed and 63 wounded when a suicide bomber blows himself up at a police station in Damascus.",
+    "People": []
+  },
+  {
+    "Id": "81836ACBEC7C9EE03C01B4F1C0829BB556CF7355BDB0A4EFDC3FF89275918C94",
+    "Day": "2017-01-06",
+    "Description": "Five people are killed and six others injured in a mass shooting at Fort Lauderdale–Hollywood International Airport in Broward County, Florida.",
+    "People": []
+  },
+  {
+    "Id": "82E1245E1E870C894A04101AEC8936F5DEAB5FC4704504D821F722B4013E91B1",
+    "Day": "2019-01-06",
+    "Description": "Forty people are killed in a gold mine collapse in Badakhshan province, in northern Afghanistan.",
+    "People": []
+  },
+  {
+    "Id": "A5632C7B11A58CBD4DE4EC4979DC7A540DAB9A1F5EFF6F381F5D2C7546266BD7",
+    "Day": "2021-01-06",
+    "Description": "Americans storm the United States Capitol Building to disrupt certification of the 2020 presidential election, resulting in four deaths and evacuation of the U.S. Congress.",
+    "People": []
+  },
+  {
+    "Id": "14B555ADAD6D52C1FF3C70F465DAFE4B75E5A9A0F9C097FCBD900300D769D847",
+    "Day": "2025-01-06",
+    "Description": "Justin Trudeau announces his resignation as leader of the Liberal Party of Canada and Prime Minister of Canada after 9 years in office.",
+    "People": []
+  },
+  {
+    "Id": "DBEC66D1F47F1CA5A32BD4E4972EF21A4213FC5A946BBD58CA19A8743C743A64",
+    "Day": "1325-01-07",
+    "Description": "Afonso IV becomes King of Portugal.",
+    "People": [
+      {
+        "EntityId": "Q272903",
+        "FullName": "Afonso IV of Portugal",
+        "BirthDate": "1291-02-08",
+        "DeathDate": "1357-05-29"
+      }
+    ]
+  },
+  {
+    "Id": "38CFA1353B3ABE715BC0E19DB6176326D27E459886A27E43F04A4AE5F718C551",
+    "Day": "1558-01-07",
+    "Description": "French troops, led by Francis, Duke of Guise, take Calais, the last continental possession of England.",
+    "People": []
+  },
+  {
+    "Id": "FEB2F8C2F89405EE4D248ED452A88D1B2B04BFBA579D13CC6F3EB582C56461F1",
+    "Day": "1608-01-07",
+    "Description": "Fire destroys Jamestown, Virginia.",
+    "People": []
+  },
+  {
+    "Id": "662EE7C349936807EB42119919E49944363DACA1F6CB6AC4A80E68C4D08E17D0",
+    "Day": "1610-01-07",
+    "Description": "Galileo Galilei makes his first observation of the four Galilean moons: Ganymede, Callisto, Io and Europa, although he is not able to distinguish the last two until the following night.",
+    "People": [
+      {
+        "EntityId": "Q307",
+        "FullName": "Galileo Galilei",
+        "BirthDate": "1564-02-25",
+        "DeathDate": "1642-01-08"
+      }
+    ]
+  },
+  {
+    "Id": "E25E97AA52D55DFFDC68D855CA41D0C6D51E430B0ED5F74838136B43F3092564",
+    "Day": "1708-01-07",
+    "Description": "Battle of Zlatoust: Battle between Bashkir and Tatar rebels and the government troops of the Tsardom of Russia. It is one of the events of the Bashkir rebellion of 1704&ndash;1711.",
+    "People": []
+  },
+  {
+    "Id": "096DA5B822C054324887E808388F790D9348FB814198E01862C146395B9B91A6",
+    "Day": "1708-01-07",
+    "Description": "Bashkir rebels besiege Yelabuga.",
+    "People": []
+  },
+  {
+    "Id": "022FA6F6B0B85A960D7B5E7D79099798761727CB0FE7E1C36FBF0BB4BF2A7F39",
+    "Day": "1738-01-07",
+    "Description": "A peace treaty is signed between Peshwa Bajirao and Jai Singh II following Maratha victory in the Battle of Bhopal.",
+    "People": []
+  },
+  {
+    "Id": "9131429278E8059275C35E74E3A96D358723911E0F47D2D2064891F33E946D59",
+    "Day": "1782-01-07",
+    "Description": "The first American commercial bank, the Bank of North America, opens.",
+    "People": []
+  },
+  {
+    "Id": "6BB0F8E2D390A33C53776699E32B2912CA62CCECFFB10936525A8D5C0FCD752D",
+    "Day": "1785-01-07",
+    "Description": "Frenchman Jean-Pierre Blanchard and American John Jeffries travel from Dover, England, to Calais, France, in a gas balloon.",
+    "People": [
+      {
+        "EntityId": "Q366649",
+        "FullName": "Jean-Pierre Blanchard",
+        "BirthDate": "1753-07-04",
+        "DeathDate": "1809-03-07"
+      },
+      {
+        "EntityId": "Q1387374",
+        "FullName": "John Jeffries",
+        "BirthDate": "1744-02-05",
+        "DeathDate": "1819-09-16"
+      }
+    ]
+  },
+  {
+    "Id": "D41ABC2273A96DF59E6631702A37731B91D55CB54BD7E9303742EB97BFC9E44A",
+    "Day": "1835-01-07",
+    "Description": "{{HMS|Beagle}}, with Charles Darwin on board, drops anchor off the Chonos Archipelago.",
+    "People": [
+      {
+        "EntityId": "Q1035",
+        "FullName": "Charles Darwin",
+        "BirthDate": "1809-02-12",
+        "DeathDate": "1882-04-19"
+      }
+    ]
+  },
+  {
+    "Id": "57B9C3AEEC330BBE8FA9497011D931479020CF311407BE5D2AAFB4518A1FCD14",
+    "Day": "1867-01-07",
+    "Description": "The Kingstree jail fire kills 22 freedmen in Reconstruction-era South Carolina.",
+    "People": []
+  },
+  {
+    "Id": "9750BE396AC22C30AE1E5A2A5962E71D4D14BB7056C90C9709BCC206552E2051",
+    "Day": "1894-01-07",
+    "Description": "Thomas Edison makes a kinetoscopic film of someone sneezing.",
+    "People": [
+      {
+        "EntityId": "Q8743",
+        "FullName": "Thomas Edison",
+        "BirthDate": "1847-02-11",
+        "DeathDate": "1931-10-18"
+      }
+    ]
+  },
+  {
+    "Id": "4E5AE7FD5B50AE5A33AADC5D0EDDAD20170717C4A583F69FBABB194C235BD871",
+    "Day": "1904-01-07",
+    "Description": "The distress signal \\\"CQD\\\" is established only to be replaced two years later by \\\"SOS\\\".",
+    "People": []
+  },
+  {
+    "Id": "714226B9B142A3FAB48B065FB9E8E31AA411E5736E9331DF0FDE8CDCDC132380",
+    "Day": "1919-01-07",
+    "Description": "Montenegrin guerrilla fighters rebel against the planned annexation of Montenegro by Serbia, but fail.",
+    "People": []
+  },
+  {
+    "Id": "E757A30C69CF58EF898589A0A56877255C0992A8020555D32DE30D29EFAD19B5",
+    "Day": "1920-01-07",
+    "Description": "The New York State Assembly refuses to seat five duly elected Socialist assemblymen.",
+    "People": []
+  },
+  {
+    "Id": "1BA962EE4860BF2EFC013F604EA84309B428864BCDD1A67301D69D3043AADD67",
+    "Day": "1922-01-07",
+    "Description": "Dáil Éireann ratifies the Anglo-Irish Treaty by a 64–57 vote.{{fact|date=September 2024}}",
+    "People": []
+  },
+  {
+    "Id": "3C2C990FEC92B12CA73583413A134BFEF09097B719C92C6BD8DDAED31CE179F4",
+    "Day": "1927-01-07",
+    "Description": "The first transatlantic commercial telephone service is established from New York City to London.",
+    "People": []
+  },
+  {
+    "Id": "DDEE9DC35F13682B9A596C102DC605BEE6A59A7C3A7FB6F313722B2E81E3BF2D",
+    "Day": "1928-01-07",
+    "Description": "A disastrous flood of the River Thames kills 14 people and causes extensive damage to much of riverside London.",
+    "People": []
+  },
+  {
+    "Id": "C6D123A5149B18154A8AB4BE4AF7314E2FCB2E8E88BECBEE4B0D40E47F5A6A90",
+    "Day": "1931-01-07",
+    "Description": "Guy Menzies flies the first solo non-stop trans-Tasman flight (from Australia to New Zealand) in 11 hours and 45 minutes, crash-landing on New Zealand's west coast.",
+    "People": [
+      {
+        "EntityId": "Q5622461",
+        "FullName": "Guy Menzies",
+        "BirthDate": "1909-08-20",
+        "DeathDate": "1940-11-01"
+      }
+    ]
+  },
+  {
+    "Id": "AB446A1AE7CC9A75E5E01F1DDB9B65F86F794F87FD7AB3B8B463AFA4CE4EC2AF",
+    "Day": "1935-01-07",
+    "Description": "Benito Mussolini and French Foreign Minister Pierre Laval sign the Franco-Italian Agreement.",
+    "People": [
+      {
+        "EntityId": "Q23559",
+        "FullName": "Benito Mussolini",
+        "BirthDate": "1883-07-29",
+        "DeathDate": "1945-04-28"
+      },
+      {
+        "EntityId": "Q151983",
+        "FullName": "Pierre Laval",
+        "BirthDate": "1883-06-28",
+        "DeathDate": "1945-10-15"
+      }
+    ]
+  },
+  {
+    "Id": "C2F3C77117619848A04081D9396A0C936C16B6856DFF75A0780C1B51C4408C53",
+    "Day": "1940-01-07",
+    "Description": "Winter War: Battle of Raate Road: The Finnish 9th Division finally defeat the numerically superior Soviet forces on the Raate-Suomussalmi road.",
+    "People": []
+  },
+  {
+    "Id": "9687D60B8B22BDE0A15E76595567C16D110C412279CBD888F8DA67F8E7C79518",
+    "Day": "1948-01-07",
+    "Description": "Kentucky Air National Guard pilot Thomas Mantell crashes while in pursuit of a supposed UFO.",
+    "People": []
+  },
+  {
+    "Id": "A786FE691E447059A4DDF177BCF8CC3E076278842D442CD102D399B752112CF6",
+    "Day": "1950-01-07",
+    "Description": "In the Sverdlovsk air disaster, all 19 of those on board are killed, including almost the entire national ice hockey team (VVS Moscow) of the Soviet Air Force – 11 players, as well as a team doctor and a masseur.",
+    "People": []
+  },
+  {
+    "Id": "4D1FC7886F5D42EE18E1719715A444649EABC86E15E813388954FE34FBD6DDB1",
+    "Day": "1954-01-07",
+    "Description": "Georgetown–IBM experiment: The first public demonstration of a machine translation system is held in New York at the head office of IBM.",
+    "People": []
+  },
+  {
+    "Id": "D61380792AC0639C9C8B3693761DDBC3D23DE580F5379A6D276A3A804BCD53E3",
+    "Day": "1955-01-07",
+    "Description": "Contralto Marian Anderson becomes the first person of color to perform at the Metropolitan Opera in Giuseppe Verdi's ''Un ballo in maschera''.",
+    "People": [
+      {
+        "EntityId": "Q7317",
+        "FullName": "Giuseppe Verdi",
+        "BirthDate": "1813-10-10",
+        "DeathDate": "1901-01-27"
+      },
+      {
+        "EntityId": "Q231923",
+        "FullName": "Marian Anderson",
+        "BirthDate": "1897-02-21",
+        "DeathDate": "1993-04-08"
+      }
+    ]
+  },
+  {
+    "Id": "1AFB3AA3F26244FEEB857DB30D1518EE2ACAEC461BB3F74EFC1566278AD5B5B8",
+    "Day": "1959-01-07",
+    "Description": "The United States recognizes the new Cuban government of Fidel Castro.",
+    "People": [
+      {
+        "EntityId": "Q11256",
+        "FullName": "Fidel Castro",
+        "BirthDate": "1926-08-13",
+        "DeathDate": "2016-11-25"
+      }
+    ]
+  },
+  {
+    "Id": "12CFF4C45133863F36868BE1B7D69ECC5D17779EDEF837DF3685DAC3C4C5D4B3",
+    "Day": "1968-01-07",
+    "Description": "Surveyor program: ''Surveyor 7'', the last spacecraft in the Surveyor series, lifts off from Cape Canaveral Launch Complex 36A.",
+    "People": []
+  },
+  {
+    "Id": "C1BEEC8E789E854EE714A90722938BDCBEA1A4BB8625F033FFB764FF6274B5FA",
+    "Day": "1972-01-07",
+    "Description": "Iberia Flight 602 crashes near Ibiza Airport, killing all 104 people on board.",
+    "People": []
+  },
+  {
+    "Id": "247FD3337470C0AA399AF1EF35E49E40CAE5782AD21F5C26ECB2FD0A2BBD1C8D",
+    "Day": "1973-01-07",
+    "Description": "In his second shooting spree of the week, Mark Essex fatally shoots seven people and wounds five others at Howard Johnson's Hotel in New Orleans, before being shot to death by police officers.",
+    "People": [
+      {
+        "EntityId": "Q6767537",
+        "FullName": "Mark Essex",
+        "BirthDate": "1949-08-12",
+        "DeathDate": "1973-01-07"
+      }
+    ]
+  },
+  {
+    "Id": "A6B98A53D4F9F63197F5BA832DF3BB6EFB05E77838E1AEC140988E81B9A91D6B",
+    "Day": "1979-01-07",
+    "Description": "Third Indochina War: Cambodian–Vietnamese War: Phnom Penh falls to the advancing Vietnamese troops, driving out Pol Pot and the Khmer Rouge.",
+    "People": [
+      {
+        "EntityId": "Q39464",
+        "FullName": "Pol Pot",
+        "BirthDate": "1928-05-19",
+        "DeathDate": "1998-04-15"
+      }
+    ]
+  },
+  {
+    "Id": "5AE1860486855A974856369F7D9C8C785C88AE3A04DDDF89926B51C9D938BB9D",
+    "Day": "1980-01-07",
+    "Description": "U.S. President Jimmy Carter authorizes legislation giving $1.5 billion in loans to bail out the Chrysler Corporation.",
+    "People": [
+      {
+        "EntityId": "Q23685",
+        "FullName": "Jimmy Carter",
+        "BirthDate": "1924-10-01",
+        "DeathDate": "2024-12-29"
+      }
+    ]
+  },
+  {
+    "Id": "072948C1969CE4755050E028AB6AFB96C271CF72A48AF50773C58B2DF5B76BB3",
+    "Day": "1984-01-07",
+    "Description": "Brunei becomes the sixth member of the Association of Southeast Asian Nations (ASEAN).",
+    "People": []
+  },
+  {
+    "Id": "A2C861462E3D913E682F9DA2AF3DE7F925092538E482AAEC401D8456A5F57F10",
+    "Day": "1985-01-07",
+    "Description": "Japan Aerospace Exploration Agency launches ''Sakigake'', Japan's first interplanetary spacecraft and the first deep space probe to be launched by any country other than the United States or the Soviet Union.",
+    "People": []
+  },
+  {
+    "Id": "DE8A28AFB68C5FFB0C07512B99F498019E1E47867D7479C19063148EFE13B130",
+    "Day": "1989-01-07",
+    "Description": "Sutton United, a team in the fifth tier of English league football, defeated top-tier Coventry City in one of the biggest upsets in FA Cup history.",
+    "People": []
+  },
+  {
+    "Id": "AAF87CEBAA6DAC6E55B793F261BAC6893BEFB71EA63E96F1B874448940BA9C3A",
+    "Day": "1991-01-07",
+    "Description": "Roger Lafontant, former leader of the Tonton Macoute in Haiti under François Duvalier, attempts a coup d'état, which ends in his arrest.",
+    "People": [
+      {
+        "EntityId": "Q3439151",
+        "FullName": "Roger Lafontant",
+        "BirthDate": "1931-01-01",
+        "DeathDate": "1991-09-30"
+      }
+    ]
+  },
+  {
+    "Id": "49C59083828655D43A2BFC331F407C806298305D6FD6CE9FD54D87CB91E28291",
+    "Day": "1993-01-07",
+    "Description": "The Fourth Republic of Ghana is inaugurated with Jerry Rawlings as president.",
+    "People": []
+  },
+  {
+    "Id": "80B74B3D35E8EA53BB1783BB7047E5E0A39C916C5915403FA850866BE3F90A26",
+    "Day": "1994-01-07",
+    "Description": "A British Aerospace Jetstream 41 operating as United Express Flight 6291 crashes in Gahanna, Ohio, killing five of the eight people on board.",
+    "People": []
+  },
+  {
+    "Id": "77C43C2F5EBBEFB3C2A604737092254F59828DC98BF4F05926472EC109A20434",
+    "Day": "1999-01-07",
+    "Description": "The Senate trial in the impeachment of U.S. President Bill Clinton begins.",
+    "People": []
+  },
+  {
+    "Id": "CFEC059D8BE046FCA3B2C9E222077D37A043407E1FED29BE4922D300961C0E3C",
+    "Day": "2012-01-07",
+    "Description": "A hot air balloon crashes near Carterton, New Zealand, killing all 11 people on board.",
+    "People": []
+  },
+  {
+    "Id": "CCA36425E0B66632288CDA5BB8916F6EF1C8F24E758ECF702723DC469D7D0C06",
+    "Day": "2015-01-07",
+    "Description": "Two gunmen commit mass murder at the offices of ''Charlie Hebdo'' in Paris, executing twelve people and wounding eleven others.",
+    "People": []
+  },
+  {
+    "Id": "15E4675A1B6D45C2CCFFF0ABECAF289358239573AF61AB11F41A71877E7579F0",
+    "Day": "2020-01-07",
+    "Description": "The 6.4{{M|w}} 2019–20 Puerto Rico earthquakes kill four and injure nine in southern Puerto Rico.",
+    "People": []
+  },
+  {
+    "Id": "EA3752225351E1B3FFC643988CB4E581F2810E8AA017F70CDC68D8367A7CC9C3",
+    "Day": "2023-01-07",
+    "Description": "The longest U.S. House of Representatives speaker election since the December 1859 – February 1860 U.S. speaker election concludes and Kevin McCarthy is elected 55th Speaker of the United States House of Representatives.",
+    "People": []
+  },
+  {
+    "Id": "11723AF4456A910F3011264AC0B509570AB683C37AE0AE18EA4EB41299874C57",
+    "Day": "2025-01-07",
+    "Description": "A series of wildfires ravage the Greater Los Angeles area, resulting in at least 16 deaths and 13,401 structures destroyed.",
+    "People": []
+  }
+]

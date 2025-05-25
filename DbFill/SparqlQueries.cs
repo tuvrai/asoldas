@@ -43,7 +43,7 @@ namespace DbFill
             return person;
         }
 
-        private static DateOnly? GetDate(XElement result, string attrName)
+        public static DateOnly? GetDate(XElement result, string attrName)
         {
             if (result.Descendants().Where(e => e.Name.LocalName == "binding").FirstOrDefault(x => x.Attribute("name")?.Value == attrName) is XElement elementB
                      && ParseAsDate(elementB) is DateOnly date
@@ -71,13 +71,29 @@ namespace DbFill
             }
         }
 
-        private static bool IsHuman(XElement xElement)
+        public static bool IsHuman(XElement xElement)
         {
             return xElement.Descendants().Where(e => e.Name.LocalName == "binding")
                     .FirstOrDefault(x => x.Attribute("name").Value == "isHuman") is XElement el
                     && !string.IsNullOrEmpty(el.Value)
                     && bool.TryParse(el.Value, out bool isHuman)
                     && isHuman == true;
+        }
+
+        public static string? GetEntity(XElement xElement)
+        {
+            if (xElement.Descendants().Where(e => e.Name.LocalName == "binding")
+                    .FirstOrDefault(x => x.Attribute("name").Value == "person") is XElement el
+                    && el.Descendants().FirstOrDefault(e => e.Name.LocalName == "uri") is XElement uriEl
+                    && !string.IsNullOrEmpty(uriEl.Value))
+            {
+                int id = uriEl.Value.IndexOf("Q");
+                if (id > 0)
+                {
+                    return uriEl.Value[id..];
+                }
+            }
+            return null;
         }
     }
 }

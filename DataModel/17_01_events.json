@@ -5,12 +5,6 @@
     "Description": "The Senate chooses Pertinax against his will to succeed Commodus as Roman emperor.",
     "People": [
       {
-        "EntityId": "Q1434",
-        "FullName": "Commodus",
-        "BirthDate": "0161-08-30",
-        "DeathDate": "0192-12-30"
-      },
-      {
         "EntityId": "Q1436",
         "FullName": "Pertinax",
         "BirthDate": "0126-07-31",
@@ -37,16 +31,16 @@
     "Description": "Emperor Honorius forces Galla Placidia into marriage to Constantius, his famous general (''magister militum'') (probable).",
     "People": [
       {
-        "EntityId": "Q237907",
-        "FullName": "Galla Placidia",
-        "BirthDate": "0386-01-01",
-        "DeathDate": "0450-11-28"
-      },
-      {
         "EntityId": "Q201905",
         "FullName": "Constantius III",
         "BirthDate": "0370-01-01",
         "DeathDate": "0421-09-03"
+      },
+      {
+        "EntityId": "Q237907",
+        "FullName": "Galla Placidia",
+        "BirthDate": "0386-01-01",
+        "DeathDate": "0450-11-28"
       }
     ]
   },
@@ -82,16 +76,16 @@
     "Description": "Romanos IV Diogenes marries Eudokia Makrembolitissa and is crowned Byzantine Emperor.",
     "People": [
       {
-        "EntityId": "Q232223",
-        "FullName": "Eudokia Makrembolitissa",
-        "BirthDate": "1021-01-01",
-        "DeathDate": "1096-01-01"
-      },
-      {
         "EntityId": "Q41834",
         "FullName": "Romanos IV Diogenes",
         "BirthDate": "1030-01-01",
         "DeathDate": "1072-08-10"
+      },
+      {
+        "EntityId": "Q232223",
+        "FullName": "Eudokia Makrembolitissa",
+        "BirthDate": "1021-01-01",
+        "DeathDate": "1096-01-01"
       }
     ]
   },
@@ -101,16 +95,16 @@
     "Description": "Michael VIII Palaiologos is proclaimed co-emperor of the Empire of Nicaea with his ward John IV Laskaris.",
     "People": [
       {
-        "EntityId": "Q200033",
-        "FullName": "Michael VIII Palaiologos",
-        "BirthDate": "1224-01-01",
-        "DeathDate": "1282-12-18"
-      },
-      {
         "EntityId": "Q37088",
         "FullName": "John IV Laskaris",
         "BirthDate": "1251-01-01",
         "DeathDate": "1305-01-01"
+      },
+      {
+        "EntityId": "Q200033",
+        "FullName": "Michael VIII Palaiologos",
+        "BirthDate": "1224-01-01",
+        "DeathDate": "1282-12-18"
       }
     ]
   },
@@ -332,14 +326,7 @@
     "Id": "5F8C0E2E2CB0AFF469496EE6E9090CDC5E1798B367BC4D3C1A3C7AAD90CCE1F1",
     "Day": "1845-01-01",
     "Description": "The Philippines moves its national calendar to align with other Asian countries' calendars by skipping Tuesday, December 31, 1844. The change has been ordered by Governor–General Narciso Claveria to reform the country's calendar so that it aligns with the rest of Asia. Its territory has been one day behind the rest of Asia for 323 years since the arrival of Ferdinand Magellan in the Philippines on March 16, 1521.",
-    "People": [
-      {
-        "EntityId": "Q1496",
-        "FullName": "Ferdinand Magellan",
-        "BirthDate": "1480-01-01",
-        "DeathDate": "1521-05-07"
-      }
-    ]
+    "People": []
   },
   {
     "Id": "8C00028BCBD6E898DE1DE5254B6248CFA501F580AA6854765A0B6D6A2B5A5E07",
@@ -438,12 +425,6 @@
     "Day": "1910-01-01",
     "Description": "Captain David Beatty is promoted to rear admiral, and becomes the youngest admiral in the Royal Navy (except for royal family members) since Horatio Nelson.",
     "People": [
-      {
-        "EntityId": "Q83235",
-        "FullName": "Horatio Nelson, 1st Viscount Nelson",
-        "BirthDate": "1758-09-29",
-        "DeathDate": "1805-10-21"
-      },
       {
         "EntityId": "Q335013",
         "FullName": "David Beatty, 1st Earl Beatty",
@@ -574,16 +555,16 @@
     "Description": "Cuban Revolution: Fulgencio Batista, dictator of Cuba, is overthrown by Fidel Castro's forces.",
     "People": [
       {
-        "EntityId": "Q11256",
-        "FullName": "Fidel Castro",
-        "BirthDate": "1926-08-13",
-        "DeathDate": "2016-11-25"
-      },
-      {
         "EntityId": "Q11270",
         "FullName": "Fulgencio Batista",
         "BirthDate": "1901-01-16",
         "DeathDate": "1973-08-06"
+      },
+      {
+        "EntityId": "Q11256",
+        "FullName": "Fidel Castro",
+        "BirthDate": "1926-08-13",
+        "DeathDate": "2016-11-25"
       }
     ]
   },
@@ -1378,16 +1359,16 @@
     "Description": "Pope John XXIII excommunicates Fidel Castro.",
     "People": [
       {
-        "EntityId": "Q23873",
-        "FullName": "Pope John XXIII",
-        "BirthDate": "1881-11-25",
-        "DeathDate": "1963-06-03"
-      },
-      {
         "EntityId": "Q11256",
         "FullName": "Fidel Castro",
         "BirthDate": "1926-08-13",
         "DeathDate": "2016-11-25"
+      },
+      {
+        "EntityId": "Q23873",
+        "FullName": "Pope John XXIII",
+        "BirthDate": "1881-11-25",
+        "DeathDate": "1963-06-03"
       }
     ]
   },
@@ -1804,16 +1785,16 @@
     "Description": "Ehud Olmert becomes acting Prime Minister of Israel after the incumbent, Ariel Sharon, suffers a second, apparently more serious stroke.",
     "People": [
       {
-        "EntityId": "Q60206",
-        "FullName": "Ariel Sharon",
-        "BirthDate": "1928-02-27",
-        "DeathDate": "2014-01-11"
-      },
-      {
         "EntityId": "Q93181",
         "FullName": "Ehud Olmert",
         "BirthDate": "1945-09-30",
         "DeathDate": null
+      },
+      {
+        "EntityId": "Q60206",
+        "FullName": "Ariel Sharon",
+        "BirthDate": "1928-02-27",
+        "DeathDate": "2014-01-11"
       }
     ]
   },
@@ -2150,14 +2131,7 @@
     "Id": "53344A9BEF5CFA75236E6B2AB868AC86143FEF6F7FA292F2D6182F7E0CEC6883",
     "Day": "1322-01-06",
     "Description": "Stephen Uroš III is crowned King of Serbia, having defeated his half-brother Stefan Konstantin in battle. His son is crowned \\\"young king\\\" in the same ceremony.",
-    "People": [
-      {
-        "EntityId": "Q1281457",
-        "FullName": "Stefan Konstantin",
-        "BirthDate": "1282-01-01",
-        "DeathDate": "1322-01-01"
-      }
-    ]
+    "People": []
   },
   {
     "Id": "BED580E5C94BCFE760E9A622C746CB466EAB1E724563F6E197C95B2E5B045484",
@@ -2446,18 +2420,6 @@
     "Day": "1989-01-06",
     "Description": "Satwant Singh and Kehar Singh are sentenced to death for conspiracy in the assassination of Prime Minister Indira Gandhi; the two men are executed the same day.",
     "People": [
-      {
-        "EntityId": "Q1149",
-        "FullName": "Indira Gandhi",
-        "BirthDate": "1917-11-19",
-        "DeathDate": "1984-10-31"
-      },
-      {
-        "EntityId": "Q6383467",
-        "FullName": "Kehar Singh",
-        "BirthDate": "1935-01-01",
-        "DeathDate": "1989-01-01"
-      },
       {
         "EntityId": "Q2546004",
         "FullName": "Satwant Singh",
@@ -2749,12 +2711,6 @@
     "Day": "1955-01-07",
     "Description": "Contralto Marian Anderson becomes the first person of color to perform at the Metropolitan Opera in Giuseppe Verdi's ''Un ballo in maschera''.",
     "People": [
-      {
-        "EntityId": "Q7317",
-        "FullName": "Giuseppe Verdi",
-        "BirthDate": "1813-10-10",
-        "DeathDate": "1901-01-27"
-      },
       {
         "EntityId": "Q231923",
         "FullName": "Marian Anderson",

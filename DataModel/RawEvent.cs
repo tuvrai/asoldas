@@ -15,12 +15,16 @@ namespace DataModel
 
         public WikiEvent GetWikiEvent(Dictionary<string, Person> articlePersonDict)
         {
-            return new WikiEvent()
+            WikiEvent wikiEvent = new WikiEvent()
             {
                 Day = this.Day,
                 Description = this.Description,
-                People = articlePersonDict.Where(x => LinkedArticleTitles.Any(l => l.Equals(x.Key, StringComparison.OrdinalIgnoreCase))).Select(x => x.Value).ToList(),
             };
+            foreach (Person person in articlePersonDict.Where(x => LinkedArticleTitles.Any(l => l.Equals(x.Key, StringComparison.OrdinalIgnoreCase))).Select(x => x.Value))
+            {
+                wikiEvent.AddPerson(person);
+            }
+            return wikiEvent;
         }
     }
 }

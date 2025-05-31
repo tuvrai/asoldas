@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -11,6 +12,7 @@ namespace DataModel
 {
     public class WikiEvent
     {
+        [Key]
         public string Id { get; set; } = string.Empty;
         public DateOnly Day { get; set; }
         public string Description { get; set; } = string.Empty;
@@ -49,6 +51,24 @@ namespace DataModel
                 return true;
             }
             return false;
+        }
+
+        public List<Person> PeopleAsOldAs(int days)
+        {
+            return People.Where(x => x.BirthDate.AddDays(days) == Day).ToList();
+        }
+
+        public bool HasPeopleOfAge(int days) => PeopleAsOldAs(days).Count > 0;
+
+        public WikiEvent CopyWithPeopleOfAge(int ageInDays)
+        {
+            return new WikiEvent
+            {
+                Day = Day,
+                Description = Description,
+                Id = Id,
+                People = PeopleAsOldAs(ageInDays)
+            };
         }
     }
 }

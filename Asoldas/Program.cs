@@ -1,4 +1,6 @@
 using Asoldas.Components;
+using Asoldas.Components.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Asoldas
 {
@@ -7,6 +9,9 @@ namespace Asoldas
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            builder.Services.AddDbContext<WikiDbContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("WikiDb")));
+
 
             // Add services to the container.
             builder.Services.AddRazorComponents()

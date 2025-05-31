@@ -1,0 +1,76 @@
+﻿@page "/"
+@using Microsoft.EntityFrameworkCore
+@using DataModel
+@inject IDbContextFactory<AsOldAsApp.Data.AsOldAsAppContext> DbFactory
+@inject NavigationManager NavigationManager
+@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.Components.Web;
+@using System.Linq;
+
+
+<PageTitle>As old as...</PageTitle>
+
+<div>
+    <label for="birthDate">Enter your birth date:</label>
+    <InputDate @bind-Value="birthDate" class="form-control" />
+    <button type="button" class="btn btn-primary" @onclick="LoadEvents">Submitt</button>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        @if (RelevantEvents == null)
+        {
+            <p>Loading...</p>
+        }
+        else
+        {
+            <ul>
+                @if (RelevantEvents.Count > 0)
+                {
+                    @foreach (var item in RelevantEvents)
+                    {
+                        <li>
+                            <div style="border:2px solid red;padding:5px;">
+                                <span>@item.Id</span>
+                                <span>@item.Day</span>
+                                <span>@item.Description</span>
+                                <span>@string.Join(',', item.People)</span>
+                            </div>
+                        </li>
+                    }
+                }
+                else
+                {
+                    <p>No events found.</p>
+                }
+            </ul>
+        }
+    </div>
+</div>
+
+
+@code {
+    private DateOnly birthDate = DateOnly.FromDateTime(DateTime.Today);
+    private string message;
+
+
+    private async Task LoadEvents()
+    {
+        DateTime now = DateTime.Now;
+        int usersAgeInDays = new DateOnly(now.Year, now.Month, now.Day).DayNumber - birthDate.DayNumber;
+        using var context = DbFactory.CreateDbContext();
+        RelevantEvents = (await context.WikiEvent.Include(e => e.People)
+                            .Where(e => e.People.Any(p =>
+                                EF.Functions(p.BirthDate.ToDateTime(new TimeOnly(0)), e.Day.ToDateTime(new TimeOnly(0))) == usersAgeInDays)))
+                            .Select(x => x.CopyWithPeopleOfAge(usersAgeInDays))
+                            .ToList();
+    }
+
+    public List<WikiEvent>? RelevantEvents { get; set; } = [];
+
+    protected override async Task OnInitializedAsync()
+    {
+        // using var context = DbFactory.CreateDbContext();
+        // RelevantEvents = await context.WikiEvent.Include(e => e.People).ToListAsync();
+    }
+}

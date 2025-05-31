@@ -1,0 +1,19 @@
+﻿@page "/myage"
+@rendermode InteractiveServer
+
+<PageTitle>I am as old as...</PageTitle>
+
+<h1>I am as old as..</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}

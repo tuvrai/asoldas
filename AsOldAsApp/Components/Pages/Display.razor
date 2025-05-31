@@ -1,0 +1,54 @@
+﻿@page "/displayevents"
+@using Microsoft.EntityFrameworkCore
+@using DataModel
+@inject IDbContextFactory<AsOldAsApp.Data.AsOldAsAppContext> DbFactory
+@inject NavigationManager NavigationManager
+
+<PageTitle>Display</PageTitle>
+
+<h1>All events</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        @if (WikiEvents == null)
+        {
+            <p>Loading...</p>
+        }
+        else
+        {
+            <ul>
+                @if (WikiEvents.Count > 0)
+                {
+                    @foreach (var item in WikiEvents)
+                    {
+                        <li>
+                            <div style="border:2px solid red;">
+                                <span>@item.Id</span>
+                                <span>@item.Day</span>
+                                <span>@item.Description</span>
+                                <span>@string.Join(',', item.People)</span>
+                            </div>
+                        </li>
+                    }
+                }
+                else
+                {
+                    <p>No events found.</p>
+                }
+            </ul>
+        }
+    </div>
+</div>
+
+@code {
+    [SupplyParameterFromForm]
+    public List<WikiEvent>? WikiEvents { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        using var context = DbFactory.CreateDbContext();
+        WikiEvents = await context.WikiEvent.Include(e => e.People).ToListAsync();
+        var people = await context.People.ToListAsync();
+    }
+}

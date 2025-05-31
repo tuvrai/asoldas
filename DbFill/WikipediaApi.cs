@@ -17,6 +17,7 @@ using System.Diagnostics;
 using System.Net;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Formats.Asn1.AsnWriter;
+using System.Security.Authentication;
 
 namespace DbFill
 {
@@ -54,15 +55,22 @@ namespace DbFill
             Dictionary<string, Person> persons = [];
             if (allLinked.Count > 0)
             {
-                int batchSize = 50;
-                int maxBatchId = (allLinked.Count - 1) / batchSize;
-                for (int batchId = 0; batchId < maxBatchId; batchId++)
+                List<int> batches = [50, 20, 5];
+                foreach (int batchSize in batches)
                 {
-                    int startId = batchId * batchSize;
-                    
-                    foreach (KeyValuePair<string, Person> pair in await GetPersonDict(await GetPersonToEntityDict(allLinked.Slice(startId, batchSize))))
+                    try
                     {
-                        persons.Add(pair.Key, pair.Value);
+                        persons = await ProcessPeople(batchSize, allLinked);
+                        break;
+                    }
+                    catch
+                    {
+                        if (batchSize == batches.Last())
+                        {
+                            Console.WriteLine($"Could not parse people from events of {month}/{day}");
+                            return wikiDataset;
+                        }
+                        continue;
                     }
                 }
 
@@ -84,96 +92,21 @@ namespace DbFill
 
         }
 
-        public async static Task<WikiDataset> GetEventsFromDayOld(int month, int day)
+        private async static Task<Dictionary<string, Person>> ProcessPeople(int batchSize, List<string> allLinked)
         {
-            if (_httpClient == null)
+            Dictionary<string, Person> persons = [];
+            int maxBatchId = (allLinked.Count - 1) / batchSize;
+            for (int batchId = 0; batchId <= maxBatchId; batchId++)
             {
-                PrepareHttpClient();
-            }
-            WikiDataset wikiDataset = new();
-            if (month < 1 || _dayMax[month] < day)
-            {
-                return wikiDataset;
-            }
+                int startId = batchId * batchSize;
 
-            string urlFormat = @"https://en.wikipedia.org/w/api.php?action=query&format=json&prop=revisions&rvprop=content&titles={0}%20{1}&origin=*";
-            string actualUrl = string.Format(urlFormat, _monthFull[month], day);
-            string data = await GetHttpContent(actualUrl);
-
-            int eventsStartId = data.IndexOf(events);
-            int birthsStartId = data.IndexOf(births);
-
-            Stopwatch watch = Stopwatch.StartNew();
-            long lastStopElapsed = watch.ElapsedMilliseconds;
-            if (eventsStartId >= 0 && birthsStartId >= 0)
-            {
-                string[] lines = data.Substring(eventsStartId, birthsStartId - eventsStartId).Split("\\n*").Where(x => x.Trim().StartsWith("[[")).ToArray();
-                int lineCount = lines.Length;
-                int currentLine = 1;
-                foreach (string line in lines)
+                foreach (KeyValuePair<string, Person> pair in await GetPersonDict(await GetPersonToEntityDict(allLinked.Slice(startId, Math.Min(batchSize, allLinked.Count - startId)))))
                 {
-                    WikiEvent newEvent = new();
-                    Console.Clear();
-                    Console.WriteLine($"{day}/{_monthFull[month]}, {currentLine}/{lineCount} - {line[..40]}");
-                    try
-                    {
-                        
-                        string datePart = line.Contains("&ndash;") ? line.Split("&ndash;", 2)[0] : line.Replace("\\u2013", "&ndash;").Split("&ndash;", 2)[0];
-                        string eventPart = line.Contains("&ndash;") ? line.Split("&ndash;", 2)[1] : line.Replace("\\u2013", "&ndash;").Split("&ndash;", 2)[1];
-
-                        Stop(watch, ref lastStopElapsed, "a. split");
-                        if (ParseAcYear(WikiMarkupParsers.ReadWikipediaLinkArticleName(datePart)) is int year)
-                        {
-                            Stop(watch, ref lastStopElapsed, "a. parseacyear");
-                            newEvent.Day = new DateOnly(year, month, day);
-                            string cleanEventDescr = eventPart
-                                .RemoveRefs()
-                                .RemoveExcessNewLines()
-                                .FlattenLinks(out List<string> linked)
-                                .ConvertUtfCharacters()
-                                .Trim();
-                            Stop(watch, ref lastStopElapsed, "a. cleaneventdescr");
-                            newEvent.Description = cleanEventDescr;
-
-                            //foreach (string name in linked)
-                            //{
-                            //    if (await GetWikiItemId(name) is string entity)
-                            //    {
-                            //        Stop(watch, ref lastStopElapsed, "a. GetWikiItemId (OK)");
-                            //        if (await SparqlQueries.GetPersonUsingEntityId(entity) is Person person)
-                            //        {
-                            //            Stop(watch, ref lastStopElapsed, "a. GetPersonUsingEntityId (OK)");
-                            //            person.FullName = name;
-                            //            if (newEvent.AddPerson(person))
-                            //            {
-                            //                person.Events.Add(newEvent);
-                            //                wikiDataset.AddPerson(person);
-                            //            }
-                            //        }
-                            //        else
-                            //        {
-                            //            Stop(watch, ref lastStopElapsed, "a. GetPersonUsingEntityId (NOK)");
-                            //        }
-                            //    }
-                            //    else
-                            //    {
-                            //        Stop(watch, ref lastStopElapsed, "a. getwikiitemid (NOK)");
-                            //    }
-                            //}
-
-                            //wikiDataset.AddEvent(newEvent);
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        Console.WriteLine(ex.StackTrace);
-                    }
-
-                    currentLine++;
-                    //Thread.Sleep(ForcedBreakTimeMs);
+                    persons.Add(pair.Key, pair.Value);
                 }
             }
-            return wikiDataset;
+
+            return persons;
         }
 
         private static async Task<List<RawEvent>> PreprocessEvents(int month, int day)
@@ -192,14 +125,14 @@ namespace DbFill
 
             if (eventsStartId >= 0 && birthsStartId >= 0)
             {
-                string[] lines = data.Substring(eventsStartId, birthsStartId - eventsStartId).Split("\\n*").Where(x => x.Trim().StartsWith("[[")).ToArray();
+                string[] lines = data.Substring(eventsStartId, birthsStartId - eventsStartId).Split("\\n*").Where(x => x.Trim().StartsWith("[[") || x.Contains("&ndash;") || x.Contains("\\u2013")).ToArray();
                 int lineCount = lines.Length;
                 int currentLine = 1;
                 foreach (string line in lines)
                 {
                     WikiEvent newEvent = new();
                     Console.Clear();
-                    Console.WriteLine($"{day}/{_monthFull[month]}, {currentLine}/{lineCount} - {line[..40]}");
+                    Console.WriteLine($"{day}/{_monthFull[month]}, {currentLine}/{lineCount} - {line[..Math.Min(Math.Abs(line.Length - 1), 40)]}");
                     try
                     {
 
@@ -207,7 +140,7 @@ namespace DbFill
                         string eventPart = line.Contains("&ndash;") ? line.Split("&ndash;", 2)[1] : line.Replace("\\u2013", "&ndash;").Split("&ndash;", 2)[1];
 
                         Stop(watch, ref lastStopElapsed, "a. split");
-                        if (ParseAcYear(WikiMarkupParsers.ReadWikipediaLinkArticleName(datePart)) is int year)
+                        if (ParseAcYear(datePart) is int year)
                         {
                             Stop(watch, ref lastStopElapsed, "a. parseacyear");
                             newEvent.Day = new DateOnly(year, month, day);
@@ -227,6 +160,14 @@ namespace DbFill
                                 LinkedArticleTitles = linked
                             });
                         }
+                        else if (datePart.Contains("BC"))
+                        {
+                            // ignore BC
+                        }
+                        else
+                        {
+                            Console.WriteLine($"Year info {datePart} could not have been parsed.");
+                        }
                     }
                     catch (Exception ex)
                     {
@@ -234,7 +175,6 @@ namespace DbFill
                     }
 
                     currentLine++;
-                    Thread.Sleep(ForcedBreakTimeMs);
                 }
             }
 
@@ -312,11 +252,16 @@ namespace DbFill
         {
             var stopw = Stopwatch.StartNew();
             long curr = stopw.ElapsedMilliseconds;
-            string urlFormat = @"https://en.wikipedia.org/w/api.php?action=query&titles={0}&prop=pageprops&format=xml";
+            string urlFormat = @"https://en.wikipedia.org/w/api.php?action=query&titles={0}&prop=pageprops&format=xml&redirects=1";
             string articleUrl = string.Format(urlFormat, Uri.EscapeDataString(GetUrlTitleArg(articleNames)));
 
 
             string xmlContent = await GetHttpContent(articleUrl);
+
+            if (xmlContent.Contains("toomanyvalues"))
+            {
+                throw new Exception("Too many values");
+            }
 
             Stop(stopw, ref curr, $"\tarticle batch - a. http");
 
@@ -334,10 +279,22 @@ namespace DbFill
                         {
                             dict.Add(titleAttr.Value, entityAttr.Value);
                         }
+                        else
+                        {
+                            Console.WriteLine($"Ignored {titleAttr.Value}");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Ignored {titleAttr.Value}");
                     }
                 }
+                else
+                {
+                    Console.WriteLine("Missing title");
+                }
             }
-            Stop(stopw, ref curr, $"\ttarticle batch - a. desc");
+            Stop(stopw, ref curr, $"\tarticle batch - a. desc");
             return dict;
         }
 
@@ -363,7 +320,7 @@ namespace DbFill
                     {
                         if (SparqlQueries.GetDate(result, "birthDate") is DateOnly birthDate)
                         {
-                            Person person = new Person()
+                            Person person = new()
                             {
                                 EntityId = entity,
                                 FullName = key,
@@ -371,6 +328,10 @@ namespace DbFill
                                 DeathDate = SparqlQueries.GetDate(result, "deathDate")
                             };
                             dict.Add(key, person);
+                        }
+                        else
+                        {
+                            Console.WriteLine($"{key} is human, incorrect birthdate.");
                         }
                     }
                 }
@@ -387,19 +348,16 @@ namespace DbFill
 
         private static async Task<string> GetHttpContent(string url)
         {
-            _httpClient.DefaultRequestHeaders.UserAgent.ParseAdd("MyBot/1.0 (https://example.com)");
-            _httpClient.DefaultRequestHeaders.AcceptEncoding.ParseAdd("gzip, deflate");
-
-
             return await _httpClient.GetStringAsync(url);
         }
 
-        private static int? ParseAcYear(string date)
+        private static int? ParseAcYear(string textYear)
         {
+            string parsed = WikiMarkupParsers.IsLink(textYear) ? WikiMarkupParsers.ReadWikipediaLinkArticleName(textYear) : textYear.Trim();
             int? year = null;
-            if (!date.Contains("BC"))
+            if (!parsed.Contains("BC"))
             {
-                year = int.TryParse(date.Replace("AD", string.Empty).Trim(), out int res) ? res : null;
+                year = int.TryParse(parsed.Replace("AD", string.Empty).Trim(), out int res) ? res : null;
             }
 
             return year;

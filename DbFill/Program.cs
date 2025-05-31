@@ -9,9 +9,9 @@ namespace DbFill
             //PersonData? x = await WikipediaApi.GetPerson("Steve Jobs");
 
             WikiDataset dataset = new WikiDataset();
-            for (int month = 1; month <= 1; month++)
+            for (int month = 1; month <= 2; month++)
             {
-                for (int day = 1; day <= 7; day++)
+                for (int day = 1; day <= 31; day++)
                 {
                     WikiDataset x = await WikipediaApi.GetEventsFromDay(month, day);
                     foreach (WikiEvent e in x.Events)

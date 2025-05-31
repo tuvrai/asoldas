@@ -33,6 +33,11 @@ namespace DbFill
             return inner;
         }
 
+        internal static bool IsLink(string text)
+        {
+            return text.Contains("[[") || text.Contains("]]");
+        }
+
         internal static string FlattenLinks(this string text, out List<string> linkedPages)
         {
             string pattern = @"\[\[(.*?)\]\]";

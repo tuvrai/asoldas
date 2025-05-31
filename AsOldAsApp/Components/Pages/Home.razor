@@ -56,21 +56,23 @@
 
     private async Task LoadEvents()
     {
-        DateTime now = DateTime.Now;
-        int usersAgeInDays = new DateOnly(now.Year, now.Month, now.Day).DayNumber - birthDate.DayNumber;
-        using var context = DbFactory.CreateDbContext();
-        RelevantEvents = (await context.WikiEvent.Include(e => e.People)
-                            .Where(e => e.People.Any(p =>
-                                EF.Functions(p.BirthDate.ToDateTime(new TimeOnly(0)), e.Day.ToDateTime(new TimeOnly(0))) == usersAgeInDays)))
-                            .Select(x => x.CopyWithPeopleOfAge(usersAgeInDays))
-                            .ToList();
+        do
+        {
+            birthDate = birthDate.AddDays(-1);
+            DateTime now = DateTime.Now;
+            int usersAgeInDays = new DateOnly(now.Year, now.Month, now.Day).DayNumber - birthDate.DayNumber;
+            using var context = DbFactory.CreateDbContext();
+            RelevantEvents = AllEvents.Where(x => x.HasPeopleOfAge(usersAgeInDays))
+                                .Select(x => x.CopyWithPeopleOfAge(usersAgeInDays))
+                                .ToList();
+        } while (RelevantEvents.Count <= 0);
     }
-
+    public List<WikiEvent>? AllEvents { get; set; } = [];
     public List<WikiEvent>? RelevantEvents { get; set; } = [];
 
     protected override async Task OnInitializedAsync()
     {
-        // using var context = DbFactory.CreateDbContext();
-        // RelevantEvents = await context.WikiEvent.Include(e => e.People).ToListAsync();
+        using var context = DbFactory.CreateDbContext();
+        AllEvents = await context.WikiEvent.Include(e => e.People).ToListAsync();
     }
 }

@@ -55,7 +55,7 @@ namespace DataModel
 
         public List<Person> PeopleAsOldAs(int days)
         {
-            return People.Where(x => x.BirthDate.AddDays(days) == Day).ToList();
+            return People.Where(x => Day.DayNumber - x.BirthDate.DayNumber == days).ToList();
         }
 
         public bool HasPeopleOfAge(int days) => PeopleAsOldAs(days).Count > 0;

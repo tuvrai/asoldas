@@ -14,7 +14,7 @@
 
 <div class="date-form">
     <label for="birthDate" class="form-label">Enter your birth date:</label>
-    <InputDate @bind-Value="birthDate" class="form-control date-input" id="birthDate" />
+    <InputDate @bind-Value="birthDate" class="form-control date-input" id="birthDate" max="@DateTime.Today.ToString("yyyy-MM-dd")"  />
     <button type="button" class="btn-submit" @onclick="LoadEvents">Submit</button>
 </div>
 
@@ -26,7 +26,7 @@
         }
         else if (!isInitialized)
         {
-            <p class="init-label">Enter the date first and we will display people as old as you when an important event happened!</p>
+            <p class="init-label">Enter the date first and we will display people as old as you when something significant happened!</p>
         }
         else
         {
@@ -65,33 +65,32 @@
 </div>
 
 @code {
-        private DateOnly birthDate = DateOnly.FromDateTime(DateTime.Today);
-        private string message;
-        private int tolerance = 7;
-        private int usersAgeInDays = 0;
-        private bool isInitialized = false;
+    private DateOnly birthDate = DateOnly.FromDateTime(DateTime.Today);
+    private int tolerance = 7;
+    private int usersAgeInDays = 0;
+    private bool isInitialized = false;
 
-        private string GetTextForTolerance(int tolerance)
+    private string GetTextForTolerance(int tolerance)
+    {
+        if (tolerance == 0)
         {
-            if (tolerance == 0)
-            {
-                return "Today you are as old as";
-            }
-            else if (tolerance == 1)
-            {
-                return "Tommorow you will be as old as";
-            }
-            else
-            {
-                return $"In {tolerance} days you will be as old as";
-            }
+            return "Today you are as old as";
         }
-
-
-        private async Task LoadEvents()
+        else if (tolerance == 1)
         {
-            isInitialized = true;
-            DateTime now = DateTime.Now;
+            return "Tommorow you will be as old as";
+        }
+        else
+        {
+            return $"In {tolerance} days you will be as old as";
+        }
+    }
+
+
+    private void LoadEvents()
+    {
+        isInitialized = true;
+        DateTime now = DateTime.Now;
         usersAgeInDays = new DateOnly(now.Year, now.Month, now.Day).DayNumber - birthDate.DayNumber;
         if (AllEvents != null)
         {
@@ -102,6 +101,7 @@
                     .ToList();
         }
     }
+
     public List<WikiEvent>? AllEvents { get; set; } = [];
     public List<(WikiEvent ActualEvent, int Dist)>? RelevantEvents { get; set; } = [];
 

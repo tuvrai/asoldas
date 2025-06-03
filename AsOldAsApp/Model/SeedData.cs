@@ -17,7 +17,7 @@ namespace AsOldAsApp.Model
             if (context == null || context.WikiEvent == null)
             {
                 throw new NullReferenceException(
-                    "Null BlazorWebAppMoviesContext or Movie DbSet");
+                    "Null Wiki events context");
             }
 
             

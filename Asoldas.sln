@@ -3,13 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Asoldas", "Asoldas\Asoldas.csproj", "{65293A46-9D64-4BCF-AB47-AC8A79335227}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DbFill", "DbFill\DbFill.csproj", "{6AA519CA-DEF7-43D8-B6B7-F607403A0422}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataModel", "DataModel\DataModel.csproj", "{72C1C057-9D86-45D8-BE4E-A97C49ECC869}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsOldAsApp", "AsOldAsApp\AsOldAsApp.csproj", "{634A8DC5-DA9E-428D-B599-1CC07DC5AEAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsOldAsApp", "AsOldAsApp\AsOldAsApp.csproj", "{634A8DC5-DA9E-428D-B599-1CC07DC5AEAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{65293A46-9D64-4BCF-AB47-AC8A79335227}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{65293A46-9D64-4BCF-AB47-AC8A79335227}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{65293A46-9D64-4BCF-AB47-AC8A79335227}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{65293A46-9D64-4BCF-AB47-AC8A79335227}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6AA519CA-DEF7-43D8-B6B7-F607403A0422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6AA519CA-DEF7-43D8-B6B7-F607403A0422}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AA519CA-DEF7-43D8-B6B7-F607403A0422}.Release|Any CPU.ActiveCfg = Release|Any CPU

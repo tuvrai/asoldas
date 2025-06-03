@@ -74,7 +74,7 @@ namespace DbFill
         public static bool IsHuman(XElement xElement)
         {
             return xElement.Descendants().Where(e => e.Name.LocalName == "binding")
-                    .FirstOrDefault(x => x.Attribute("name").Value == "isHuman") is XElement el
+                    .FirstOrDefault(x => x.Attribute("name")?.Value == "isHuman") is XElement el
                     && !string.IsNullOrEmpty(el.Value)
                     && bool.TryParse(el.Value, out bool isHuman)
                     && isHuman == true;
@@ -83,7 +83,7 @@ namespace DbFill
         public static string? GetEntity(XElement xElement)
         {
             if (xElement.Descendants().Where(e => e.Name.LocalName == "binding")
-                    .FirstOrDefault(x => x.Attribute("name").Value == "person") is XElement el
+                    .FirstOrDefault(x => x.Attribute("name")?.Value == "person") is XElement el
                     && el.Descendants().FirstOrDefault(e => e.Name.LocalName == "uri") is XElement uriEl
                     && !string.IsNullOrEmpty(uriEl.Value))
             {

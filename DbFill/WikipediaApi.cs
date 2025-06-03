@@ -49,6 +49,9 @@ namespace DbFill
                 return wikiDataset;
             }
 
+            Console.Clear();
+            Console.WriteLine(_monthFull[month] + " " + day);
+
             List<RawEvent> preprocessedEvents = await PreprocessEvents(month, day);
             List<string> allLinked = preprocessedEvents.SelectMany(x => x.LinkedArticleTitles).ToList();
 
@@ -67,7 +70,7 @@ namespace DbFill
                     {
                         if (batchSize == batches.Last())
                         {
-                            Console.WriteLine($"Could not parse people from events of {month}/{day}");
+                            Logger.Log($"Could not parse people from events of {month}/{day}");
                             return wikiDataset;
                         }
                         continue;
@@ -86,7 +89,7 @@ namespace DbFill
             }
             else
             {
-                Console.WriteLine("Error - not a single link.");
+                Logger.Log("Error - not a single link.");
             }
             return wikiDataset;
 
@@ -102,7 +105,10 @@ namespace DbFill
 
                 foreach (KeyValuePair<string, Person> pair in await GetPersonDict(await GetPersonToEntityDict(allLinked.Slice(startId, Math.Min(batchSize, allLinked.Count - startId)))))
                 {
-                    persons.Add(pair.Key, pair.Value);
+                    if (!persons.ContainsKey(pair.Key))
+                    {
+                        persons.Add(pair.Key, pair.Value);
+                    }
                 }
             }
 
@@ -131,13 +137,12 @@ namespace DbFill
                 foreach (string line in lines)
                 {
                     WikiEvent newEvent = new();
-                    Console.Clear();
-                    Console.WriteLine($"{day}/{_monthFull[month]}, {currentLine}/{lineCount} - {line[..Math.Min(Math.Abs(line.Length - 1), 40)]}");
+                    Logger.Log($"{day}/{_monthFull[month]}, {currentLine}/{lineCount} - {line[..Math.Min(Math.Abs(line.Length - 1), 40)]}");
                     try
                     {
-
-                        string datePart = line.Contains("&ndash;") ? line.Split("&ndash;", 2)[0] : line.Replace("\\u2013", "&ndash;").Split("&ndash;", 2)[0];
-                        string eventPart = line.Contains("&ndash;") ? line.Split("&ndash;", 2)[1] : line.Replace("\\u2013", "&ndash;").Split("&ndash;", 2)[1];
+                        string normalizedLine = line.NormalizeHyphens();
+                        string datePart = normalizedLine.Split("-", 2)[0];
+                        string eventPart = normalizedLine.Split("-", 2)[1];
 
                         Stop(watch, ref lastStopElapsed, "a. split");
                         if (ParseAcYear(datePart) is int year)
@@ -166,12 +171,12 @@ namespace DbFill
                         }
                         else
                         {
-                            Console.WriteLine($"Year info {datePart} could not have been parsed.");
+                            Logger.Log($"Year info {datePart} could not have been parsed.");
                         }
                     }
                     catch (Exception ex)
                     {
-                        Console.WriteLine(ex.StackTrace);
+                        Logger.Log(ex.StackTrace);
                     }
 
                     currentLine++;
@@ -179,6 +184,29 @@ namespace DbFill
             }
 
             return rawEvents;
+        }
+
+        private static string NormalizeHyphens(this string line)
+        {
+            return line
+                .Replace("&ndash;", "-")
+                .Replace("&mdash;", "-")
+                .Replace("\\u2013", "-")  // En dash
+                .Replace("\\u2014", "-")  // Em dash
+                .Replace("\\u2212", "-")  // Minus sign
+                .Replace("\\u2010", "-")  // Hyphen
+                .Replace("\\u2011", "-")  // Non-breaking hyphen
+                .Replace("\\uFE63", "-")  // Small hyphen-minus
+                .Replace("\\uFF0D", "-")  // Fullwidth hyphen-minus
+                .Replace("\\u02D7", "-")  // Modifier letter minus sign
+                .Replace("–", "-")        // En dash literal
+                .Replace("—", "-")        // Em dash literal
+                .Replace("−", "-")        // Minus sign literal
+                .Replace("‐", "-")        // Hyphen literal
+                .Replace("‑", "-")        // Non-breaking hyphen literal
+                .Replace("﹣", "-")        // Small hyphen-minus literal
+                .Replace("－", "-")        // Fullwidth hyphen-minus literal
+                .Replace("˗", "-");       // Modifier minus literal
         }
 
         private static void PrepareHttpClient()
@@ -194,7 +222,7 @@ namespace DbFill
 
         private static void Stop(this Stopwatch stopwatch, ref long lastMs, string comment)
         {
-            Console.WriteLine($"{comment}: {stopwatch.ElapsedMilliseconds - lastMs}");
+            Logger.Log($"{comment}: {stopwatch.ElapsedMilliseconds - lastMs}");
             lastMs = stopwatch.ElapsedMilliseconds;
         }
 
@@ -263,12 +291,10 @@ namespace DbFill
                 throw new Exception("Too many values");
             }
 
-            Stop(stopw, ref curr, $"\tarticle batch - a. http");
 
             XDocument doc = XDocument.Parse(xmlContent);
-
-            Stop(stopw, ref curr, $"\ttarticle batch - a. parse");
             Dictionary<string, string> dict = [];
+            Dictionary<string, string> redirects = GetRedirectsDict(doc.Descendants()?.FirstOrDefault(d => d.Name.LocalName == "redirects")?.Descendants()?.Where(x => x.Name.LocalName == "r") ?? []);
             foreach (XElement pageEl in doc.Descendants().Where(e => e.Name.LocalName == "page"))
             {
                 if (pageEl.Attribute("title") is XAttribute titleAttr && !string.IsNullOrEmpty(titleAttr.Value) && !dict.ContainsKey(titleAttr.Value))
@@ -277,25 +303,48 @@ namespace DbFill
                     {
                         if (pageprops.Attribute("wikibase_item") is XAttribute entityAttr)
                         {
-                            dict.Add(titleAttr.Value, entityAttr.Value);
+                            if (redirects.Any(x => x.Value == titleAttr.Value))
+                            {
+                                dict.Add(redirects.First(x => x.Value == titleAttr.Value).Key, entityAttr.Value);
+                                Logger.Log($"Redirected {titleAttr.Value} -> {redirects.First(x => x.Value == titleAttr.Value).Key}");
+                                redirects[redirects.First(x => x.Value == titleAttr.Value).Key] = "ALREADYUSEDVALUE";
+                            }
+                            else
+                            {
+                                dict.Add(titleAttr.Value, entityAttr.Value);
+                            }
                         }
                         else
                         {
-                            Console.WriteLine($"Ignored {titleAttr.Value}");
+                            Logger.Log($"NO WIKIBASE_ITEM {titleAttr.Value}");
                         }
                     }
                     else
                     {
-                        Console.WriteLine($"Ignored {titleAttr.Value}");
+                        Logger.Log($"NO PAGEPROPS {titleAttr.Value}");
                     }
                 }
                 else
                 {
-                    Console.WriteLine("Missing title");
+                    Logger.Log("Missing title");
                 }
             }
             Stop(stopw, ref curr, $"\tarticle batch - a. desc");
             return dict;
+        }
+
+        private static Dictionary<string, string> GetRedirectsDict(IEnumerable<XElement> rElements)
+        {
+            Dictionary<string, string> redirectDict = [];
+            foreach (XElement r in rElements)
+            {
+                if (r.Attribute("from")?.Value is string from && r.Attribute("to")?.Value is string to && !string.IsNullOrEmpty(from) && !string.IsNullOrEmpty(to))
+                {
+                    redirectDict.Add(from, to);
+                }
+            }
+
+            return redirectDict;
         }
 
         private async static Task<Dictionary<string, Person>> GetPersonDict(Dictionary<string, string> personToEntity)
@@ -331,7 +380,7 @@ namespace DbFill
                         }
                         else
                         {
-                            Console.WriteLine($"{key} is human, incorrect birthdate.");
+                            Logger.Log($"{key} is human, incorrect birthdate.");
                         }
                     }
                 }

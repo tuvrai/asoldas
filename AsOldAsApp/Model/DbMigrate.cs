@@ -10,13 +10,13 @@ namespace AsOldAsApp.Model
 
         public void ReadEvents()
         {
-            string json = File.ReadAllText("Components/EventsData/events.json");
+            string json = File.ReadAllText("Components/EventsData/fullevents.json");
             WikiEvents = JsonConvert.DeserializeObject<List<WikiEvent>>(json) ?? [];
         }
 
         public void ReadPeople()
         {
-            string json = File.ReadAllText("Components/EventsData/people.json");
+            string json = File.ReadAllText("Components/EventsData/fullpeople.json");
             People = JsonConvert.DeserializeObject<List<Person>>(json) ?? [];
         }
     }

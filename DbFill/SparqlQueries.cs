@@ -66,7 +66,7 @@ namespace DbFill
             }
             catch
             {
-                Console.WriteLine($"\t\tError: weird date - {element.Value}");
+                Logger.Log($"\t\tError: weird date - {element.Value}");
                 return null;
             }
         }

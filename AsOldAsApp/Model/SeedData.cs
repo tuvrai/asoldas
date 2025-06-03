@@ -7,7 +7,7 @@ namespace AsOldAsApp.Model
 {
     public class SeedData
     {
-        internal static void Reinitialize(IServiceProvider serviceProvider)
+        internal static void Initialize(IServiceProvider serviceProvider)
         {
             using var context = new AsOldAsAppContext(
             serviceProvider.GetRequiredService<
@@ -18,6 +18,11 @@ namespace AsOldAsApp.Model
             {
                 throw new NullReferenceException(
                     "Null Wiki events context");
+            }
+
+            if (context.WikiEvent.Count() > 0)
+            {
+                return;
             }
 
             

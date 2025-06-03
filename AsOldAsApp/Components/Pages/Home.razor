@@ -6,14 +6,16 @@
 @using Microsoft.AspNetCore.Components
 @using Microsoft.AspNetCore.Components.Web;
 @using System.Linq;
+@using System.Globalization;
+
 
 
 <PageTitle>As old as...</PageTitle>
 
-<div>
-    <label for="birthDate">Enter your birth date:</label>
-    <InputDate @bind-Value="birthDate" class="form-control" />
-    <button type="button" class="btn btn-primary" @onclick="LoadEvents">Submitt</button>
+<div class="date-form">
+    <label for="birthDate" class="form-label">Enter your birth date:</label>
+    <InputDate @bind-Value="birthDate" class="form-control date-input" id="birthDate" />
+    <button type="button" class="btn-submit" @onclick="LoadEvents">Submit</button>
 </div>
 
 <div class="row">
@@ -22,57 +24,90 @@
         {
             <p>Loading...</p>
         }
+        else if (!isInitialized)
+        {
+            <p class="init-label">Enter the date first and we will display people as old as you when an important event happened!</p>
+        }
         else
         {
-            <ul>
-                @if (RelevantEvents.Count > 0)
-                {
-                    @foreach (var item in RelevantEvents)
+            <p class="user-age-label">You are <b>@usersAgeInDays</b> days old.</p>
+            if (RelevantEvents.Count > 0)
+            {
+
+                <ul class="event-list">
+                    @for (int i = 0; i <= tolerance; i++)
                     {
-                        <li>
-                            <div style="border:2px solid red;padding:5px;">
-                                <span>@item.Id</span>
-                                <span>@item.Day</span>
-                                <span>@item.Description</span>
-                                <span>@string.Join(',', item.People)</span>
-                            </div>
-                        </li>
+                        @if (RelevantEvents.Any(x => x.Dist == i))
+                        {
+                            @foreach (var item in RelevantEvents.Where(x => x.Dist == i))
+                            {
+                                <li class="event event-tolerance@(item.Dist)">
+                                    <h3>
+                                        <span>@GetTextForTolerance(i)</span>
+                                        <span>@item.ActualEvent.People.First().FullName</span>
+                                        <span>when on @item.ActualEvent.Day.ToString("MMMM d, yyyy", CultureInfo.InvariantCulture)</span><span>...</span>
+                                    </h3>
+                                    <h2>
+                                        <span>@item.ActualEvent.Description</span>
+                                    </h2>
+                                </li>
+                            }
+                        }
                     }
-                }
-                else
-                {
-                    <p>No events found.</p>
-                }
-            </ul>
+                </ul>
+            }
+            else
+            {
+                <p class="no-events-label">No events found in next <b>@tolerance</b> days.</p>
+            }
         }
     </div>
 </div>
 
-
 @code {
-    private DateOnly birthDate = DateOnly.FromDateTime(DateTime.Today);
-    private string message;
+        private DateOnly birthDate = DateOnly.FromDateTime(DateTime.Today);
+        private string message;
+        private int tolerance = 7;
+        private int usersAgeInDays = 0;
+        private bool isInitialized = false;
 
-
-    private async Task LoadEvents()
-    {
-        do
+        private string GetTextForTolerance(int tolerance)
         {
-            birthDate = birthDate.AddDays(-1);
+            if (tolerance == 0)
+            {
+                return "Today you are as old as";
+            }
+            else if (tolerance == 1)
+            {
+                return "Tommorow you will be as old as";
+            }
+            else
+            {
+                return $"In {tolerance} days you will be as old as";
+            }
+        }
+
+
+        private async Task LoadEvents()
+        {
+            isInitialized = true;
             DateTime now = DateTime.Now;
-            int usersAgeInDays = new DateOnly(now.Year, now.Month, now.Day).DayNumber - birthDate.DayNumber;
-            using var context = DbFactory.CreateDbContext();
-            RelevantEvents = AllEvents.Where(x => x.HasPeopleOfAge(usersAgeInDays))
-                                .Select(x => x.CopyWithPeopleOfAge(usersAgeInDays))
-                                .ToList();
-        } while (RelevantEvents.Count <= 0);
+        usersAgeInDays = new DateOnly(now.Year, now.Month, now.Day).DayNumber - birthDate.DayNumber;
+        if (AllEvents != null)
+        {
+            RelevantEvents = AllEvents
+                    .Select(x => x.CopyWithPeopleOfAgeWithinTolerance(usersAgeInDays, tolerance))
+                    .Where(x => x.HasValue)
+                    .Select(x => x!.Value)
+                    .ToList();
+        }
     }
     public List<WikiEvent>? AllEvents { get; set; } = [];
-    public List<WikiEvent>? RelevantEvents { get; set; } = [];
+    public List<(WikiEvent ActualEvent, int Dist)>? RelevantEvents { get; set; } = [];
 
     protected override async Task OnInitializedAsync()
     {
         using var context = DbFactory.CreateDbContext();
-        AllEvents = await context.WikiEvent.Include(e => e.People).ToListAsync();
+        AllEvents = (await context.WikiEvent.Include(e => e.People).Where(x => x.People.Count > 0).ToListAsync()).Where(x => x.IsNonAdultEvent).ToList();
     }
 }

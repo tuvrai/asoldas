@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Asoldas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+38a2d04c04a123962e337aeb39fd726968b331ca")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2367022652edd69950af69b8215673de4017a977")]
 [assembly: System.Reflection.AssemblyProductAttribute("Asoldas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Asoldas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

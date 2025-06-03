@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json.Serialization;
@@ -69,6 +70,27 @@ namespace DataModel
                 Id = Id,
                 People = PeopleAsOldAs(ageInDays)
             };
+        }
+
+        public (WikiEvent ActualEvent, int Dist)? CopyWithPeopleOfAgeWithinTolerance(int ageInDays, int tolerance)
+        {
+            for (int i = ageInDays; i <= ageInDays + tolerance; i++)
+            {
+                if (HasPeopleOfAge(i))
+                {
+                    return (CopyWithPeopleOfAge(i), i - ageInDays);
+                }
+            }
+            return null;
+        }
+
+        public bool IsNonAdultEvent
+        {
+            get
+            {
+                string[] bannedWords = ["kill", "hanged", "dead", "massacre"];
+                return bannedWords.All(x => !Description.Contains(x, StringComparison.OrdinalIgnoreCase));
+            }
         }
     }
 }

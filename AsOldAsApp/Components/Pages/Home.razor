@@ -42,14 +42,14 @@
                             @foreach (var item in RelevantEvents.Where(x => x.Dist == i))
                             {
                                 <li class="event event-tolerance@(item.Dist)">
-                                    <h3>
+                                    <h2>
                                         <span>@GetTextForTolerance(i)</span>
                                         <span>@item.ActualEvent.People.First().FullName</span>
                                         <span>when on @item.ActualEvent.Day.ToString("MMMM d, yyyy", CultureInfo.InvariantCulture)</span><span>...</span>
-                                    </h3>
-                                    <h2>
-                                        <span>@item.ActualEvent.Description</span>
                                     </h2>
+                                    <h3>
+                                        <span>@item.ActualEvent.Description</span>
+                                    </h3>
                                 </li>
                             }
                         }
